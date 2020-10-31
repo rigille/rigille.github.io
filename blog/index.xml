@@ -8,10 +8,10 @@
     <language>pt-br</language><atom:link href="https://impression28.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>confusão diferencial</title>
-      <link>https://impression28.github.io/blog/confusao_diferencial/</link>
+      <link>https://impression28.github.io/blog/confusao-diferencial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://impression28.github.io/blog/confusao_diferencial/</guid>
+      <guid>https://impression28.github.io/blog/confusao-diferencial/</guid>
       <description>sempre achei os materiais de geometria diferencial muito difíceis de entender por algum motivo… elusivo demais para explicar. agora acredito que sei o que é e não é o conteúdo, é a notação.
 matemáticos naturalmente descartam trechos repetitivos das equações por motivos de preguiça de escrever. isso, combinando com outros acidentes históricos, produz expressões excepcionalmente concisas e ambíguas. um leitor experiente consegue solucionar as ambiguidades e completar as lacunas, como fazemos sempre que conversamos.</description>
     </item>
