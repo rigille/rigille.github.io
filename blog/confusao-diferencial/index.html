@@ -67,7 +67,7 @@
       "datePublished": "0001-01-01 00:00:00 \u002b0000 UTC",
       "dateModified" : "0001-01-01 00:00:00 \u002b0000 UTC",
       "url" : "https:\/\/impression28.github.io\/blog\/confusao-diferencial\/",
-      "wordCount" : "771",
+      "wordCount" : "738",
       "keywords" : ["geometria-diferencial", "Blog"]
     }
   
@@ -126,7 +126,7 @@
 <p>a raiz quadrada geralmente pega um número e retorna outro número, mas nesse caso estamos tirando a raiz quadrada de uma função definindo $\sqrt{f} := (t \mapsto \sqrt{f(t)})$<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. a soma é definida de forma muito semelhante:</p>
 <p>$$f + g := (t \mapsto f(t) + g(t))$$</p>
 <p>nada de problemático até agora, já sabemos que cada uma das parcelas  $E\left( u' \right)^2$, $2Fu&rsquo;v'$ e $G\left( v' \right)^2$ são funções $\mathbb{R} \rightarrow \mathbb{R}$.</p>
-<p>aqui os problemas começam. seria muito fácil pensar que na primeira expressão estamos pegando uma função $u'$<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> compondo com $E$ e elevando o resultado ao quadrado. ou talvez o $E$ estivesse sendo multiplicado com $(u')^2$? de fato é uma multiplicação, mas o $u'$ não é $\mathbb{R} \rightarrow \mathbb{R}$ ele é $\mathbb{R} \rightarrow \mathbb{R}^3$. estamos pegando o vetor no $\mathbb{R}^3$, fazendo o produto escalar dele com si próprio e multiplicando o resultado com $E$. Mas o que é $E$? Surpresa! $E$ é uma função $\mathbb{R}^2 \rightarrow \mathbb{R}$. Mas $(u')^2$ é do tipo $\mathbb{R}\rightarrow\mathbb{R}$ como multiplicaríamos isso com uma função $\mathbb{R}^2\rightarrow\mathbb{R}$? isso não faz sentido…</p>
+<p>aqui os problemas começam. seria muito fácil pensar que na primeira expressão estamos pegando uma função $u'$<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> compondo com $E$ e elevando o resultado ao quadrado. ou talvez o $E$ estivesse sendo multiplicado com $(u')^2$? de fato é uma multiplicação. Mas o que é $E$? Surpresa! $E$ é uma função $\mathbb{R}^2 \rightarrow \mathbb{R}$. Mas $(u')^2$ é do tipo $\mathbb{R}\rightarrow\mathbb{R}$ como multiplicaríamos isso com uma função $\mathbb{R}^2\rightarrow\mathbb{R}$? isso não faz sentido…</p>
 <p>os argumentos de $E$ foram omitidos.</p>
 <p>o que o autor realmente quis dizer é mais algo como</p>
 <p>$$E(u, v) := (t \mapsto E(u(t), v(t)))$$</p>
