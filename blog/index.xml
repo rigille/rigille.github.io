@@ -26,5 +26,26 @@
 matemáticos naturalmente descartam trechos repetitivos das equações por motivos de preguiça de escrever. isso, combinando com outros acidentes históricos, produz expressões excepcionalmente concisas e ambíguas. um leitor experiente consegue solucionar as ambiguidades e completar as lacunas, como fazemos sempre que conversamos.</description>
     </item>
     
+    <item>
+      <title>a expectativa de vida dos imortais</title>
+      <link>https://impression28.github.io/blog/expectativa-dos-imortais/</link>
+      <pubDate>Sun, 06 Sep 2020 16:13:39 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/blog/expectativa-dos-imortais/</guid>
+      <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
+ Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider
+ mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
+    </item>
+    
+    <item>
+      <title>expressões regulares do ponto de vista matemático</title>
+      <link>https://impression28.github.io/blog/expressoes-regulares-para-matematicos/</link>
+      <pubDate>Sun, 06 Sep 2020 16:13:39 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/blog/expressoes-regulares-para-matematicos/</guid>
+      <description>quando precisamos encontrar uma palavra ou contar quantas vezes ela ocorre, digitar ctrl+f basta para livrar nosso cérebro desse trabalho. mas e se precisássemos consultar quais os números dentro de um texto? nesse caso, a única ajuda que o ctrl+f parece nos oferecer é rodar uma busca para cada número possível, método de praticidade duvidosa dado que levaria praticamente o mesmo tempo que ler &amp;ldquo;em busca do tempo perdido&amp;rdquo;.
+felizmente existem as expressões regulares.</description>
+    </item>
+    
   </channel>
 </rss>
