@@ -67,7 +67,7 @@
       "datePublished": "2020-09-06 16:13:39 -0300 -03",
       "dateModified" : "2020-09-06 16:13:39 -0300 -03",
       "url" : "https:\/\/impression28.github.io\/blog\/expectativa-dos-imortais\/",
-      "wordCount" : "537",
+      "wordCount" : "777",
       "keywords" : ["Blog"]
     }
   
@@ -116,14 +116,14 @@
               
 <p>em 2019 um usuário do reddit <a href="https://www.reddit.com/r/AskReddit/comments/b9vnxj/youre_given_immortality_but_the_cost_is_being">perguntou</a> pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.</p>
 <blockquote>
-<p><em>Yeah, that should give me just enough time to put off all the things I should actually be doing right now.</em> — <a href="https://www.reddit.com/r/AskReddit/comments/b9vnxj/youre_given_immortality_but_the_cost_is_being/ek7u077?utm_source=share&amp;utm_medium=web2x&amp;context=3">WorgRider</a></p>
+<p><em>Yeah, that should give me just enough time to put off all the things I should actually be doing right now.</em> — <a href="https://www.reddit.com/r/AskReddit/comments/b9vnxj/youre_given_immortality_but_the_cost_is_being/ek7u077?utm_source=share&amp;utm_medium=web2x&amp;context=3">WorgRider</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p>mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021? responder isso envolve muitas considerações históricas e geográficas que vamos conscientemente ignorar enquanto aproveitamos a desculpa para pensar em matemática e probabilidade.</p>
 <p>primeiro, como poderíamos modelar o envelhecimento? como uma pessoa imortal seria diferente? uma forma é considerar a fatia dos humanos que têm uma certa idade. digamos os <a href="https://www.ibge.gov.br/apps/populacao/projecao/">≈2 milhões</a> de brasileiros que têm 20 anos. depois de 1 ano, parte deles morrerá. essa proporção é a <em>mortalidade</em> e ela reflete a probabilidade de que um brasileiro de 20 anos morrerá dentro de 1 ano. quanto mais velha a população, maior a mortalidade  e maior a probabilidade de morrer dentro de um ano.</p>
 <p><img src="/mortalidade_brasileiros.png" alt="gráfico de mortalidade dos brasileiros">
 <em>baseado na <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9126-tabuas-completas-de-mortalidade.html?=&amp;t=downloads">tábua de mortalidade de 2019</a></em></p>
-<p>então imaginaremos que todo ano o universo joga uma moedinha com pesos para decidir se você vive ou não por mais um ano, e os pesos vão se voltando contra você quando você fica velho.</p>
-<p>surpreendentemente, o que acontece com os humanos nem sempre acontece com os outros animais. lagostas, águas vivas, algumas tartarugas etc. têm uma mortalidade constante durante a vida, aparentemente não envelhecem. se esse fosse o nosso caso o gráfico ficaria mais ou menos assim:</p>
+<p>então imaginaremos que todo ano o universo joga uma moedinha com pesos para decidir se você vive ou não por mais um ano, e os pesos vão se voltando contra você.</p>
+<p>surpreendentemente, o que acontece com os humanos nem sempre acontece com os outros animais. lagostas, águas vivas, algumas tartarugas etc. têm uma mortalidade constante durante a vida. aparentemente eles não envelhecem. se esse fosse o nosso caso o gráfico ficaria mais ou menos assim:</p>
 <p><img src="/mortalidade_imortais.png" alt="gráfico de mortalidade dos imortais"></p>
 <p>vamos simplificar mais ainda e considerar que a probabilidade de morrer é constante igual a $\alpha$ desde os 0 anos de idade. qual seria a expectativa de vida? seria</p>
 <p>$$\sum_{n=0}^\infty n \cdot \mathrm{probabilidade\ de\ viver\ exatamente}\ n\ \mathrm{anos}$$</p>
@@ -132,8 +132,8 @@
 <p>$$ \mathrm{probabilidade\ de\ viver\ exatamente}\ n\ \mathrm{anos} = (1 - \alpha)^{n}\cdot\alpha$$</p>
 <p>e portanto a expectativa de vida é</p>
 <p>$$\sum_{n=0}^\infty n \cdot (1 - \alpha)^{n}\cdot\alpha$$
-$$\alpha\cdot\sum_{n=1}^\infty n \cdot (1 - \alpha)^{n}$$</p>
-<p>e, de fato, pelo teste da razão essa série converge, então estamos liberados para fazer o truquezinho.</p>
+$$\alpha\cdot\sum_{n=1}^\infty n \cdot (1 - \alpha)^{n} \tag{0}$$</p>
+<p>pelo teste da razão essa série converge, então estamos liberados para fazer o truquezinho.</p>
 <p>$$\sum_{n=1}^\infty n \cdot (1 - \alpha)^{n} $$
 $$= 1 \cdot (1 - \alpha)^{1} + 2 \cdot (1 - \alpha)^{2} + 3 \cdot (1 - \alpha)^{3} + … $$
 $$= (1 - \alpha)$$
@@ -148,8 +148,22 @@ $$= \sum_{n=1}^\infty(1 - \alpha)^n +\ \sum_{n=2}^\infty(1 - \alpha)^n+\ \sum_{n
 $$= (1-\alpha)\cdot\sum_{n=0}^\infty(1 - \alpha)^n + (1-\alpha)^2\cdot\sum_{n=0}^\infty(1 - \alpha)^n + …$$
 $$= ((1-\alpha) + (1-\alpha)^2 + …)\cdot\sum_{n=0}^\infty(1 - \alpha)^n$$
 $$= (1-\alpha)\cdot\left(\sum_{n=0}^\infty(1 - \alpha)^n\right)^2$$
-$$= (1-\alpha)\cdot\left(\frac{1}{1-\alpha}\right)^2$$
-$$= \frac{1}{(1-\alpha)}$$</p>
+$$= (1-\alpha)\cdot\left(\frac{1}{\alpha}\right)^2$$
+$$= \frac{1-\alpha}{\alpha^2}$$</p>
+<p>substituindo esse resultado em $(0)$ concluímos que a expectativa de vida é</p>
+<p>$$\frac{1-\alpha}{\alpha}$$</p>
+<p>para $\alpha = 0.0013$, como está na tábua de mortalidade, o resultado é uma expectativa de $768.23$ anos. nada promissor, ainda mais pensando que consideramos a sua mortalidade no mundo moderno, com infraestrutura e pessoas que falam a sua língua. eventos históricos pontuais também podem reduzir drasticamente suas chances. claro que isso não significa que é impossível voltar para $2021$, só que o tempo médio de vida seria esse. adianto que a probabilidade de sobreviver isso tudo seria $7.41\%$, mas não vou te entediar com as contas.</p>
+<p>a mortalidade constante tem algumas consequências engraçadas. por exemplo, calculamos que a expectativa é $768.23$, mas depois que você sobreviveu o primeiro ano qual a expectativa pros próximos anos? $768.23$. e se você sobreviveu $1000$ anos? $768.23$. você encontrou uma outra imortal de $2000$ anos e agora estão juntos? se ela tiver a mesma mortalidade, vocês têm a mesma expectativa de vida.</p>
+<p>existe algo na natureza que tem essa característica, mas não é nenhum animal: átomos radioativos. eles têm a mesma chance de decaírem em qualquer dado momento. nesse caso o que dissemos no parágrafo anterior não parece mais tão estranho. um átomo urânio tem a mesma chance de decair, não importa se tem $1000$ anos ou $2000$ anos ou bilhões de anos.</p>
+<p>$$.$$</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>sim, isso deve me dar exatamente o tempo que preciso para adiar todas as coisas que deveria estar fazendo agora. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
 
               
