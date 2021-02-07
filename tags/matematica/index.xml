@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dessages</title>
-    <link>https://impression28.github.io/</link>
-    <description>Recent content on dessages</description>
+    <title>matematica on dessages</title>
+    <link>https://impression28.github.io/tags/matematica/</link>
+    <description>Recent content in matematica on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 07 Feb 2021 17:43:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 17:43:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/matematica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>as curvas e as quinas</title>
       <link>https://impression28.github.io/blog/se-%C3%A9-diferenci%C3%A1vel-n%C3%A3o-tem-quinas-eles-disseram./</link>
@@ -26,25 +26,6 @@ essa definição foi pensada visando excluir as curvas que têm quinas e outras 
       <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
  Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider1
  mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
-    </item>
-    
-    <item>
-      <title>os reais mais valiosos</title>
-      <link>https://impression28.github.io/blog/os-reais-mais-valiosos/</link>
-      <pubDate>Wed, 02 Dec 2020 22:00:00 -0300</pubDate>
-      
-      <guid>https://impression28.github.io/blog/os-reais-mais-valiosos/</guid>
-      <description>o dinheiro funciona como dinheiro em parte por ser tão genérico. na padaria, o real que você recebe de troco não é muito diferente do troco que receberia comprando água de coco na praia, ou no sex shop, tanto faz. independentemente da origem você pode gastá-lo mais ou menos das mesmas formas, e isso te livra do embolamento mental que seria pensar quais são os reais certos para gastar, quais os reais certos para ganhar.</description>
-    </item>
-    
-    <item>
-      <title>confusão diferencial</title>
-      <link>https://impression28.github.io/blog/confusao-diferencial/</link>
-      <pubDate>Wed, 30 Sep 2020 16:13:39 -0300</pubDate>
-      
-      <guid>https://impression28.github.io/blog/confusao-diferencial/</guid>
-      <description>sempre achei os materiais de geometria diferencial muito difíceis de entender por algum motivo… elusivo demais para explicar. agora acredito que sei o que é e não é o conteúdo, é a notação.
-matemáticos naturalmente descartam trechos repetitivos das equações por motivos de preguiça de escrever. isso, combinando com outros acidentes históricos, produz expressões excepcionalmente concisas e ambíguas. um leitor experiente consegue solucionar as ambiguidades e completar as lacunas, como fazemos sempre que conversamos.</description>
     </item>
     
   </channel>
