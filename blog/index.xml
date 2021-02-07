@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 07 Feb 2021 17:43:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>as curvas e as quinas</title>
-      <link>https://impression28.github.io/blog/se-%C3%A9-diferenci%C3%A1vel-n%C3%A3o-tem-quinas-eles-disseram./</link>
+      <link>https://impression28.github.io/blog/as-curvas-e-as-quinas/</link>
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/blog/se-%C3%A9-diferenci%C3%A1vel-n%C3%A3o-tem-quinas-eles-disseram./</guid>
+      <guid>https://impression28.github.io/blog/as-curvas-e-as-quinas/</guid>
       <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
