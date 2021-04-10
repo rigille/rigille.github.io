@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Lista 1 — Tópicos de Álgebra Linear | dessages</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lista 1 — Tópicos de Álgebra Linear" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/impression28" />
+  <meta name="twitter:creator" content="https://twitter.com/impression28" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/impression28.github.io\/exercicios\/lista1-tal\/",
+      "name": "Lista 1 — Tópicos de Álgebra Linear",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/exercicios">exercicios</a>
+      </li>
+    
+      <li>
+        <a  href="/">sobre</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Lista 1 — Tópicos de Álgebra Linear</h1>
+            <time datetime="2021-04-10 17:14:00 -0300 -03" class="post__date">Apr 10 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="questão-3">Questão 3</h1>
+<h2 id="enunciado">Enunciado<a class="anchor" href="#enunciado">#</a></h2>
+<p>Seja $A$ uma matriz real simétrica, $k$ um número inteiro positivo. Mostre que se $A^k \cdot v = 0$ para $v \in \mathbb{R}^k$. Então $A \cdot v = 0$.</p>
+<h2 id="resolução">Resolução<a class="anchor" href="#resolução">#</a></h2>
+<p>A questão nos pede para mostrar que</p>
+<p>$$\forall k \in \mathbb{N}^*\ \forall v \in \mathbb{R}^k\ \forall A \in M_{k\times k}(A^k \cdot v = 0 \rightarrow A \cdot v = 0) \tag{P0}$$</p>
+<p>Provarei a versão mais forte</p>
+<p>$$\forall  \color{teal}{k, n} \in \mathbb{N}^*\ \forall v \in \mathbb{R}^{\color{teal}{n}}\ \forall A \in M_{\color{teal}{n\times n}}(A^{\color{teal}{k}} \cdot v = 0 \rightarrow A \cdot v = 0) \tag{P1}$$</p>
+<p>que vale pra qualquer expoente da matriz, não só a dimensão do espaço.
+Quando chegarmos a $(P1)$ podemos provar $(P0)$ especializando $k$ como $n$. Mas antes de chegar lá passaremos pelo caso específico em que o expoente é $2$:</p>
+<p>$$\forall n \in \mathbb{N} \ \forall v \in \mathbb{R}^n\ \forall A \in M_{n\times n}(A^{\color{teal}{2}} \cdot v = 0 \rightarrow A \cdot v = 0) \tag{P2}$$</p>
+<p>De fato suponha que</p>
+<p>$$A^2 \cdot v = 0$$</p>
+<p>fazendo o produto interno com $v$</p>
+<p>$$\langle A^2  \cdot v,\ v \rangle = 0$$</p>
+<p>mas a matriz $A$ é simétrica, então podemos passar um desses $A$s para o outro fator do produto.</p>
+<p>$$\langle A  \cdot v,\  A \cdot v \rangle = 0$$</p>
+<p>como o produto interno é positivo definido, isso implica que</p>
+<p>$$A \cdot v = 0$$</p>
+<p>isso conclui a demonstração de $P2$. Falta dar um jeito de usar $P2$ para provar $P1$. Para isso, podemos fazer uma indução em $k$.</p>
+<ul>
+<li><strong>Caso base $P1(1)$</strong></li>
+</ul>
+<p>Hmmm, de fato a conclusão segue da premissa</p>
+<p>$$A \cdot v = 0 \rightarrow A \cdot v = 0$$</p>
+<ul>
+<li><strong>Passo indutivo $P1(n) \rightarrow P1(n+1)$</strong></li>
+</ul>
+<p>Vamos fixar $n$ e supor que</p>
+<p>$A^n \cdot v = 0 \rightarrow A \cdot v = 0 \tag{P1.0}$</p>
+<p>Queremos mostrar que</p>
+<p>$$A^{n+1} \cdot v = 0 \rightarrow A \cdot v = 0$$</p>
+<p>Suponhamos então que</p>
+<p>$$A^{n+1} \cdot v = 0$$</p>
+<p>Pode ser que $n+1 = 1$ ou $n+1 = 2$, esses são os casos que já analisamos no caso base e em $P2$. Também pode ser que $n+1 &gt; 2$, nesse caso podemos escrever</p>
+<p>$$A^2 \left(A^{n-1} \cdot v\right) = 0$$</p>
+<p>agora podemos aplicar $P2$ para concluir que</p>
+<p>$$A \left(A^{n-1} \cdot v\right) = 0$$
+$$A^n \cdot v = 0$$</p>
+<p>Por fim, aplicamos a hipótese de indução $P1.0$ para concluir</p>
+<p>$$A \cdot v = 0$$</p>
+<p>o que conclui a demonstração de $P1$. $\blacksquare$</p>
+
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/matematica/">matematica</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/algebra-linear/">algebra-linear</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://impression28.github.io/exercicios/solucao-prova-1-iedo/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Solução da Prova de IEDO</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Twitter"
+         href="https://twitter.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#enunciado">Enunciado</a></li>
+    <li><a href="#resolução">Resolução</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

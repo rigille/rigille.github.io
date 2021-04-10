@@ -6,7 +6,20 @@
     <description>Recent content in Exercicios on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 04 Apr 2021 21:50:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Apr 2021 17:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 1 — Tópicos de Álgebra Linear</title>
+      <link>https://impression28.github.io/exercicios/lista1-tal/</link>
+      <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/lista1-tal/</guid>
+      <description>Questão 3 Enunciado Seja $A$ uma matriz real simétrica, $k$ um número inteiro positivo. Mostre que se $A^k \cdot v = 0$ para $v \in \mathbb{R}^k$. Então $A \cdot v = 0$.
+Resolução A questão nos pede para mostrar que
+$$\forall k \in \mathbb{N}^*\ \forall v \in \mathbb{R}^k\ \forall A \in M_{k\times k}(A^k \cdot v = 0 \rightarrow A \cdot v = 0) \tag{P0}$$
+Provarei a versão mais forte
+$$\forall \color{teal}{k, n} \in \mathbb{N}^*\ \forall v \in \mathbb{R}^{\color{teal}{n}}\ \forall A \in M_{\color{teal}{n\times n}}(A^{\color{teal}{k}} \cdot v = 0 \rightarrow A \cdot v = 0) \tag{P1}$$</description>
+    </item>
+    
     <item>
       <title>Solução da Prova de IEDO</title>
       <link>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</link>
