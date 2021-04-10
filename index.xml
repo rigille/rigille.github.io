@@ -6,7 +6,59 @@
     <description>Recent content on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 07 Feb 2021 17:43:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 21:50:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solução da Prova de IEDO</title>
+      <link>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</link>
+      <pubDate>Sun, 04 Apr 2021 21:50:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</guid>
+      <description>Enunciado E. 4. b) Seja
+$$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
+0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
+0 &amp;amp; 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 \\
+0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -3 \\
+0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 &amp;amp; 0 \\
+\end{bmatrix} $$
+Encontre a solução $\varphi$ para o PVI
+$$ \begin{cases} x&#39; = Bx \\</description>
+    </item>
+    
+    <item>
+      <title>Lista 1 — Tópicos de Álgebra Linear — Questão 23</title>
+      <link>https://impression28.github.io/exercicios/tal-23/</link>
+      <pubDate>Thu, 25 Mar 2021 17:34:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/tal-23/</guid>
+      <description>Enunciado Seja $u$ um vetor unitário num espaço real com produto interno $V$. Defina $T(x) = x - 2\langle x, u \rangle u$.
+a) Mostre que $T$ é um operador linear e uma isometria.
+b) Encontre $\mathrm{det}(T)$ no caso em que $\mathrm{dim}(V) &amp;lt; \infty$.
+Resolução a) Para mostrar que é um operador linear vamos mostrar que para todo $u$, vale $T(x + \alpha y) = T(x) + \alpha T(y)$.
+De fato $$T(x + \alpha y) = x + \alpha y - 2\langle x + \alpha y, u \rangle u$$ $$= x + \alpha y - 2\langle x, u \rangle u - 2\langle \alpha y, u \rangle u$$ $$= x - 2\langle x, u \rangle u + \alpha y - 2\langle \alpha y, u \rangle u$$ $$= x - 2\langle x, u \rangle u + \alpha \left(y - 2\langle y, u \rangle u\right)$$ $$= T(x) + \alpha T(y)$$</description>
+    </item>
+    
+    <item>
+      <title>Atividade Semanal 3 de IEDO</title>
+      <link>https://impression28.github.io/exercicios/atividade-semanal-5-iedo/</link>
+      <pubDate>Mon, 15 Mar 2021 23:43:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/atividade-semanal-5-iedo/</guid>
+      <description>i) Pelo fato de $f : \mathbb{R}^{n+1} \rightarrow \mathbb{R}^n$, temos que $D(f) = \mathbb{R}^{n+1}$. Se para toda condição inicial $(t_0, u_0) \in \mathbb{R}^{n+1}$ a solução está definida em todo $\mathbb{R}$, então para qualquer escolha de condições iniciais $\omega_{-}(t_0, u_0) = -\infty$ e $\omega_{+}(t_0, u_0) = \infty$. Como a definição de $E$ é
+$$E := \left\{(t, r, x) \in \mathbb{R}^{n+2} : (r, x) \in D(f) \wedge\omega_{-}(t_0, u_0) &amp;lt; t &amp;lt; \omega_{+}(t_0, u_0) \right\}$$</description>
+    </item>
+    
+    <item>
+      <title>prova de tópicos de álgebra linear</title>
+      <link>https://impression28.github.io/exercicios/prova-topicos-de-algebra-linear/</link>
+      <pubDate>Sat, 06 Mar 2021 12:00:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/prova-topicos-de-algebra-linear/</guid>
+      <description>postando a solução da primeira prova de álgebra linear.
+ Seja A uma matriz não singular com $n \times n$ entradas reais. para $x \in \mathbb{R}^n \setminus \{ 0 \}$, defina $f(x) := \frac{Ax}{|| A x ||}$.
+a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\rightarrow \infty} f^n(x)$ então $L$ é um autovetor de $A$.
+ primeiramente definindo $\alpha(x) := Ax$ e $\beta(x) := ||Ax||$, deduzimos que $f$ é uma função contínua, pois $\alpha$ é contínua e $\beta$ é contínua e não se anula no domínio.</description>
+    </item>
+    
     <item>
       <title>as curvas e as quinas</title>
       <link>https://impression28.github.io/blog/as-curvas-e-as-quinas/</link>

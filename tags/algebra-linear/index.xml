@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>matematica on dessages</title>
-    <link>https://impression28.github.io/tags/matematica/</link>
-    <description>Recent content in matematica on dessages</description>
+    <title>algebra linear on dessages</title>
+    <link>https://impression28.github.io/tags/algebra-linear/</link>
+    <description>Recent content in algebra linear on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 04 Apr 2021 21:50:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/matematica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 21:50:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solução da Prova de IEDO</title>
       <link>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</link>
@@ -57,27 +57,6 @@ $$E := \left\{(t, r, x) \in \mathbb{R}^{n+2} : (r, x) \in D(f) \wedge\omega_{-}(
  Seja A uma matriz não singular com $n \times n$ entradas reais. para $x \in \mathbb{R}^n \setminus \{ 0 \}$, defina $f(x) := \frac{Ax}{|| A x ||}$.
 a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\rightarrow \infty} f^n(x)$ então $L$ é um autovetor de $A$.
  primeiramente definindo $\alpha(x) := Ax$ e $\beta(x) := ||Ax||$, deduzimos que $f$ é uma função contínua, pois $\alpha$ é contínua e $\beta$ é contínua e não se anula no domínio.</description>
-    </item>
-    
-    <item>
-      <title>as curvas e as quinas</title>
-      <link>https://impression28.github.io/blog/as-curvas-e-as-quinas/</link>
-      <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
-      
-      <guid>https://impression28.github.io/blog/as-curvas-e-as-quinas/</guid>
-      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
-essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
-    </item>
-    
-    <item>
-      <title>a expectativa de vida dos imortais</title>
-      <link>https://impression28.github.io/blog/expectativa-dos-imortais/</link>
-      <pubDate>Fri, 22 Jan 2021 21:50:00 -0300</pubDate>
-      
-      <guid>https://impression28.github.io/blog/expectativa-dos-imortais/</guid>
-      <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
- Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider1
- mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
     </item>
     
   </channel>
