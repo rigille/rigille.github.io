@@ -157,6 +157,29 @@ $$A^n \cdot v = 0$$</p>
 <p>Vamos fazer de $V$ o espaço de sequências de números reais com quadrado somável. Nosso subespaço $W$ será o conjunto das sequências com apenas finitos termos não-nulos. Pra todo vetor $v \in V$, podemos definir o funcional linear $v^* : W \rightarrow \mathbb{R}$ tal que  $v^*(u) = \langle v, u \rangle$. Além disso sempre que $u \neq v$ vale $u^* \neq v^*$. Afinal se $u \neq v$ então existe um termo das sequências que discorda, e se considerarmos $w \in W$ a sequência que é $1$ neste termo e zero no resto, teremos $v^*(w) \neq u^*(w)$.</p>
 <p>Existe uma transformação linear injetiva $v \mapsto v^*$ de $V$ para $W^{\perp}$. Assumindo o axioma da escolha, existe uma base para $V$. Qual a cardinalidade dessa base? Por um lado os subespaços de $V$ com base enumerável são uma união enumerável de conjuntos fechados com o interior vazio, nomeadamente a união dos espaços gerados pelos $n$ primeiros vetores da base. Por outro, $V$ é um espaço métrico completo, então o Teorema da Categoria de Baire nos diz que ele não pode ser a união enumerável de conjuntos fechados com interior vazio. Não resta outra opção para a base de $V$, ela deverá ser não-enumerável.</p>
 <p>Em $W^{\perp \perp}$, o isomorfismo $v \mapsto v^*$ nos dá um conjunto LD de $W^{\perp \perp}$ a partir da base de $V$. Daí que a dimensão de $W^{\perp \perp}$ é não-enumerável, e portanto não existe bijeção nem muito menos isomorfismo entre $W^{\perp \perp}$ e $W$.</p>
+<h2 id="questão-33">Questão 33<a class="anchor" href="#questão-33">#</a></h2>
+<h3 id="enunciado-2">Enunciado<a class="anchor" href="#enunciado-2">#</a></h3>
+<p>Quais são os possíveis autovalores reais de um operador linear $T$ atuando num espaço de dimensão finita tal que $T$ e $T^2$ possuem os mesmos autovalores reais? Dê um exemplo mostrando que a mesma resposta não vale em espaços de dimensão infinita.</p>
+<h3 id="resolução-2">Resolução<a class="anchor" href="#resolução-2">#</a></h3>
+<p>Pode ser que tanto $T$ quanto $T^2$ não tenham autovalores reais. Como no caso de $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ dado pela matriz</p>
+<p>$$
+\begin{bmatrix}
+1 &amp; -1 \\<br>
+1 &amp;  1 \\<br>
+\end{bmatrix}
+$$</p>
+<p>Porêm se $T$ tem um autovalor $\lambda$ associado a um autovetor $v$, então $T^2$ tem o autovalor $\lambda^2$ pois</p>
+<p>$$T^2 v = \lambda T v = \lambda^2 v$$</p>
+<p>Mas os autovalores de $T^2$ são autovalores de $T$, então $\lambda^2$ é autovalor de $T$. Fazendo indução nesse raciocínio, concluímos que a existência de $\lambda$ como autovalor implica na existência de $\lambda^{2^k}$ para todo $k\in\mathbb{N}$. Quando $|\lambda| = 1$ não tem medo não, esse conjunto tem tamanho no máximo $2$. De fato segue abaixo um exemplo em que o conjunto tem tamanho exatamente $2$.</p>
+<p>$$
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 \\<br>
+0 &amp;  0 &amp; -1 \\<br>
+0 &amp;  1 &amp; 0 \\<br>
+\end{bmatrix}
+$$</p>
+<p>Quando $|\lambda| \neq 1$ o conjunto é infinito. Considerando que um operador linear num espaço vetorial finito tem finitos autovalores, temos um absurdo.</p>
+<p>No caso de espaços com infinitas dimensões isso pode acontecer. Por exemplo, a derivada é um operador linear no espaço das funções $C^\infty$. O conjunto dos autovalores é todo $\mathbb{R}$, podemos agradecer às funções exponenciais por isso. O conjunto dos autovalores da segunda derivada é $\mathbb{R}$ da mesma forma.</p>
 
 
               
@@ -241,6 +264,12 @@ $$A^n \cdot v = 0$$</p>
       <ul>
         <li><a href="#enunciado-1">Enunciado</a></li>
         <li><a href="#resolução-1">Resolução</a></li>
+      </ul>
+    </li>
+    <li><a href="#questão-33">Questão 33</a>
+      <ul>
+        <li><a href="#enunciado-2">Enunciado</a></li>
+        <li><a href="#resolução-2">Resolução</a></li>
       </ul>
     </li>
   </ul>
