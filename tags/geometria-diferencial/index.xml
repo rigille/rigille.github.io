@@ -6,7 +6,19 @@
     <description>Recent content in geometria-diferencial on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 07 Feb 2021 17:43:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Apr 2021 17:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 1 — Geometria Diferencial</title>
+      <link>https://impression28.github.io/exercicios/lista1-gd/</link>
+      <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/lista1-gd/</guid>
+      <description>Capítulo 1 — Seção 3 Questão 8 🖋️ Seja $\alpha : I \rightarrow R^3$ uma curva diferenciável e seja $[a, b] \subset I$ ser um intervalo fechado. Pra cada partição
+$$a = t_0 &amp;lt; t_1 &amp;lt; &amp;hellip; &amp;lt; t_n = b$$
+de $[a, b]$, considere a soma $\sum_{i=1}^n |\alpha(t_i) - \alpha(t_{i-1})| = I(\alpha, P)$ onde $P$ representa a partição. A norma $|P|$ de uma partição $|P|$ é definida como
+$$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</description>
+    </item>
+    
     <item>
       <title>as curvas e as quinas</title>
       <link>https://impression28.github.io/blog/as-curvas-e-as-quinas/</link>
