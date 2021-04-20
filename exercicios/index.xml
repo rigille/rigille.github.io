@@ -6,7 +6,20 @@
     <description>Recent content in Exercicios on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 10 Apr 2021 17:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Apr 2021 21:04:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 5 — Introdução às Equações Diferenciais Ordinárias</title>
+      <link>https://impression28.github.io/exercicios/lista5-edo/</link>
+      <pubDate>Mon, 19 Apr 2021 21:04:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/lista5-edo/</guid>
+      <description>Seção 3.8 Questão 1 Seja $X$ um campo vetorial de classe $C^1$ num aberto $\Delta \subset \mathbb{R}^n$. Uma função contínua $f: \Delta \rightarrow \mathbb{R}$ chama-se integral primeira de $X$ em $\Delta$ se:
+a) $f$ é constante ao longo de toda órbita de $X$;
+b) $f$ não é constante em nenhum aberto de $\Delta$;
+Resolva as seguintes questões:
+i) Seja $f : \Delta \rightarrow \mathbb{R}$ de classe $C^1$ tal que $Df(p) \cdot X(p) = 0$ e $Df(p) \neq 0$ para todo $p \in \Delta$.</description>
+    </item>
+    
     <item>
       <title>Lista 1 — Geometria Diferencial</title>
       <link>https://impression28.github.io/exercicios/lista1-gd/</link>

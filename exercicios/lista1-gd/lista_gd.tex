@@ -1,0 +1,861 @@
+\begin{itemize}
+\tightlist
+\item
+  \href{/blog}{blog}
+\item
+  \href{/exercicios}{exercicios}
+\item
+  \href{/}{sobre}
+\end{itemize}
+
+\hypertarget{post__title}{%
+\section{Lista 1 --- Geometria Diferencial}\label{post__title}}
+
+Apr 10 2021
+
+\hypertarget{capuxedtulo-1--seuxe7uxe3o-3}{%
+\subsection{\texorpdfstring{Capítulo 1 --- Seção
+3\protect\hyperlink{capuxedtulo-1--seuxe7uxe3o-3}{\#}}{Capítulo 1 --- Seção 3\#}}\label{capuxedtulo-1--seuxe7uxe3o-3}}
+
+\hypertarget{questuxe3o-8-}{%
+\subsubsection{\texorpdfstring{Questão 8
+🖋️\protect\hyperlink{questuxe3o-8-}{\#}}{Questão 8 🖋️\#}}\label{questuxe3o-8-}}
+
+Seja \$\textbackslash{}alpha : I \textbackslash{}rightarrow R\^{}3\$ uma
+curva diferenciável e seja \${[}a, b{]} \textbackslash{}subset I\$ ser
+um intervalo fechado. Pra cada partição
+
+\$\$a = t\_0 \textless{} t\_1 \textless{} \ldots{} \textless{} t\_n =
+b\$\$
+
+de \${[}a, b{]}\$, considere a soma \$\textbackslash{}sum\_\{i=1\}\^{}n
+\textbar{}\textbackslash{}alpha(t\_i) -
+\textbackslash{}alpha(t\_\{i-1\})\textbar{} = I(\textbackslash{}alpha,
+P)\$ onde \$P\$ representa a partição. A norma \$\textbar{}P\textbar{}\$
+de uma partição \$\textbar{}P\textbar{}\$ é definida como
+
+\$\$\textbar{}P\textbar{} = \textbackslash{}mathrm\{max\}(t\_i -
+t\_\{i-1\}),\textbackslash{} i = 1, \ldots{}, n\$\$
+
+Geometricamente, \$I(\textbackslash{}alpha, P)\$ é o comprimento de um
+polígono inscrito em \$\textbackslash{}alpha({[}a, b{]})\$ com vértices
+em \$\textbackslash{}alpha(t\_i)\$. O objetivo deste exercício é mostrar
+que o comprimento de arco de \$\textbackslash{}alpha({[}a, b{]})\$ é, em
+certo sentido, um limite dos comprimentos dos polígonos inscritos.
+
+Prove que, dado um \$\textbackslash{}varepsilon \textgreater{} 0\$,
+existe um \$\textbackslash{}delta \textgreater{} 0\$ tal que
+\$\textbar{}P\textbar{} \textless{} \textbackslash{}delta\$ então
+
+\$\$\textbackslash{}left\textbar{}\textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}\textbackslash{}mathrm\{d\}t
+- I(\textbackslash{}alpha, P)\textbackslash{}right\textbar{} \textless{}
+\textbackslash{}varepsilon\$\$
+
+\hypertarget{resoluuxe7uxe3o}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o}}
+
+Primeiro consideremos que
+
+\$\$I(\textbackslash{}alpha, P) =
+\textbackslash{}sum\_\{i=0\}\^{}\{n-1\} \textbackslash{}left\textbar{}
+\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t
+\textbackslash{}right\textbar{} \textbackslash{}leq
+\textbackslash{}sum\_\{i=0\}\^{}\{n-1\}
+\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t = \textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}tag\{0\}\$\$
+
+Como \$\textbackslash{}alpha'\$ é contínua no intervalo compacto \${[}a,
+b{]}\$, ela é uniformemente contínua. Isto significa que, dado
+\$\textbackslash{}varepsilon \textgreater{} 0\$, existe
+\$\textbackslash{}delta \textgreater{} 0\$ tal que
+
+\$\$\textbar{}\textbackslash{}alpha'(s) -
+\textbackslash{}alpha'(t)\textbar{} \textless{}
+\textbackslash{}varepsilon\$\$
+
+sempre que \$\textbar{}s - t\textbar{} \textless{}
+\textbackslash{}delta\$. Em particular, se \$\textbar{}P\textbar{}
+\textless{} \textbackslash{}delta\$ e \$t\_i \textless{} k \textless{}
+t\_\{i+1\}\$
+
+\$\$\textbar{}\textbackslash{}alpha'(k)\textbar{} \textbackslash{}leq
+\textbar{}\textbackslash{}alpha'(t\_\{i+1\})\textbar{} +
+\textbackslash{}varepsilon\$\$
+
+daí que
+
+\$\$\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+\textbar{}\textbackslash{}alpha'(t\_\{i+1\})\textbar{}(t\_\{i+1\} -
+t\_i) + \textbackslash{}varepsilon (t\_\{i+1\} - t\_i)\$\$
+
+\$\$= \textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t) + \textbackslash{}alpha'(t\_\{i+1\})
+- \textbackslash{}alpha'(t)\textbar{} \textbackslash{}mathrm\{d\}t +
+\textbackslash{}varepsilon (t\_\{i+1\} - t\_i)\$\$
+
+\$\$\textbackslash{}leq
+\textbackslash{}left\textbar{}\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t
+\textbackslash{}right\textbar{} +
+\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t\_\{i+1\}) -
+\textbackslash{}alpha'(t)\textbar{} \textbackslash{}mathrm\{d\}t +
+\textbackslash{}varepsilon (t\_\{i+1\} - t\_i)\$\$
+\$\$\textbackslash{}leq
+\textbackslash{}left\textbar{}\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t
+\textbackslash{}right\textbar{} + 2 \textbackslash{}varepsilon
+(t\_\{i+1\} - t\_i)\$\$
+
+ou seja
+
+\$\$\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+\textbackslash{}left\textbar{}\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t
+\textbackslash{}right\textbar{} + 2 \textbackslash{}varepsilon
+(t\_\{i+1\} - t\_i)\$\$
+
+\$\$\textbackslash{}sum\_\{i=0\}\^{}\{n-1\}
+\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+\textbackslash{}sum\_\{i=0\}\^{}\{n-1\}\textbackslash{}left\textbar{}\textbackslash{}int\_\{t\_i\}\^{}\{t\_\{i+1\}\}
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t
+\textbackslash{}right\textbar{} + 2 \textbackslash{}varepsilon
+(t\_\{i+1\} - t\_i)\$\$
+
+\$\$\textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+I(\textbackslash{}alpha, P) + 2 \textbackslash{}varepsilon (b - a)\$\$
+
+por fim, juntando \$(0)\$ e a linha de cima
+
+\$\$0 \textbackslash{}leq \textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t - I(\textbackslash{}alpha, P)
+\textbackslash{}leq 2 \textbackslash{}varepsilon (b - a)\$\$
+
+como o \$\textbackslash{}varepsilon\$ é genérico, isso conclui a
+demonstração
+
+\hypertarget{questuxe3o-9-}{%
+\subsubsection{\texorpdfstring{Questão 9
+🖋️\protect\hyperlink{questuxe3o-9-}{\#}}{Questão 9 🖋️\#}}\label{questuxe3o-9-}}
+
+\textbf{a)} Seja \$\textbackslash{}alpha: I \textbackslash{}rightarrow
+R\^{}3\$ uma curva de classe \$C\^{}0\$. Use a aproximação de polígonos
+descrita no Exercício 8 para dar uma definição razoável do comprimento
+de arco de \$\textbackslash{}alpha\$.
+
+\hypertarget{resoluuxe7uxe3o-1}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-1}}
+
+No caso \$C\^{}0\$, não faz sentido falar em integrar a derivada, ela
+pode não existir. Mas continua fazendo todo sentido falar no comprimento
+da poligonal inscrita \$I(\textbackslash{}alpha, P)\$. Assim seria bem
+razoável definir o comprimento de \$\textbackslash{}alpha\$ como
+
+\$\$\textbackslash{}lim\_\{\textbar{}P\textbar{}
+\textbackslash{}rightarrow 0\} I(\textbackslash{}alpha, P)\$\$
+
+\textbf{b)} (Uma curva não-retificável) O exemplo a seguir mostra que,
+com qualquer definição razoável, o comprimento de uma curva pode ser
+ilimitado. Seja \$\textbackslash{}alpha: {[}0, 1{]}
+\textbackslash{}rightarrow R\^{}2\$ dado como \$\textbackslash{}alpha(t)
+= (t, t \textbackslash{}mathrm\{sin\}(\textbackslash{}pi/t))\$ se \$t
+\textbackslash{}neq 0\$, e \$\textbackslash{}alpha(0) = (0, 0)\$.
+Mostre, geometricamente que o comprimento de arco da porção da curva
+correspondendo a \$1/(n+1) \textbackslash{}leq t \textbackslash{}leq
+1/n\$ é pelo menos
+\$2/\textbackslash{}left(n+\textbackslash{}frac\{1\}\{2\}\textbackslash{}right)\$.
+Use isso para mostrar que o comprimento da curva no intevalo \$1/N
+\textbackslash{}leq t \textbackslash{}leq 1\$ é maior que \$2
+\textbackslash{}sum\_\{n=1\}\^{}N 1/(n+1)\$ e portanto que ele tende a
+infinito conforme \$N \textbackslash{}rightarrow
+\textbackslash{}infty\$.
+
+Usaremos a poligonal que passa pelos pontos
+
+\$\$P\_0 = (1/(n+1), 0)\$\$ \$\$P\_1 = (1/(n+1/2), 1/(n+1/2)\$\$
+\$\$P\_2 = (1/n, 0)\$\$
+
+para conseguir a nossa cota inferior de comprimento no intervalo.
+Ficaria
+
+\$\$ \textbar{}P\_1 - P\_0\textbar{} + \textbar{}P\_1 - P\_2\textbar{}
+\textbackslash{}leq \textbackslash{}frac\{2\}\{n + 1/2\} \$\$
+
+e, de fato, usando essa estimativa
+
+\$\$\textbackslash{}int\_\{1/N\}\^{}1
+\textbar{}\textbackslash{}alpha'(t)\textbar{}\textbackslash{}mathrm\{d\}t
+= \textbackslash{}sum\_\{k = 1\}\^{}\{N-1\}
+\textbackslash{}int\_\{1/(k+1)\}\^{}\{1/k\}
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+\textbackslash{}sum\_\{k = 1\}\^{}\{N-1\} \textbackslash{}frac\{2\}\{n +
+1/2\}\$\$
+
+A série da direita pode ser comparada com a série harmônica
+
+\$\$\textbackslash{}sum\_\{k = 1\}\^{}\{\textbackslash{}infty\}
+\textbackslash{}frac\{2\}\{n + 1/2\} \textbackslash{}geq
+\textbackslash{}sum\_\{k = 1\}\^{}\{\textbackslash{}infty\}
+\textbackslash{}frac\{1\}\{n\} = +\textbackslash{}infty\$\$
+
+A curva não é retificável.
+
+\hypertarget{questuxe3o-10-}{%
+\subsubsection{\texorpdfstring{Questão 10
+🖋️\protect\hyperlink{questuxe3o-10-}{\#}}{Questão 10 🖋️\#}}\label{questuxe3o-10-}}
+
+(Linhas retas como as mais curtas) Seja \$\textbackslash{}alpha: I
+\textbackslash{}rightarrow R\^{}3\$ uma curva parametrizada. Seja
+\${[}a, b{]} \textbackslash{}subset I\$ e fixe
+\$\textbackslash{}alpha(a) = p\$, \$\textbackslash{}alpha(b) = q\$.
+
+\textbf{a)} Mostre que, para qualquer vetor constante \$v\$, com
+\$\textbar{}v\textbar{} = 1\$,
+
+\$\$(q - p) \textbackslash{}cdot v = \textbackslash{}int\_a\^{}b
+\textbackslash{}alpha'(t) \textbackslash{}cdot v
+\textbackslash{}mathrm\{d\}t \textbackslash{}leq
+\textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+\hypertarget{resoluuxe7uxe3o-2}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-2}}
+
+Pelo teorema fundamental do cálculo
+
+\$\$q - p = \textbackslash{}int\_a\^{}b \textbackslash{}alpha'(t)
+\textbackslash{}mathrm\{d\}t\$\$
+
+tirando o produto interno de ambos os lados
+
+\$\$\textbackslash{}langle q - p, v \textbackslash{}rangle =
+\textbackslash{}left\textbackslash{}langle \textbackslash{}int\_a\^{}b
+\textbackslash{}alpha'(t) \textbackslash{}mathrm\{d\}t, v
+\textbackslash{}right\textbackslash{}rangle\$\$
+
+pela linearidade da integral
+
+\$\$\textbackslash{}langle q - p, v \textbackslash{}rangle =
+\textbackslash{}int\_a\^{}b \textbackslash{}left\textbackslash{}langle
+\textbackslash{}alpha'(t), v \textbackslash{}right\textbackslash{}rangle
+\textbackslash{}mathrm\{d\}t \$\$
+
+para fechar, pela desigualdade de cauchy-schwarz
+
+\$\$\textbackslash{}int\_a\^{}b
+\textbackslash{}left\textbackslash{}langle \textbackslash{}alpha'(t), v
+\textbackslash{}right\textbackslash{}rangle \textbackslash{}mathrm\{d\}t
+\textbackslash{}leq \textbackslash{}int\_a\^{}b \textbar{}
+\textbackslash{}alpha'(t)\textbar{} \textbackslash{}cdot \textbar{} v
+\textbar{} \textbackslash{}mathrm\{d\}t = \textbackslash{}int\_a\^{}b
+\textbar{} \textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+\textbf{b)} Fixe
+
+\$\$v = \textbackslash{}frac\{q-p\}\{\textbar{}q-p\textbar{}\}\$\$
+
+e mostre que
+
+\$\$\textbar{}\textbackslash{}alpha(b) -
+\textbackslash{}alpha(a)\textbar{} \textbackslash{}leq
+\textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+Isto é, que a curva de menor comprimento ligando
+\$\textbackslash{}alpha(a)\$ e \$\textbackslash{}alpha(b)\$ é a linha
+reta ligando esses pontos.
+
+\hypertarget{resoluuxe7uxe3o-3}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-3}}
+
+Como \$v\$ é unitário, vale a identidade da letra anterior. Substituindo
+
+\$\$\textbackslash{}left\textbackslash{}langle \textbackslash{}alpha(b)
+- \textbackslash{}alpha(a),
+\textbackslash{}frac\{\textbackslash{}alpha(b)-\textbackslash{}alpha(a)\}\{\textbar{}\textbackslash{}alpha(b)-\textbackslash{}alpha(a)\textbar{}\}
+\textbackslash{}right\textbackslash{}rangle \textbackslash{}leq
+\textbackslash{}int\_a\^{}b \textbar{}
+\textbackslash{}alpha'(t)\textbar{} \textbackslash{}mathrm\{d\}t\$\$
+
+\$\$\textbar{}\textbackslash{}alpha(b)-\textbackslash{}alpha(a)\textbar{}
+\textbackslash{}leq \textbackslash{}int\_a\^{}b \textbar{}
+\textbackslash{}alpha'(t)\textbar{} \textbackslash{}mathrm\{d\}t\$\$
+
+\hypertarget{capuxedtulo-1--seuxe7uxe3o-5}{%
+\subsection{\texorpdfstring{Capítulo 1 --- Seção
+5\protect\hyperlink{capuxedtulo-1--seuxe7uxe3o-5}{\#}}{Capítulo 1 --- Seção 5\#}}\label{capuxedtulo-1--seuxe7uxe3o-5}}
+
+\hypertarget{questuxe3o-4-}{%
+\subsubsection{\texorpdfstring{Questão 4
+🖋️\protect\hyperlink{questuxe3o-4-}{\#}}{Questão 4 🖋️\#}}\label{questuxe3o-4-}}
+
+Assuma que todas as normais de uma curva parametrizada passam por um
+ponto fixado, prove que a curva está contida em um círculo.
+
+\hypertarget{resoluuxe7uxe3o-4}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-4}}
+
+Sem perda de generalidade, vamos assumir que o ponto fixado é a origem,
+do contrário poderíamos aplicar um movimento rígido para movimentar o
+ponto para origem. Dizer que as normais passam pela origem é a mesma
+coisa que dizer que o vetor posição e o vetor tangente são ortogonais.
+Então:
+
+\$\$ \textbackslash{}langle \textbackslash{}alpha(t),
+\textbackslash{}alpha'(t) \textbackslash{}rangle = 0\$\$
+
+Sabendo dessa identidade, vamos analizar a derivada do quadrado da norma
+do vetor posição
+
+\$\$\textbackslash{}frac\{\textbackslash{}mathrm\{d\}\}\{\textbackslash{}mathrm\{d\}t\}
+\textbackslash{}langle \textbackslash{}alpha(t),
+\textbackslash{}alpha(t) \textbackslash{}rangle\$\$
+
+\$\$\textbackslash{}langle \textbackslash{}alpha(t),
+\textbackslash{}alpha'(t) \textbackslash{}rangle +
+\textbackslash{}langle \textbackslash{}alpha'(t),
+\textbackslash{}alpha(t) \textbackslash{}rangle\$\$
+
+\$\$0\$\$
+
+Ahá! Então a derivada é zero. Daí concluímos que a norma é constante e
+que a curva está contida no círculo.
+
+\hypertarget{questuxe3o-6-}{%
+\subsubsection{\texorpdfstring{Questão 6
+🖋️\protect\hyperlink{questuxe3o-6-}{\#}}{Questão 6 🖋️\#}}\label{questuxe3o-6-}}
+
+Uma translação por um vetor \$v\$ em \$R\^{}3\$ é uma aplicação \$A:
+R\^{}3 \textbackslash{}rightarrow R\^{}3\$ que é dado por \$A(p) = p +
+v\$, \$p \textbackslash{}in R\^{}3\$. Uma aplicação linear
+\$\textbackslash{}rho : R\^{}3 \textbackslash{}rightarrow R\^{}3\$ é uma
+\emph{transformação ortogonal} quando \$\textbackslash{}rho u
+\textbackslash{}cdot \textbackslash{}rho v = u \textbackslash{}cdot v\$
+para todos os vetores \$u,\textbackslash{} v \textbackslash{}in
+R\^{}3\$. Um \emph{movimento rígido} em \$R\^{}3\$ é o resultado de
+compor uma translação com uma transformação ortogonal com determinante
+positivo (esta última condição é incluída porque esperamos que
+movimentos rígidos preservem orientações).
+
+\textbf{a)} Demonstre que a norma de um vetor e o ângulo
+\$\textbackslash{}theta\$ entre dois vetores, \$0 \textbackslash{}leq
+\textbackslash{}theta \textbackslash{}leq \textbackslash{}pi\$, são
+invariantes sob transformações ortogonais com determinante positivo.
+
+\hypertarget{resoluuxe7uxe3o-5}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-5}}
+
+Seja \$u \textbackslash{}in R\^{}3\$, vamos investigar \$\textbar{}
+\textbackslash{}rho(u) \textbar{}\$:
+
+\$\$\textbar{} \textbackslash{}rho(u) \textbar{}\$\$
+
+\$\$\textbackslash{}sqrt\{\textbackslash{}langle \textbackslash{}rho(u),
+\textbackslash{}rho(u) \textbackslash{}rangle\}\$\$
+
+\$\$\textbackslash{}sqrt\{\textbackslash{}langle u, u
+\textbackslash{}rangle\}\$\$
+
+\$\$\textbar{} u \textbar{}\$\$
+
+Agora sejam \$u,\textbackslash{} v \textbackslash{}in R\^{}3\$, o ângulo
+\$\textbackslash{}theta\$ entre \$\textbackslash{}rho(u)\$ e
+\$\textbackslash{}rho(v)\$ é:
+
+\$\$\textbackslash{}theta =
+\textbackslash{}mathrm\{arccos\}\textbackslash{}left(\textbackslash{}frac\{\textbackslash{}langle
+\textbackslash{}rho(u), \textbackslash{}rho(v)
+\textbackslash{}rangle\}\{\textbar{} \textbackslash{}rho(u) \textbar{}
+\textbackslash{}cdot \textbar{} \textbackslash{}rho(v)
+\textbar{}\}\textbackslash{}right)\$\$
+
+simplificando
+
+\$\$\textbackslash{}theta =
+\textbackslash{}mathrm\{arccos\}\textbackslash{}left(\textbackslash{}frac\{\textbackslash{}langle
+u, v \textbackslash{}rangle\}\{\textbar{} u \textbar{}
+\textbackslash{}cdot \textbar{} v \textbar{}\}\textbackslash{}right)\$\$
+
+que é o mesmo que o ângulo entre \$u\$ e \$v\$.
+
+\textbf{b)} Mostre que o produto vetorial de dois vetores é invariante
+sob transformações ortogonais com determinante positivo. Essa afirmação
+ainda é válida se removermos a condição do determinante?
+
+\hypertarget{resoluuxe7uxe3o-6}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-6}}
+
+Essa é mais complicada. A ortogonalidade da transformação, por si só,
+não é o bastante para determinar qual o sentido do produto vetorial.
+Para conseguir usar a hipótese do determinante efetivamente, o que me
+deixou surpreso, fica mais fácil considerar o caso mais geral. Primeiro
+considere que
+
+\$\$ \textbackslash{}langle u, v \textbackslash{}times w
+\textbackslash{}rangle = \textbackslash{}mathrm\{det\}(u, v, w)\$\$
+
+onde \$\textbackslash{}mathrm\{det\}(u, v, w)\$ é o determinante da
+matriz que tem linhas \$u\$, \$v\$ e \$w\$.
+
+\$\$ \textbackslash{}mathrm\{det\}(A)\textbackslash{}langle u, v
+\textbackslash{}times w \textbackslash{}rangle =
+\textbackslash{}mathrm\{det\}(A)\textbackslash{}mathrm\{det\}(u, v, w)
+\$\$
+
+\$\$ \textbackslash{}langle u, \textbackslash{}mathrm\{det\}(A) (v
+\textbackslash{}times w) \textbackslash{}rangle =
+\textbackslash{}mathrm\{det\}(A)\textbackslash{}mathrm\{det\}(u, v, w)
+\$\$
+
+\$\$ \textbackslash{}langle u, \textbackslash{}mathrm\{det\}(A) (v
+\textbackslash{}times w) \textbackslash{}rangle =
+\textbackslash{}mathrm\{det\}(Au, Av, Aw) \$\$
+
+\$\$ \textbackslash{}langle u, \textbackslash{}mathrm\{det\}(A) (v
+\textbackslash{}times w) \textbackslash{}rangle = \textbackslash{}langle
+Au, Av \textbackslash{}times Aw \textbackslash{}rangle \$\$
+
+\$\$ \textbackslash{}langle u, \textbackslash{}mathrm\{det\}(A) (v
+\textbackslash{}times w) \textbackslash{}rangle = \textbackslash{}langle
+u, A\^{}T (Av \textbackslash{}times Aw) \textbackslash{}rangle \$\$
+
+como esta identidade vale para qualquer escolha de \$u\$, os dois
+fatores do produto devem ser iguais.
+
+\$\$\textbackslash{}mathrm\{det\}(A) (v \textbackslash{}times w) =
+A\^{}T (Av \textbackslash{}times Aw)\$\$
+
+no belíssimo caso em que \$A\^{}T\$ é invertível, isso é equivalente a
+
+\$\$\textbackslash{}mathrm\{det\}(A) (A\^{}T)\^{}\{-1\} (v
+\textbackslash{}times w) = Av \textbackslash{}times Aw\$\$
+
+especializando \$A = \textbackslash{}rho\$
+
+\$\$\textbackslash{}mathrm\{det\}(\textbackslash{}rho)
+(\textbackslash{}rho\^{}T)\^{}\{-1\} (v \textbackslash{}times w) =
+\textbackslash{}rho(v) \textbackslash{}times \textbackslash{}rho(w)\$\$
+
+\$\$ \textbackslash{}rho (v \textbackslash{}times w) =
+\textbackslash{}rho(v) \textbackslash{}times \textbackslash{}rho(w) \$\$
+
+\textbf{c)} Mostre que o comprimento de arco, a curvatora e a torção de
+uma curva parametrizada são (sempre que definidos) invariantes sob
+movimentos rígidos.
+
+Usaremos as identidades que mostramos e as identidades que mostraremos
+no exercício 12 para demonstrar esta questão.
+
+Comprimento de arco:
+
+\$\$\textbackslash{}int\_a\^{}b \textbar{}(\textbackslash{}rho
+\textbackslash{}circ \textbackslash{}alpha)'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+\$\$\textbackslash{}int\_a\^{}b \textbar{}\textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+\$\$\textbackslash{}int\_a\^{}b
+\textbar{}\textbackslash{}alpha'(t)\textbar{}
+\textbackslash{}mathrm\{d\}t\$\$
+
+Curvatura:
+
+\$\$\textbackslash{}frac\{\textbar{}(\textbackslash{}rho
+\textbackslash{}circ \textbackslash{}alpha)' \textbackslash{}wedge
+(\textbackslash{}rho \textbackslash{}circ
+\textbackslash{}alpha)''\textbar{}\}\{\textbar{}\textbackslash{}rho
+\textbackslash{}circ \textbackslash{}alpha'\textbar{}\^{}3\}\$\$
+
+\$\$\textbackslash{}frac\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha' \textbackslash{}wedge
+\textbackslash{}rho \textbackslash{}cdot
+\textbackslash{}alpha''\textbar{}\}\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha'\textbar{}\^{}3\}\$\$
+
+\$\$\textbackslash{}frac\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot (\textbackslash{}alpha' \textbackslash{}wedge
+\textbackslash{}alpha'')\textbar{}\}\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha'\textbar{}\^{}3\}\$\$
+
+\$\$\textbackslash{}frac\{\textbar{}\textbackslash{}alpha'
+\textbackslash{}wedge
+\textbackslash{}alpha''\textbar{}\}\{\textbar{}\textbackslash{}alpha'\textbar{}\^{}3\}\$\$
+
+Torção:
+
+\$\$-\textbackslash{}frac\{((\textbackslash{}rho \textbackslash{}circ
+\textbackslash{}alpha)' \textbackslash{}wedge (\textbackslash{}rho
+\textbackslash{}circ \textbackslash{}alpha)'') \textbackslash{}cdot
+(\textbackslash{}rho \textbackslash{}circ
+\textbackslash{}alpha)'''\}\{\textbar{}(\textbackslash{}rho
+\textbackslash{}circ \textbackslash{}alpha) \textbackslash{}wedge
+(\textbackslash{}rho \textbackslash{}circ
+\textbackslash{}alpha)''\textbar{}\^{}2\}\$\$
+
+\$\$-\textbackslash{}frac\{(\textbackslash{}rho \textbackslash{}cdot
+\textbackslash{}alpha' \textbackslash{}wedge \textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha'') \textbackslash{}cdot
+\textbackslash{}rho \textbackslash{}cdot
+\textbackslash{}alpha'''\}\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot \textbackslash{}alpha \textbackslash{}wedge
+\textbackslash{}rho \textbackslash{}cdot
+\textbackslash{}alpha''\textbar{}\^{}2\}\$\$
+
+\$\$-\textbackslash{}frac\{(\textbackslash{}rho \textbackslash{}cdot
+(\textbackslash{}alpha' \textbackslash{}wedge \textbackslash{}alpha''))
+\textbackslash{}cdot \textbackslash{}rho \textbackslash{}cdot
+\textbackslash{}alpha'''\}\{\textbar{}\textbackslash{}rho
+\textbackslash{}cdot (\textbackslash{}alpha \textbackslash{}wedge
+\textbackslash{}alpha'')\textbar{}\^{}2\}\$\$
+
+\$\$-\textbackslash{}frac\{(\textbackslash{}alpha' \textbackslash{}wedge
+\textbackslash{}alpha'') \textbackslash{}cdot
+\textbackslash{}alpha'''\}\{\textbar{}\textbackslash{}alpha
+\textbackslash{}wedge \textbackslash{}alpha''\textbar{}\^{}2\}\$\$
+
+\hypertarget{questuxe3o-12}{%
+\subsubsection{\texorpdfstring{Questão
+12\protect\hyperlink{questuxe3o-12}{\#}}{Questão 12\#}}\label{questuxe3o-12}}
+
+Seja \$\textbackslash{}alpha: I \textbackslash{}rightarrow R\^{}3\$ uma
+curva regular parametrizada (não necessariamente por comprimento de
+arco) e seja \$\textbackslash{}beta: J \textbackslash{}rightarrow
+R\^{}3\$ uma parametrização de \$\textbackslash{}alpha(I)\$ pelo
+comprimento de arco \$s = s(t)\$, medida de \$t\_0 \textbackslash{}in
+I\$s. Seja \$t = t(s)\$ a função inversa de \$s\$ e fixe
+\$\textbackslash{}mathrm\{d\}\textbackslash{}alpha/\textbackslash{}mathrm\{d\}t
+= \textbackslash{}alpha'\$,
+\$\textbackslash{}mathrm\{d\}\^{}2\textbackslash{}alpha/\textbackslash{}mathrm\{d\}t\^{}2
+= \textbackslash{}alpha''\$, etc. Prove que
+
+\textbf{a)} \$\textbackslash{}mathrm\{d\}t/\textbackslash{}mathrm\{d\}s
+= 1/\textbar{}\textbackslash{}alpha'\textbar{}\$,
+\$\textbackslash{}mathrm\{d\}\^{}2t/\textbackslash{}mathrm\{d\}s\^{}2 =
+-(\textbackslash{}alpha'\textbackslash{}cdot
+\textbackslash{}alpha''/\textbar{}\textbackslash{}alpha'\textbar{}\^{}4)\$.
+
+\textbf{b)} A curvatora de \$\textbackslash{}alpha\$ em \$t
+\textbackslash{}in I\$ é
+
+\$\$k(t) =
+\textbackslash{}frac\{\textbar{}\textbackslash{}alpha'\textbackslash{}wedge
+\textbackslash{}alpha''\textbar{}\}\{\textbar{}\textbackslash{}alpha'\textbar{}\^{}3\}\$\$
+
+\textbf{c)} A torção de \$\textbackslash{}alpha\$ em \$t
+\textbackslash{}in I\$ é
+
+\$\$\textbackslash{}tau(t) = -
+\textbackslash{}frac\{(\textbackslash{}alpha' \textbackslash{}wedge
+\textbackslash{}alpha'') \textbackslash{}cdot
+\textbackslash{}alpha'''\}\{\textbar{}\textbackslash{}alpha
+\textbackslash{}wedge \textbackslash{}alpha''\textbar{}\^{}2\}\$\$
+
+\textbf{d)} Se \$\textbackslash{}alpha: I \textbackslash{}rightarrow
+R\^{}2\$ é uma curva plana \$\textbackslash{}alpha(t) = (x(t), y(t))\$,
+a curvatura com sinal de \$\textbackslash{}alpha\$ no \$t\$ é
+
+\$\$k(t) = \textbackslash{}frac\{x'y'' - x'' y'\}\{\textbackslash{}left(
+(x')\^{}2 + (y')\^{}2 \textbackslash{}right)\^{}\{3/2\}\}\$\$
+
+\hypertarget{capuxedtulo-2--seuxe7uxe3o-2}{%
+\subsection{\texorpdfstring{Capítulo 2 --- Seção
+2\protect\hyperlink{capuxedtulo-2--seuxe7uxe3o-2}{\#}}{Capítulo 2 --- Seção 2\#}}\label{capuxedtulo-2--seuxe7uxe3o-2}}
+
+\hypertarget{questuxe3o-16-}{%
+\subsubsection{\texorpdfstring{Questão 16
+🖋️\protect\hyperlink{questuxe3o-16-}{\#}}{Questão 16 🖋️\#}}\label{questuxe3o-16-}}
+
+Uma forma de definir um sistema de coordenadas para a esfera \$S\^{}2\$,
+dada por \$x\^{}2 + y\^{}2 + (z-1)\^{}2 = 1\$\$ é considerar a chamada
+\emph{projeção estereográfica} \$\textbackslash{}pi: S\^{}2
+\textbackslash{}setminus \{N\} \textbackslash{}rightarrow R\^{}2\$ que
+carrega um ponto \$p = (x, y, z)\$ da esfera \$S\^{}2\$ menos o polo
+norte \$N = (0, 0, 2)\$ na intersecção com o plano \$xy\$ com a linha
+reta que conecta \$N\$ a \$p\$. Seja \$(u, v) = \textbackslash{}pi(x, y,
+z)\$, onde \$(x, y, z) \textbackslash{}in S\^{}2
+\textbackslash{}setminus \{N\}\$ e \$(u, v)\$ pertence ao plano \$xy\$.
+
+\textbf{a)} Mostre que \$\textbackslash{}pi\^{}\{-1\}: R\^{}2
+\textbackslash{}rightarrow S\^{}2\$ é dada por
+
+\$\$\textbackslash{}begin\{cases\} x =
+\textbackslash{}frac\{4u\}\{u\^{}2 + v\^{}2 + 4\}
+\textbackslash{}\textbackslash{}\\
+y = \textbackslash{}frac\{4v\}\{u\^{}2 + v\^{}2 + 4\}
+\textbackslash{}\textbackslash{}\\
+z = \textbackslash{}frac\{2(u\^{}2 + v\^{}2)\}\{u\^{}2 + v\^{}2 + 4\}
+\textbackslash{}\textbackslash{}\\
+\textbackslash{}end\{cases\}\$\$
+
+\hypertarget{resoluuxe7uxe3o-7}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-7}}
+
+Esta ilustração aqui ficou bonitinha, mas não vamos precisar dela
+
+Para verificar se o ponto está ou não na esfera, vamos calcular
+
+\$\$x\^{}2 + y\^{}2 + (z - 1)\^{}2\$\$
+
+e verificar se isso dá \$1\$
+
+\$\$\textbackslash{}left(\textbackslash{}frac\{4u\}\{u\^{}2 + v\^{}2 +
+4\}\textbackslash{}right)\^{}2 +
+\textbackslash{}left(\textbackslash{}frac\{4v\}\{u\^{}2 + v\^{}2 +
+4\}\textbackslash{}right)\^{}2 +
+\textbackslash{}left(\textbackslash{}frac\{2(u\^{}2 + v\^{}2)\}\{u\^{}2
++ v\^{}2 + 4\} - 1\textbackslash{}right)\^{}2\$\$
+
+\$\$\textbackslash{}frac\{16u\^{}2 + 16v\^{}2 + (u\^{}2 + v\^{}2 -
+4)\^{}2\}\{(u\^{}2 + v\^{}2 + 4)\^{}2\}\$\$
+
+\$\$\textbackslash{}frac\{16u\^{}2 + 16v\^{}2 + (u\^{}2 + v\^{}2 -
+4)\^{}2\}\{(u\^{}2 + v\^{}2 + 4)\^{}2\}\$\$
+
+\$\$\textbackslash{}frac\{16u\^{}2 + 16v\^{}2 + u\^{}4 + v\^{}4 +
+2u\^{}2v\^{}2 - 8u\^{}2 - 8v\^{}2 + 16\}\{(u\^{}2 + v\^{}2 +
+4)\^{}2\}\$\$
+
+\$\$\textbackslash{}frac\{8u\^{}2 + 8v\^{}2 + u\^{}4 + v\^{}4 +
+2u\^{}2v\^{}2 + 16\}\{(u\^{}2 + v\^{}2 + 4)\^{}2\}\$\$
+
+\$\$1\$\$
+
+Bacana, então o ponto está na esfera. Agora resta verificar se \$D = (0,
+0, 4)\$, \$E = (x, y, z)\$ e \$C = (u, v, 0)\$ são colineares. Se forem
+não resta dúvida que essa é a expressão correta para
+\$\textbackslash{}pi\^{}\{-1\}\$. De fato
+
+\$\$C - D = (u, v, -4)\$\$
+
+e
+
+\$\$E - D = \textbackslash{}left(\textbackslash{}frac\{4\}\{u\^{}2 +
+v\^{}2 + 4\}u, \textbackslash{}frac\{4\}\{u\^{}2 + v\^{}2 + 4\}v,
+\textbackslash{}frac\{4\}\{u\^{}2 + v\^{}2 + 4\}\textbackslash{}cdot
+(-4)\textbackslash{}right)\$\$
+
+\textbf{b)} Mostre que é possível, usando projeção estereográfica,
+cobrir a esfera com duas vizinhanças coordenadas.
+
+\hypertarget{resoluuxe7uxe3o-8}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-8}}
+
+Se você definir a transformação afim \$\textbackslash{}varphi(x, y, z) =
+(x, y, 2 - z)\$, a composição \$\textbackslash{}varphi
+\textbackslash{}circ \textbackslash{}pi\^{}\{-1\}\$ também parametriza
+outra vizinhança da esfera. Em particular \$\textbackslash{}varphi
+\textbackslash{}circ \textbackslash{}pi\^{}\{-1\} (0, 0) = (0, 0, 4)\$,
+que era o único ponto que tinha ficado faltando na parametrização
+anterior.
+
+\hypertarget{questuxe3o-17-}{%
+\subsubsection{\texorpdfstring{Questão 17
+🖋️\protect\hyperlink{questuxe3o-17-}{\#}}{Questão 17 🖋️\#}}\label{questuxe3o-17-}}
+
+Defina uma curva regular analogamente a uma superfície regular. Prove
+que
+
+\hypertarget{resoluuxe7uxe3o-9}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-9}}
+
+Um subconjunto \$C \textbackslash{}subset R\^{}3\$ é uma \emph{curva
+regular} se, para todo \$p \textbackslash{}in C\$, existir uma
+vizinhança \$V\$ em \$R\^{}3\$ e uma aplicação
+\$\textbackslash{}mathbf\{x\}: I \textbackslash{}rightarrow V
+\textbackslash{}cap C\$ de um \emph{intervalo aberto} \$I
+\textbackslash{}subset R\$ em \$V \textbackslash{}cap C
+\textbackslash{}subset R\^{}3\$ tal que
+
+\begin{enumerate}
+\tightlist
+\item
+  \$\textbackslash{}mathbf\{x\}\$ é diferenciável
+\item
+  \$\textbackslash{}mathbf\{x\}\$ é homeomorfismo
+\item
+  para todo \$t \textbackslash{}in I\$ temos
+  \$\textbackslash{}mathbf\{x\}' \textbackslash{}neq 0\$
+\end{enumerate}
+
+\textbf{a)} A imagem inversa de um valor regular de uma função
+diferenciável
+
+\$\$f: U \textbackslash{}subset R\^{}2 \textbackslash{}rightarrow R\$\$
+
+é uma curva plana regular. Dê um exemplo de tal curva que não é conexa.
+
+\hypertarget{resoluuxe7uxe3o-10}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-10}}
+
+Suponha que \$u \textbackslash{}in R\$ é um valor regular de \$f\$ e
+seja \$p = (x\_0, y\_0)\$ um ponto de \$f\^{}\{-1\}(p)\$. Sabemos que
+\$f'(u) \textbackslash{}neq 0\$, então alguma das coordenadas dessa
+derivada seria diferente de \$0\$. Sem perda de generalizada podemos
+assumir que é o \$y\$. Vamos definir uma \$F : R\^{}2
+\textbackslash{}rightarrow R\^{}2\$ tal que \$F(x, y) = (x, f(x, y))\$.
+A derivada de \$F\$ é dada por \$\$\textbackslash{}mathrm\{d\}F\_p =
+\textbackslash{}begin\{pmatrix\} 1 \& 0
+\textbackslash{}\textbackslash{}\\
+f\_x \& f\_y \textbackslash{}\textbackslash{}\\
+\textbackslash{}end\{pmatrix\}\$\$
+
+Como \$f\_y \textbackslash{}neq 0\$ por hipótese, esse determinante é
+diferente de \$0\$. Assim podemos aplicar o teorema da função inversa
+para obter uma \$F\^{}\{-1\}\$ numa vizinhança de \$p\$. Em particular,
+em \$f\^{}\{-1\}(u)\$ podemos definir a função \$\textbackslash{}varphi:
+x \textbackslash{}mapsto F\^{}\{-1\}(x, u)\$ que vai parametrizar os
+pontos da vizinhança em função do \$x\$.
+
+Um exemplo de curva regular que não é conexa é \$y\^{}2 - x\^{}2 = -1\$,
+dá uma hipérbole. Ela possui os pontos \$(1, 0)\$ e \$(-1, 0)\$, mas não
+possui nenhum ponto com \$x \textbackslash{}in (-1, 1)\$
+
+\textbf{b)} A imagem inversa de um valor regular de uma aplicação
+diferenciável
+
+\$\$F: U \textbackslash{}subset R\^{}3 \textbackslash{}rightarrow
+R\^{}2\$\$
+
+é uma curva regular em R\^{}3. Mostre a relação entre esta proposição e
+a maneira clássica de definir a curva em \$R\^{}3\$ como uma intersecção
+de duas superfícies.
+
+\hypertarget{resoluuxe7uxe3o-11}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-11}}
+
+A ideia é bem parecida com a da questão anterior, mas dessa vez vamos
+definir a função \$G(x, y, z) = (x, F\_1(x, y, z), F\_2(x, y, z))\$ para
+aplicarmos o teorema da função inversa. Feito isso a função
+\$\textbackslash{}varphi(x) = G\^{}\{-1\}(x, p\_1, p\_2)\$ irá
+parametrizar os pontos da curva.
+
+A analogia vem do fato de que, se temos \$p = (p\_1, p\_2)\$ um valor
+regular de \$F\$, definirmos \$F\_1 = \textbackslash{}pi\_1
+\textbackslash{}circ F\$ e \$F\_2 = \textbackslash{}pi\_2
+\textbackslash{}circ F\$, então \$p\_1\$ é um valor regular de \$F\_1\$
+e \$p\_2\$ é um valor regular de \$F\_2\$. Logo \$F\_1\^{}\{-1\}(p\_1)\$
+e \$F\_2\^{}\{-1\}(p\_2)\$ são superfícies regulares, e a intersecção
+delas é a curva regular \$F\^{}\{-1\}(p)\$.
+
+\textbf{c)} O conjunto \$C = \{(x, y) \textbackslash{}in
+R\^{}2;\textbackslash{} x\^{}2 = y\^{}3\}\$ não é uma curva regular.
+
+\hypertarget{resoluuxe7uxe3o-12}{%
+\paragraph{Resolução}\label{resoluuxe7uxe3o-12}}
+
+Suponha que tivéssemos uma \$\textbackslash{}varphi:
+(-\textbackslash{}varepsilon, \textbackslash{}varepsilon)
+\textbackslash{}rightarrow R\^{}2\$ que parametrizasse uma vizinhança do
+\$0\$ de forma que \$\textbackslash{}varphi(0) = (0, 0)\$ e
+
+\$\$t\^{}2 = \textbackslash{}varphi(t)\^{}3\$\$
+
+derivando ambos os lados duas vezes
+
+\$\$2 \textbackslash{}cdot t = 3 \textbackslash{}cdot
+\textbackslash{}varphi(t)\^{}2 \textbackslash{}varphi'(t)\$\$
+
+\$\$2 = 3 \textbackslash{}cdot (2\textbackslash{}varphi(t)
+\textbackslash{}varphi'(t)\^{}2 + \textbackslash{}varphi(t)\^{}2
+\textbackslash{}varphi''(t))\$\$ \$\$2 = 3 \textbackslash{}varphi(t)
+\textbackslash{}cdot (2\textbackslash{}varphi'(t)\^{}2 +
+\textbackslash{}varphi(t) \textbackslash{}varphi''(t))\$\$
+
+mas \$\textbackslash{}varphi(0) = 0\$, absurdo. Daí que a curva não pode
+ser regular.
+
+\hypertarget{capuxedtulo-2---seuxe7uxe3o-3}{%
+\subsection{\texorpdfstring{Capítulo 2 - Seção
+3\protect\hyperlink{capuxedtulo-2---seuxe7uxe3o-3}{\#}}{Capítulo 2 - Seção 3\#}}\label{capuxedtulo-2---seuxe7uxe3o-3}}
+
+\hypertarget{questuxe3o-6}{%
+\subsubsection{\texorpdfstring{Questão
+6\protect\hyperlink{questuxe3o-6}{\#}}{Questão 6\#}}\label{questuxe3o-6}}
+
+Prove que a definição de aplicação diferenciável entre superfícies não
+depende das parametrizações escolhidas.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://impression28.github.io/tags/matematica/}{matematica}
+\item
+  \href{https://impression28.github.io/tags/geometria-diferencial/}{geometria-diferencial}
+\end{itemize}
+
+\href{https://impression28.github.io/exercicios/lista1-tal/}{{Previous
+Post} {Lista 1 --- Tópicos de Álgebra Linear}}
+
+\href{https://github.com/impression28}{}
+
+\href{https://twitter.com/impression28}{}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{capuxedtulo-1--seuxe7uxe3o-3}{Capítulo 1 --- Seção
+  3}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \protect\hyperlink{questuxe3o-8-}{Questão 8 🖋️}
+  \item
+    \protect\hyperlink{questuxe3o-9-}{Questão 9 🖋️}
+  \item
+    \protect\hyperlink{questuxe3o-10-}{Questão 10 🖋️}
+  \end{itemize}
+\item
+  \protect\hyperlink{capuxedtulo-1--seuxe7uxe3o-5}{Capítulo 1 --- Seção
+  5}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \protect\hyperlink{questuxe3o-4-}{Questão 4 🖋️}
+  \item
+    \protect\hyperlink{questuxe3o-6-}{Questão 6 🖋️}
+  \item
+    \protect\hyperlink{questuxe3o-12}{Questão 12}
+  \end{itemize}
+\item
+  \protect\hyperlink{capuxedtulo-2--seuxe7uxe3o-2}{Capítulo 2 --- Seção
+  2}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \protect\hyperlink{questuxe3o-16-}{Questão 16 🖋️}
+  \item
+    \protect\hyperlink{questuxe3o-17-}{Questão 17 🖋️}
+  \end{itemize}
+\item
+  \protect\hyperlink{capuxedtulo-2---seuxe7uxe3o-3}{Capítulo 2 - Seção
+  3}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \protect\hyperlink{questuxe3o-6}{Questão 6}
+  \end{itemize}
+\end{itemize}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Lista 5 — Introdução às Equações Diferenciais Ordinárias | dessages</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lista 5 — Introdução às Equações Diferenciais Ordinárias" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/impression28" />
+  <meta name="twitter:creator" content="https://twitter.com/impression28" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/impression28.github.io\/exercicios\/lista5-edo\/",
+      "name": "Lista 5 — Introdução às Equações Diferenciais Ordinárias",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/exercicios">exercicios</a>
+      </li>
+    
+      <li>
+        <a  href="/">sobre</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Lista 5 — Introdução às Equações Diferenciais Ordinárias</h1>
+            <time datetime="2021-04-19 21:04:00 -0300 -03" class="post__date">Apr 19 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<h1 id="seção-38">Seção 3.8</h1>
+<h2 id="questão-1">Questão 1<a class="anchor" href="#questão-1">#</a></h2>
+<p>Seja $X$ um campo vetorial de classe $C^1$ num aberto $\Delta \subset \mathbb{R}^n$. Uma função contínua $f: \Delta \rightarrow \mathbb{R}$ chama-se integral primeira de $X$ em $\Delta$ se:</p>
+<p><strong>a)</strong> $f$ é constante ao longo de toda órbita de $X$;</p>
+<p><strong>b)</strong> $f$ não é constante em nenhum aberto de $\Delta$;</p>
+<p>Resolva as seguintes questões:</p>
+<h3 id="i">i)<a class="anchor" href="#i">#</a></h3>
+<p>Seja $f : \Delta \rightarrow \mathbb{R}$ de classe $C^1$ tal que $Df(p) \cdot X(p) = 0$ e $Df(p) \neq 0$ para todo $p \in \Delta$. Então $f$ é uma integral primeira de $X$.</p>
+<h4 id="resolução">Resolução</h4>
+<p>Seja $\varphi_p : \mathbb{R} \rightarrow \Delta \subset \mathbb{R}^n$ uma curva integral de $X$ passando pelo ponto $p$. Queremos demonstrar que a função $f \circ \varphi_p(t)$ é constante. Consideremos então a derivada</p>
+<p>$$(f \circ \varphi_p)'(t)$$</p>
+<p>$$= Df(\varphi_p(t)) \cdot \varphi_p'(t)$$</p>
+<p>mas $\varphi_p$ é uma curva integral de $X$, então</p>
+<p>$$= Df(\varphi_p(t)) \cdot X(\varphi_p(t))$$</p>
+<p>$$= 0$$</p>
+<p>Daí que a função $f \circ \varphi_p$ é constante, como queríamos demonstrar. Além disso $f$ não é constante em nenhum aberto de $\Delta$ pois isso significaria $Df(p) = 0$ em todo ponto $p$ desse aberto hipotético. Note que a recíproca deste item é falsa.</p>
+<h3 id="ii">ii)<a class="anchor" href="#ii">#</a></h3>
+<p>Se $p \in \Delta$ não é ponto singular de $X$ então existe uma vizinhança $V$ de $p$ tal que $X | V$ tem $n - 1$ <em>integrais primeiras</em> $f_1,\ …,\ f_{n-1}$ de classe $C^1$ funcionalmente independentes (isto é, tais que $\mathrm{d}f_1(q),\ …,\ \mathrm{d}f_{n-1}(q)$ sao linearmente independentes para todo $q \in V$.</p>
+<p>(Sugestão: Use o corolário do teorema do fluxo tubular, pensando primeiro em um campo paralelo $(1,\ 0,\ …,\ 0)$.)</p>
+<h4 id="resolução-1">Resolução</h4>
+<p>Seguindo a sugestão do enunciado, vamos considerar que $X$ é um campo paralelo constante igual a $(1,\ 0,\ …,\ 0)$. Nesse caso podemos definir as integrais primeiras como $f_i(q) = \langle e_{i+1}, q - p \rangle$, onde $e_k$ é o $k$-ésimo vetor da base canônica do $\mathbb{R}^n$. Elas são de fato primeiras integrais porque em todas as órbitas, que são da forma $p + e_{1}*q$, elas são constantes. Elas também são funcionalmente independentes por conta das derivadas serem $\mathrm{d}f_i(q) = e_{i+1}$, o que garante que são LI.</p>
+<p>Agora considere que $X$ não é um campo paralelo, apenas que $p \in \Delta$ é não-singular. O teorema do fluxo tubular nos garante a existência de uma vizinhança $V$ de $p$ em $\mathbb{R}^n$ e um difeomorfismo $h: V \rightarrow (-\epsilon, \epsilon) \times B$ de classe $C^1$, onde $B$ é uma bola aberta em $\mathbb{R}^{n-1}$ tal que $h$ leva órbitas de $X$ em órbitas do campo constante paralelo igual a $(1,\ 0,\ …,\ 0)$.</p>
+<p>Neste caso podemos definir as integrais primeiras auxiliares $g_1, …, g_{n-2}, g_{n-1}$ em $(-\epsilon, \epsilon) \times B$ como fizemos no primeiro parágrafo desta resolução. As integrais primeiras de $f$ ficam então definidas como $f_i = g_i \circ h$. elas continuarão sendo constantes nas órbitas de X, pq são constantes nas órbitas do campo paralelo e $h$ leva órbitas em órbitas. E elas continuarão sendo funcionalmente independentes, porque $h$ é difeomorfismo.</p>
+<h3 id="iii">iii)<a class="anchor" href="#iii">#</a></h3>
+<p>Encontre uma integral primeira do centro dado por</p>
+<p>$$x_1' = -\beta x_2$$
+$$x_2' = \beta x_1$$</p>
+<p>e da sela</p>
+<p>$$x_1' = \lambda_1 x_1$$
+$$x_2' = \lambda_2 x_2$$</p>
+<p>onde $\lambda_1 &lt; 0 &lt; \lambda_2$</p>
+<h4 id="resolução-2">Resolução</h4>
+<p>o item <strong>i)</strong> é agora muito conveniente, porque podemos simplesmente verificar que o gradiente da nossa candidata é perpendicular às derivadas das órbitas para mostrar que ela é uma integral primeira. no caso do centro podemos usar</p>
+<p>$$f(x, y) = x^2 + y^2$$</p>
+<p>$$ Df(x, y) = (2x, 2y) $$</p>
+<p>que de fato tem o gradiente perpendicular ao campo. já no caso da sela eu não sei chutar logo de cara uma $f$, então vamos fazer por exemplo que</p>
+<p>$$\frac{\partial}{\partial x_1}f(x_1, x_2) = -\lambda_2 x_2$$
+$$f(x_1, x_2) = -\lambda_2 x_2 x_1 + C_2(x_2)$$</p>
+<p>e</p>
+<p>$$\frac{\partial}{\partial x_2}f(x_1, x_2) = \lambda_1 x_1$$
+$$f(x_1, x_2) = \lambda_1 x_2 x_1 + C_1(x_1)$$</p>
+<p>igualando os dois</p>
+<p>$$-\lambda_2 x_2 x_1 + C_2(x_2) = \lambda_1 x_2 x_1 + C_1(x_1)$$
+$$(-\lambda_1-\lambda_2) x_2 x_1 = - C_2(x_2) + C_1(x_1)$$</p>
+<p>analisando o caso em que $x_1 = 0$ e o caso em que $x_2 = 0$ vemos que as $C_1$ e $C_2$ devem ser identicamente nulos. Mas isso é um paradoxo, exceto quando $\lambda_1 = - \lambda_2$. O que significa que nesse caso a primeira integral é $f(x, y) = xy$, mas no outros caso a primeira integral não é o gradiente de uma função. Pensando bem podemos definir $f(x, y) = x_1^{-\lambda_2/\lambda_1}x_2$, mas não conheço um algoritmo que chegasse nessa resposta.</p>
+<h3 id="vi">vi)<a class="anchor" href="#vi">#</a></h3>
+<p>Seja $H: \mathbb{R}^{2n} \rightarrow \mathbb{R}$ uma função de classe $C^r$, $r \geq 2$. Suponha que os pontos onde $\mathrm{d}H_q$ é nula são isolados e encontre uma integral primeira para o campo</p>
+<p>$$X = \left( \frac{\partial H}{\partial x_{n+1}}, …, \frac{\partial H}{\partial x_{2n}}, -\frac{\partial H}{\partial x_{1}}, …, -\frac{\partial H}{\partial x_{n}} \right)$$</p>
+<p>(tal campo é conhecido como Hamiltoniano).</p>
+<h4 id="resolução-3">Resolução</h4>
+<p>Este campo não parece com uma rotação de $\pi/2$ de um vetor do $\mathbb{R}^2$? Não é exatamente isso, mas é verdade que</p>
+<p>$$ \langle X, D H \rangle$$
+$$ =  \left\langle \left( \frac{\partial H}{\partial x_{n+1}}, …, \frac{\partial H}{\partial x_{2n}}, -\frac{\partial H}{\partial x_{1}}, …, -\frac{\partial H}{\partial x_{n}} \right),\\ \left( \frac{\partial H}{\partial x_{1}}, …, \frac{\partial H}{\partial x_{n}}, \frac{\partial H}{\partial x_{n+1}}, …, \frac{\partial H}{\partial x_{2n}} \right) \right\rangle$$
+$$ = 0$$</p>
+<p>sendo assim uma integral primeira seria o próprio $H$.</p>
+<h3 id="viii">viii)<a class="anchor" href="#viii">#</a></h3>
+<p>Se $X_1$ e $X_2$ em $\Delta_1$ e $\Delta_2$, respecitvamente, são topologicamente equivalentes e $X_1$ tem uma integral primeira, então o mesmo é válido para $X_2$.</p>
+<h4 id="resolução-4">Resolução</h4>
+<p>A definição definição de ser topologicamente equivalente é ter um homeomorfismo que leva as órbitas de um campo nas órbitas do outro, digamos, sem perda de generalidade, $h : \Delta_1 \rightarrow \Delta_2$. Afirmo que, se $f$ é uma integral primeira de $X_1$ então $f \circ h^{-1}$ é uma integral primeira de $X_2$.</p>
+<!-- raw HTML omitted -->
+<h1 id="seção-44">Seção 4.4</h1>
+<h2 id="questão-2">Questão 2<a class="anchor" href="#questão-2">#</a></h2>
+<p>Seja $X = \nabla f = \mathrm{grad} f$, onde $f$ é uma função de classe $C^r$, $r \geq 2$, definida num aberto $\Delta \subset \mathrm{R}^n$. Prove que $X$ não possui órbitas periódicas. Se $X$ tem pontos singulares isolados, então, para todo $p \in \Delta$, o conjunto $\omega$-limite de $p$ é vazio ou é um ponto singular.</p>
+<p>(Sugestão: Se $\varphi(t)$ ŕ uma trajetória de $X$, note que $\mathrm{d}f(\varphi(t))/\mathrm{d}t &gt; 0$, isto é, $f \circ \varphi$ é crescente.)</p>
+<h4 id="resolução-5">Resolução</h4>
+<p>Considere $\varphi$ uma trajetória qualquer de $X$, vamos seguir a sugestão do enunciado e calcular $(f \circ \varphi)' = \langle\nabla f \circ \varphi, \varphi' \rangle = \langle \nabla f \circ \varphi,  \nabla f \circ \varphi \rangle \geq 0$. Se $\varphi$ não está presa em um dos pontos isolados em que o gradiente é $0$, então a derivada é positiva e essa composta é crescente, em particular, ela não é periódica. Isso exclui a possibilidade de $\varphi$ ser periódica porque do contrário $f \circ \varphi$ também o seria.</p>
+<p>Existe duas possibilidades para $\phi$, ou ela é limitada ou ela não é. Se ela não for limitada, o conjunto $\omega$-limite é vazio. No caso em que ela é limitada podemos aplicar o teorema de poincaré-bendixson. A possibilidade de órbitas periódicas já está excluída. A possibilidade de valores regulares no conjunto $\omega$-limite também está excluída porque, por ser crescente, qualquer sequência ilimitada de valores da $\varphi$ converge para um valor de máximo da órbita, que não pode ser regular. Resta apenas a possibilidade de pontos singulares isolados.</p>
+
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/matematica/">matematica</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/equacoes-diferenciais/">equacoes-diferenciais</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://impression28.github.io/exercicios/lista1-gd/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Lista 1 — Geometria Diferencial</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Twitter"
+         href="https://twitter.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#questão-1">Questão 1</a>
+      <ul>
+        <li><a href="#i">i)</a></li>
+        <li><a href="#ii">ii)</a></li>
+        <li><a href="#iii">iii)</a></li>
+        <li><a href="#vi">vi)</a></li>
+        <li><a href="#viii">viii)</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#questão-2">Questão 2</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
