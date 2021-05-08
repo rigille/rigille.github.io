@@ -6,18 +6,15 @@
     <description>Recent content in matematica on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 19 Apr 2021 21:04:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/matematica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 08:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/matematica/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lista 5 — Introdução às Equações Diferenciais Ordinárias</title>
-      <link>https://impression28.github.io/exercicios/lista5-edo/</link>
-      <pubDate>Mon, 19 Apr 2021 21:04:00 -0300</pubDate>
+      <title>Prova 5 — Tópicos de Álgebra Linear</title>
+      <link>https://impression28.github.io/exercicios/prova5-tal/</link>
+      <pubDate>Sat, 08 May 2021 08:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/lista5-edo/</guid>
-      <description>Seção 3.8 Questão 1 Seja $X$ um campo vetorial de classe $C^1$ num aberto $\Delta \subset \mathbb{R}^n$. Uma função contínua $f: \Delta \rightarrow \mathbb{R}$ chama-se integral primeira de $X$ em $\Delta$ se:
-a) $f$ é constante ao longo de toda órbita de $X$;
-b) $f$ não é constante em nenhum aberto de $\Delta$;
-Resolva as seguintes questões:
-i) Seja $f : \Delta \rightarrow \mathbb{R}$ de classe $C^1$ tal que $Df(p) \cdot X(p) = 0$ e $Df(p) \neq 0$ para todo $p \in \Delta$.</description>
+      <guid>https://impression28.github.io/exercicios/prova5-tal/</guid>
+      <description>Enunciado Seja $X \subset \mathbb{R}^2$ um conjunto finito. Prove que o fecho convexo de $X$, $\mathrm{conv}(X)$, é a intersecção de todos os semi-planos fechados contendo $X$.
+Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é um conjunto compacto. Ele é, afinal, a imagem de um conjunto compacto — nomeadamente $[0, 1]^{|X|} \subset \mathbb{R}^{|X|}$ — sob uma aplicação contínua — nomeadamente a combinação linear dos elementos de $X$. A partir daqui mostraremos o resultado mais geral: todo compacto convexo do espaço $\mathbb{R}^n$ é a intersecção de todos os semi-planos fechados contendo $X$.</description>
     </item>
     
     <item>
@@ -113,7 +110,7 @@ essa definição foi pensada visando excluir as curvas que têm quinas e outras 
       
       <guid>https://impression28.github.io/blog/expectativa-dos-imortais/</guid>
       <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
- Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider1
+ Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider 1
  mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
     </item>
     

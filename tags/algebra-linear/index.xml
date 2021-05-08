@@ -6,7 +6,17 @@
     <description>Recent content in algebra linear on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 10 Apr 2021 17:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 08:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prova 5 — Tópicos de Álgebra Linear</title>
+      <link>https://impression28.github.io/exercicios/prova5-tal/</link>
+      <pubDate>Sat, 08 May 2021 08:14:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/prova5-tal/</guid>
+      <description>Enunciado Seja $X \subset \mathbb{R}^2$ um conjunto finito. Prove que o fecho convexo de $X$, $\mathrm{conv}(X)$, é a intersecção de todos os semi-planos fechados contendo $X$.
+Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é um conjunto compacto. Ele é, afinal, a imagem de um conjunto compacto — nomeadamente $[0, 1]^{|X|} \subset \mathbb{R}^{|X|}$ — sob uma aplicação contínua — nomeadamente a combinação linear dos elementos de $X$. A partir daqui mostraremos o resultado mais geral: todo compacto convexo do espaço $\mathbb{R}^n$ é a intersecção de todos os semi-planos fechados contendo $X$.</description>
+    </item>
+    
     <item>
       <title>Lista 1 — Tópicos de Álgebra Linear</title>
       <link>https://impression28.github.io/exercicios/lista1-tal/</link>

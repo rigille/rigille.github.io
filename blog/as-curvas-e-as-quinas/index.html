@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -67,7 +68,7 @@
       "datePublished": "2021-02-07 17:43:00 -0300 -03",
       "dateModified" : "2021-02-07 17:43:00 -0300 -03",
       "url" : "https:\/\/impression28.github.io\/blog\/as-curvas-e-as-quinas\/",
-      "wordCount" : "1374",
+      "wordCount" : "1371",
       "keywords" : ["geometria-diferencial", "Blog"]
     }
   
@@ -142,7 +143,15 @@
 $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$</p>
 <p>então precisamos que $\varphi''(0) = \varphi'(0) = 0$ para chegar em uma parametrização derivável duas vezes. pra isso $\varphi(t) = t\cdot|t|^2$ funciona. para conseguir derivar três vezes, provavelmente $\varphi(t) = t\cdot|t|^3$ funciona. além disso $\varphi(t) = t\cdot|t|^n$ deve funcionar para $n$ derivadas.</p>
 <p>provavelmente…</p>
-<p>talvez se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$ poderíamos garantir a existência de $(f \circ \varphi)^{(n)}$, mas a expressão da derivada está começando a ficar fora de controle. existe uma <a href="https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula">fórmula</a> pra $n$-ésima derivada de uma função composta dada pela regra da cadeia. sublime! profunda! dá-me pesadelos só de olhar. felizmente não precisaremos dela, mas precisaremos da <a href="https://en.wikipedia.org/wiki/General_Leibniz_rule">regra geral de leibnitz</a>.</p>
+<p>talvez se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$ poderíamos garantir a existência de $(f \circ \varphi)^{(n)}$, mas a expressão da derivada está começando a ficar fora de controle. existe uma <a href="https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>fórmula</a>
+ pra $n$-ésima derivada de uma função composta dada pela regra da cadeia. sublime! profunda! dá-me pesadelos só de olhar. felizmente não precisaremos dela, mas precisaremos da <a href="https://en.wikipedia.org/wiki/General_Leibniz_rule" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>regra geral de leibnitz</a>
+.</p>
 <h1 id="teorema-0">teorema 0</h1>
 <p>se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$, então $(f \circ \varphi)^{(n)}(0) = 0$.</p>
 <p><strong>prova:</strong> vamos fazer a primeira derivada pela regra da cadeia:</p>
@@ -168,7 +177,11 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
 <h1 id="teorema-1">teorema 1</h1>
 <p>para todos $n$ e $m$ naturais e todo $c$ real.</p>
 <p>$$\lim_{x \rightarrow 0} \frac{c}{x^m}\cdot\varphi^{(n)}(x) = 0$$</p>
-<p><strong>prova:</strong> faremos a prova por <a href="https://en.wikipedia.org/wiki/Mathematical_induction#Complete_(strong)_induction">indução completa</a> em $n$. lembrando que assumirei o caso em que $n = 0$ porque não sei prová-lo agora. dito isso suponha que o teorema vale pra todos os números até $n$, faremos $p(x) = \frac{c}{x^m}$ e $q(x) = \frac{2}{x^3}$ — para não carregar a notação — e analisaremos o caso $n+1$:</p>
+<p><strong>prova:</strong> faremos a prova por <a href="https://en.wikipedia.org/wiki/Mathematical_induction#Complete_%28strong%29_induction" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>indução completa</a>
+ em $n$. lembrando que assumirei o caso em que $n = 0$ porque não sei prová-lo agora. dito isso suponha que o teorema vale pra todos os números até $n$, faremos $p(x) = \frac{c}{x^m}$ e $q(x) = \frac{2}{x^3}$ — para não carregar a notação — e analisaremos o caso $n+1$:</p>
 <p>$$\lim_{x \rightarrow 0} p \cdot \varphi^{(n+1)}(x)$$</p>
 <p>$$= \lim_{x \rightarrow 0} p \cdot (\varphi')^{(n)}(x)$$</p>
 <p>$$= \lim_{x \rightarrow 0} p \cdot (q\cdot\varphi)^{(n)}(x)$$</p>
@@ -191,22 +204,30 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>cuidado para não confundir com as <a href="https://www.amazon.com/Sensual-Quadratic-Carus-Mathematical-Monographs/dp/0883850400">formas sensuais</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>cuidado para não confundir com as <a href="https://www.amazon.com/Sensual-Quadratic-Carus-Mathematical-Monographs/dp/0883850400" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>formas sensuais</a>
+.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>admito, essa não é uma descrição muito precisa, talvez olhar para $\frac{f'(t)}{ \Vert f'(t) \Vert }$ seja mais esclarecedor. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>admito, essa não é uma descrição muito precisa, talvez olhar para $\frac{f'(t)}{ \Vert f'(t) \Vert }$ seja mais esclarecedor.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>estamos sendo descuidados aqui. a regra da cadeia assume que $f$ é diferenciável. quando isso não é verdade, realmente há $f$&rsquo;s tais que $(f \circ \varphi)' (0) \neq 0$ mesmo quando $\varphi'(0) = 0$. um exemplo seria $f(t) = \sqrt[3]{t}$ e $\varphi(t) = t^3$. estou supondo que, por $f$ ser <a href="https://en.wikipedia.org/wiki/Lipschitz_continuity">lipschitz</a>, poderíamos traduzir os raciocínios que faremos com a regra da cadeia em raciocínios com desigualdades, que dariam prova rigorosa de que a derivada é zero. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>estamos sendo descuidados aqui. a regra da cadeia assume que $f$ é diferenciável. quando isso não é verdade, realmente há $f$&rsquo;s tais que $(f \circ \varphi)' (0) \neq 0$ mesmo quando $\varphi'(0) = 0$. um exemplo seria $f(t) = \sqrt[3]{t}$ e $\varphi(t) = t^3$. estou supondo que, por $f$ ser <a href="https://en.wikipedia.org/wiki/Lipschitz_continuity" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>lipschitz</a>
+, poderíamos traduzir os raciocínios que faremos com a regra da cadeia em raciocínios com desigualdades, que dariam prova rigorosa de que a derivada é zero.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>eu totalmente não fiz essa derivada simples no wolframalpha… <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>eu totalmente não fiz essa derivada simples no wolframalpha…&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>uso a mesma numeração porque, no fundo, lemas, exemplos, proposições, corolários e teoremas são todos a mesma coisa. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>uso a mesma numeração porque, no fundo, lemas, exemplos, proposições, corolários e teoremas são todos a mesma coisa.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>é o sinal de $t$. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>é o sinal de $t$.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -248,7 +269,7 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
   
     <a class="pagination__item" href="https://impression28.github.io/blog/memorizar-prejudica-o-aprendizado/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >memorizar prejudica o aprendizado?</a>
+      <span class="pagination__title" >memorizar prejudica o aprendizado?</span>
     </a>
   
 </div>
@@ -262,7 +283,7 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/github.svg')"></div>
@@ -271,7 +292,7 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/twitter.svg')"></div>
@@ -293,7 +314,7 @@ $$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$<
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

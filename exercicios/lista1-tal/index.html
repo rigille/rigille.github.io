@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -189,34 +190,39 @@ $$</p>
 <p>$|X_i \cap Y_j| =\ \mathrm{if}\ j = i\ \mathrm{then}\ 0\ \mathrm{else}\ 1$</p>
 <p>se traduz como</p>
 <p>$\langle \mathbf{x}_i, \mathbf{y}_j \rangle =\ \mathrm{if}\ j = i\ \mathrm{then}\ 0\ \mathrm{else}\ 1$</p>
-<p>De fato podemos tirar algumas conclusões disso, por exemplo podemos calcular o valor do produto interno de qualquer combinação linear $\left\langle \sum \lambda_i \mathbf{x}_i, \sum \gamma_j \mathbf{y}_j \right\rangle$. Mas a princípio não está claro, pelo menos para mim, como isso poderia ajudar. A questão nos pede para mostrar que $m \leq n$. Nesse caso, seria muito conveniente concluir que algum dos conjuntos $\{\mathbf{x}_1, …, \mathbf{x}_m\}$ ou $\{\mathbf{y}_1, …, \mathbf{y}_m\}$ deveria ser LI, porque a dimensão do espaço limita o tamanho do conjunto. Então vamos assumir que são ambos LD, com</p>
-<p>$$\sum_{i=1}^m \lambda_i \mathbf{x}_i = 0$$</p>
+<p>De fato podemos tirar algumas conclusões disso, por exemplo, se considerarmos $\mathbf{X} = [\mathbf{x}_1, …, \mathbf{x}_m]$ e $\mathbf{Y} = [\mathbf{y}_1, …, \mathbf{y}_m]$ temos que:</p>
+<p>$$\mathbf{X}^{T}\mathbf{Y} =
+\begin{bmatrix} 0 &amp; 1 &amp; \dots \\ 1 &amp; 0 \\ \vdots &amp; &amp; \ddots  \\ &amp; &amp; &amp; 0 &amp; 1 \\ &amp; &amp; &amp; 1 &amp; 0\end{bmatrix} = [\mathrm{if}\ i = j\ \mathrm{then}\ 0\ \mathrm{else}\ 1]_{ij}$$</p>
+<p>Seria muito conveniente para nós concluir que essas matrizes não são singulares, que os conjuntos $\{\mathbf{x}_1, …, \mathbf{x}_m\}$ e $\{\mathbf{y}_1, …, \mathbf{y}_m\}$ são LI, porque a dimensão do espaço limita oria o tamanho do conjunto da forma que gostaríamos. E podemos obter isso concluindo que $\mathbf{X}^T\mathbf{Y}$ é não-singular! Afinal uma matriz é não-singular sse é o produto de matrizes não-singulares. Felizmente esse é o caso, porque se definirmos</p>
+<p>$$\mathbf{s} := \sum_{i=1}^m e_i$$</p>
+<p>como o vetor que tem todas as entradas iguais a $1$, o produto de matrizes se torna.</p>
+<p>$$\mathbf{X}^{T}\mathbf{Y} = [\mathbf{s} - e_j]_j$$</p>
+<p>agora é suficiente demonstrar que o conjunto desses vetorers é linearmente independente. suponha que existam coeficientes $\alpha_j \in \mathbb{R}$ tais que</p>
+<p>$$\sum_{j = 1}^m \alpha_j(s - e_j) = 0$$</p>
+<p>queremos concluir que, para todo $j$, $\alpha_j = 0$. Reorganizando a equação</p>
+<p>$$\left(\sum_{j = 1}^m \alpha_j\right) s = \sum_{j = 1}^m \alpha_j e_j $$</p>
+<p>o lado esquerdo da equação tem todas as coordenadas iguais, logo isso também valerá para o lado direito e, para todo $i$ e $j$, $\alpha_i = \alpha_j := \alpha$. Assim a equação se simplifica mais, para</p>
+<p>$$m \alpha s = \alpha\mathbf{s} $$</p>
+<p>o que só é verdade para $\alpha = 0$ quando $m &gt; 1$, como queríamos demonstrar.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="questão-45-">Questão 45 ⭐⭐⭐⭐⭐<a class="anchor" href="#questão-45-">#</a></h2>
+<h3 id="enunciado-4">Enunciado<a class="anchor" href="#enunciado-4">#</a></h3>
+<p>Seja $V$ um espaço vetorial sobre um corpo $K$ com $n$ elementos. Suponha que $V_1, …, V_n$ são subespaços de $V$. Mostre que se $V_1 \cup … \cup V_n$ é um subespaço de $V$, então existe um índice $k$ para o qual $V_i \subset V_k$ para todo $i = 1, …, n$.</p>
+<h3 id="resolução-4">Resolução<a class="anchor" href="#resolução-4">#</a></h3>
+<p>Vamos mostrar a contrapositiva: assumindo que não existe $k$ tal que $V_i \subset V_k$ para todo $i = 1, …, n$ e mostrando que existe um ponto de $V$ que não está na união. Faremos isso estimando por cima a quantidade de elementos de $V_1 \cup … \cup V_n$ e mostrando que nossa estimativa tem menos elementos que $V$. Nossa primeira observação é que</p>
+<p>$$|V_1 \cup … \cup V_n| \leq |V_1| + … + |V_n| \tag{0}$$</p>
+<p>Então podemos focar a nossa atenção no tamanho cada subespaço $|V_i|$. A dimensão de $V_i$ é no máximo $q-1$ onde $q := \mathrm{dim}(V)$. Ou seja</p>
+<p>$$|V_i| \leq n^{q-1} \tag{1}$$</p>
 <p>e</p>
-<p>$$\sum_{j=1}^m \gamma_j \mathbf{y}_j = 0$$</p>
-<p>e tentar chegar numa contradição. Pra isso vamos investigar</p>
-<p>$$\left\langle \sum_{i=1}^m \lambda_i \mathbf{x}_i, \sum_{j=1}^m \gamma_j \mathbf{y}_j \right\rangle = 0$$</p>
-<p>só porque sabemos que podemos… Usando a linearidade do produto interno</p>
-<p>$$ \sum_{i=1}^m \sum_{j=1}^m \lambda_i \gamma_j \left\langle\mathbf{x}_i, \mathbf{y}_j \right\rangle = 0$$</p>
-<p>$$ \sum_{i=1}^m \sum_{j=1 \\ j \neq i}^m \lambda_i \gamma_j = 0$$</p>
-<p>Essa expressão não me diz nada, acho que teremos uma chance maior de entendê-la reorganizando.</p>
-<p>$$ \sum_{i=1}^m \lambda_i \sum_{j=1 \\ j \neq i}^m \gamma_j = 0$$</p>
-<p>$$ \sum_{i=1}^m \lambda_i + \left(- \gamma_i + \sum_{j=1}^m \gamma_j\right) = 0$$</p>
-<p>Para aliviar a notação, vamos chamar $\left(\sum_{j=1}^m \gamma_j\right)$ de $s_\gamma$</p>
-<p>$$ \sum_{i=1}^m \lambda_i + \left(- \gamma_i + s_\gamma\right) = 0$$</p>
-<p>$$ \left(\sum_{i=1}^m -\lambda_i\gamma_i\right) + \left(\sum_{i=1}^m s_\gamma \lambda_i \right) = 0$$</p>
-<p>$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + \left(\sum_{i=1}^m s_\gamma \lambda_i \right) = 0$$</p>
-<p>$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + \left(s_\gamma \sum_{i=1}^m \lambda_i \right) = 0$$</p>
-<p>$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + s_\gamma \left(\sum_{i=1}^m \lambda_i \right) = 0$$</p>
-<p>Abreviando da mesma forma $\left(\sum_{i=1}^m \lambda_i\right)$ como $s_\lambda$.</p>
-<p>$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + s_\gamma s_\lambda = 0$$</p>
-<p>$$ s_\gamma s_\lambda = \sum_{i=1}^m \lambda_i\gamma_i$$</p>
-<p>Queremos mostrar que isso não acontece, e o podemos estimar o lado da direita com a desigualdade de Cauchy-Schwarz</p>
-<p>$$ \left| \sum_{i=1}^m \lambda_i\gamma_i \right| \leq \sqrt{\sum_{i=1}^m \lambda_i^2} \sqrt{\sum_{i=1}^m \gamma_i^2}$$</p>
-<p>E podemos estimar os fatores da parcela da esquerda com a desigualdade triangular.</p>
-<p>$$ |s_\lambda| \geq \sqrt{\sum_{i=1}^m \lambda_i^2}$$</p>
-<p>$$ |s_\gamma| \geq \sqrt{\sum_{i=1}^m \gamma_i^2}$$</p>
-<p>sendo que a igualdade só acontece quando $\lambda_i$ e $\gamma_j$ são diferentes de $0$ para apenas um valor de $i$ e de $j$. Temos um sanduíche!</p>
-<p>$$\sqrt{\sum_{i=1}^m \gamma_i^2} \geq |s_\gamma s_\lambda| = \left| \sum_{i=1}^m \lambda_i\gamma_i \right| \geq$$</p>
+<p>$$|V_1| + … + |V_n| \leq n \cdot n^{q-1} = n^q = |V|$$</p>
+<p>quase conseguimos! Se conseguíssemos subtrair $1$ da nossa cota superior, teríamos resolvido a questão. Com certeza dá pra fazer isso. Só vale a igualdade em $(0)$ se os conjuntos forem todos disjuntos! E os espaços vão se intersectar bastante… Em particular, eles vão se intersectar no ponto $0$. Seguindo esse espírito, vamos refinar a nossa estimativa com</p>
+<p>$$|V_1 \cup … \cup V_n| \leq 1 + |V_1 \setminus \{ 0 \}| + … + |V_n \setminus \{ 0 \}| \tag{2}$$</p>
+<p>e com</p>
+<p>$$|V_i \setminus \{ 0 \}| \leq n^{q-1} - 1 \tag{3}$$</p>
+<p>obtendo</p>
+<p>$$1 + |V_1 \setminus \{ 0 \}| + … + |V_n \setminus \{ 0 \}| \leq 1 + n \cdot (n^{q-1} - 1) &lt; n^q = |V|$$</p>
+<p>o que conclui a demonstração.</p>
 
 
               
@@ -255,7 +261,7 @@ $$</p>
   
     <a class="pagination__item" href="https://impression28.github.io/exercicios/lista1-gd/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Lista 1 — Geometria Diferencial</a>
+      <span class="pagination__title" >Lista 1 — Geometria Diferencial</span>
     </a>
   
 </div>
@@ -269,7 +275,7 @@ $$</p>
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/github.svg')"></div>
@@ -278,7 +284,7 @@ $$</p>
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/twitter.svg')"></div>
@@ -320,6 +326,12 @@ $$</p>
         <li><a href="#resolução-3">Resolução</a></li>
       </ul>
     </li>
+    <li><a href="#questão-45-">Questão 45 ⭐⭐⭐⭐⭐</a>
+      <ul>
+        <li><a href="#enunciado-4">Enunciado</a></li>
+        <li><a href="#resolução-4">Resolução</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -332,7 +344,7 @@ $$</p>
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
