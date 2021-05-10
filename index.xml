@@ -6,7 +6,22 @@
     <description>Recent content on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 08 May 2021 08:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 08:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prova 2 — Introdução às Equações Diferenciais Ordinárias</title>
+      <link>https://impression28.github.io/exercicios/prova2_iedo/</link>
+      <pubDate>Sun, 09 May 2021 08:14:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/prova2_iedo/</guid>
+      <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
+$$x&#39;&#39; = F(x)$$
+num intervalo da reta. Claramente ela é equivalente ao sistema
+$$ \begin{cases} x&#39; = v \\
+v&#39; = F(x) \end{cases} \tag{1} $$
+a) Mostre que a energia total $E = T+U$ é uma integral primeira do sistema, onde $T(v) = \frac{v^2}{2}$ é a energia cinética e $U(x) = - \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$ é a energia potencial.
+b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</description>
+    </item>
+    
     <item>
       <title>Prova 5 — Tópicos de Álgebra Linear</title>
       <link>https://impression28.github.io/exercicios/prova5-tal/</link>
