@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>o fecho convexo de um conjunto finito é um politopo | dessages</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="o fecho convexo de um conjunto finito é um politopo" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/impression28" />
+  <meta name="twitter:creator" content="https://twitter.com/impression28" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/impression28.github.io\/exercicios\/teorema-fundamental-dos-politopos\/",
+      "name": "o fecho convexo de um conjunto finito é um politopo",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/exercicios">exercicios</a>
+      </li>
+    
+      <li>
+        <a  href="/">sobre</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">o fecho convexo de um conjunto finito é um politopo</h1>
+            <time datetime="2021-05-13 10:01:00 -0300 -03" class="post__date">May 13 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<p>este post foi criado porque me animei na resolução da <a href="/exercicios/lista1-tal" 
+  
+  
+>lista de tópicos de álgebra linear</a>
+.</p>
+<h2 id="questão-46-">Questão 46 ⭐⭐⭐⭐⭐<a class="anchor" href="#questão-46-">#</a></h2>
+<h3 id="enunciado">Enunciado<a class="anchor" href="#enunciado">#</a></h3>
+<p>Um poliedro é o conjunto solução de um sistema do tipo</p>
+<p>$$a_{11} + \cdots + a_{1n}x_n \leq b_1\\<br>
+\vdots \\<br>
+a_{m1}x_1 + \cdots + a_{mn}x_n \leq b_m$$</p>
+<p>com variáveis reais. Um <strong>polítopo</strong> é um poliedro limitado. Prove que o fecho convexo de um conjunto finito é um polítopo.</p>
+<h3 id="resolução">Resolução<a class="anchor" href="#resolução">#</a></h3>
+<p>Para resolver essa questão primeiro vamos considerar o <strong>cone gerado</strong> por um conjunto de pontos. No caso, se temos um conjunto de vetores $\mathbf{v}_1, …, \mathbf{v}_d \in \mathbb{R}^n$, o cone gerado é o conjunto dos pontos</p>
+<p>$$ \mathbf{Y}\mathbf{z},\ \mathbf{z} \geq 0$$</p>
+<p>onde $\mathbf{Y} = [ v_1, …, v_n ] \in M_{d \times n}$ e $\mathbf{z} \in \mathbb{R}^n$. A ideia é mostrar que o cone gerado pode ser visto como o conjunto de pontos $\mathbf{x} \in \mathbb{R}^d$ tais que, para algum $m$ e alguma matriz $\mathbf{B} \in M_{m \times d}$</p>
+<p>$$ \mathbf{Bx} \leq 0 $$</p>
+<p>expressar o conjunto como um sistema de desigualdades. A princípio podemos expressar o conjunto do vetores $[\mathbf{x}\ \mathbf{t}]^T \in \mathbb{R}^{n+d}$ tais que $\mathbf{x} = \mathbf{Yt}$ e $t \geq 0$ como um sistema de desigualdades.
+$$
+\begin{bmatrix} I &amp; -\mathbf{Y} \\ -I &amp; \mathbf{Y} \\ 0 &amp; -I \end{bmatrix}
+\begin{bmatrix}\mathbf{x} \\ \mathbf{t} \end{bmatrix}
+\leq
+0
+$$</p>
+<p>onde vamos escrever</p>
+<p>$$ \begin{bmatrix} I &amp; -\mathbf{Y} \\ -I &amp; \mathbf{Y} \\ 0 &amp; -I \end{bmatrix} = \mathbf{A}
+\tag{⭐}$$</p>
+<p>e a i-ésima linha de $\mathbf{A}$ como $\mathbf{a}_i$ onde $\mathbf{a}_i^T \in \mathbb{R^{n+d}}$ para não carregar a notação.</p>
+<p>agora a ideia é eliminar essas $d$ últimas variáveis do sistema de inequações — que correspondem ao $\mathbf{v}$ — enquanto mantemos a equivalência com o sistema original para as variáveis restantes. Isso nos trará a matriz $\mathbf{B}$ que desejamos. Então vamos falar um pouco de</p>
+<h4 id="eliminação-de-fourier-motzkin">Eliminação de Fourier-Motzkin</h4>
+<p>imagine que estamos considerando o sistema</p>
+<p>$$\begin{cases}
+x + 3y \leq 0 \\<br>
+x - 2y \leq 0
+\end{cases} \tag{Sisteminha}$$</p>
+<p>podemos eliminar a segunda variável multiplicando a primeira equação por $2$, a segunda por $3$ e somando os resultados. Daí ficaríamos apenas com</p>
+<p>$$5x \leq 0 \tag{SisteminhaEliminado}$$</p>
+<p>essa é a chamada eliminação de Fourier-Motzkin. Por outro lado se, em vez de $(\mathrm{Sisteminha})$, tivéssemos</p>
+<p>$$\begin{cases}
+x + 3y \leq 0 \\<br>
+x + 2y \leq 0
+\end{cases} \tag{SisteminhaRuim}$$</p>
+<p>a nossa estratégia não eliminaria o $y$. A multiplicação por número negativo, necessária para o cancelamento, invertiria o sentido da desigualdade e impediria que somássemos os resultados.</p>
+<p>Voltando a $\mathrm{Sisteminha}$ e $\mathrm{SisteminhaEliminado}$, será que são equivalentes? Certamente qualquer solução de $\mathrm{Sisteminha}$, também solucionará $\mathrm{SisteminhaEliminado}$, por construção. Por outro lado, nem toda solução de $\mathrm{SisteminhaEliminado}$ solucionaria $\mathrm{Sisteminha}$. Isso é exemplificado pelo par $(x, y) = (0, 1)$. Não vale a recíproca, mas vale algo tão bom quanto: para todo $x$ que satisfaz $\mathrm{SisteminhaEliminado}$ existe $y$ tal que $(x, y)$ é solução de $\mathrm{Sisteminha}$. Essa é a chamada <em>eliminação</em> do conjunto. Denotaremos ela por $\mathrm{elim}_2(C)$, onde $C$ é o conjunto e $2$ é o índice da variável eliminada. A definição mais conveniente para fazer as contas é a seguinte</p>
+<p>$$\mathrm{elim}_k(C) := \{\mathbf{v} + ye_k;\ \mathbf{v} \in C \wedge y \in \mathbb{R}\}$$</p>
+<p>Considere agora o sistema maior de inequações</p>
+<p>$$\begin{bmatrix}
+1 &amp; 3 &amp; 0 \\<br>
+2 &amp; 3 &amp; -2\\<br>
+3 &amp; 1 &amp; 4 \\<br>
+2 &amp; 5 &amp; -4 \\<br>
+1 &amp; 2 &amp; 2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\<br>
+x_2 \\<br>
+x_3 \\<br>
+\end{bmatrix}
+\leq 0 \tag{Sistemão}$$</p>
+<p>Como eliminar a terceira variável? Nesse caso não precisamos eliminar da primeira linha porque o coeficiente já é $0$. Além disso temos quatro pares de linhas que podemos combinar: linhas $2$ e $3$, ou $2$ e $5$, ou $4$ e $3$, ou $4$ e $5$. Faremos todas as combinações possíveis. O resultado é:</p>
+<p>$$\begin{bmatrix}
+1 &amp; 3 &amp; 0 \\<br>
+7 &amp; 7 &amp; 0 \\<br>
+3 &amp; 5 &amp; 0 \\<br>
+5 &amp; 6 &amp; 0 \\<br>
+4 &amp; 9 &amp; 0 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\<br>
+x_2 \\<br>
+x_3 \\<br>
+\end{bmatrix}
+\leq 0 \tag{SistemãoEliminado}$$</p>
+<p>onde a segunda linha combina $2$ e $3$ e a terceira linha combina $2$ e $5$, a quarta linha combina $4$ e $3$ e a quinta combina $4$ e $5$. Será que o conjunto solução de $\mathrm{SistemãoEliminado}$ também é a eliminação do conjunto solução de $\mathrm{Sistemão}$? Isso exige uma demonstração.</p>
+<h4 id="teorema">Teorema</h4>
+<p>Seja $\mathbf{A}$ uma matriz. Queremos calcular a eliminação de $\mathbf{A}$ na $k$-ésima variável. Para isso, primeiro separe as linhas de $\mathbf{A}$ em três matrizes de acordo com o valor de $a_{ik}$. Em $\mathbf{A}_0$ ficarão as linhas em que $a_{ik} = 0$, em $\mathbf{B}$ as que $a_{ik} &gt; 0$, em $\mathbf{C}$ as que $a_{ik} &lt; 0$. Defina a eliminação de $A$ como</p>
+<p>$$A^{/k} :=
+\begin{bmatrix}
+A_0 \\<br>
+D
+\end{bmatrix}$$</p>
+<p>onde as linhas de $D$ são $c_j b_{ik} + b_i (-c_{jk})$ para todas as linhas $b_i$ e $c_j$ de $\mathbf{B}$ e $\mathbf{C}$ respectivamente. Afirmo que</p>
+<p>$$\{\mathbf{x};\ A^{/k}\mathbf{x} \leq 0 \} = \mathrm{elim}_k\left(\{\mathbf{x};\ A\mathbf{x} \leq 0\}\right)$$</p>
+<h4 id="prova">Prova</h4>
+<p>A primeira inclusão é que $\{\mathbf{x};\ A^{/k}\mathbf{x} \leq 0 \} \supset \{\mathbf{x};\ A\mathbf{x} \leq 0\}$, novamente pela nossa construção de $A^{/k}$. Além disso</p>
+<p>$$\mathrm{elim}_k(\{\mathbf{x};\ A^{/k}\mathbf{x} \leq 0 \}) \supset \mathrm{elim}_k(\{\mathbf{x};\ A\mathbf{x} \leq 0\})$$</p>
+<p>mas a $k$-ésima coluna de $A^{/k}$ é $0$ então</p>
+<p>$$\{\mathbf{x};\ A^{/k}\mathbf{x} \leq 0 \} \supset \mathrm{elim}_k(\{\mathbf{x};\ A\mathbf{x} \leq 0\})$$</p>
+<p>Para mostrar a outra continência, vamos assumir que $A^{/k}\mathbf{v} \leq 0$ e mostraremos que existe $y \in \mathbb{R}$ tal que</p>
+<p>$$\mathbf{v} - ye_k \in \{\mathbf{x};\ A\mathbf{x} \leq 0\}$$</p>
+<p>De fato</p>
+<p>$$A(\mathbf{v} - ye_k) \leq 0$$</p>
+<p>$$A\mathbf{v} - yAe_k \leq 0$$</p>
+<p>$$\begin{cases}
+a_1\mathbf{v} - ya_{1k} \leq 0 \\<br>
+&hellip; \\<br>
+a_n\mathbf{v} - ya_{nk} \leq 0 \\<br>
+\end{cases}$$</p>
+<p>o que é equivalente a dizer que</p>
+<p>$$b_i\mathbf{v}/b_{ik} \leq  y \leq -c_j\mathbf{v}/(-c_{jk})$$</p>
+<p>$$(b_{ik}c_j + (-c_{jk})b_i)\mathbf{v} \leq 0$$</p>
+<p>o que é válido, porque supusemos que $A^{/k}\mathbf{v} \leq 0$. $\blacksquare$</p>
+<p>Retomando o problema do cone e considerando a matriz $\mathbf{A}$ definida em $(⭐)$. Podemos escrever a matriz $\mathbf{B}$, que procurávamos, como</p>
+<p>$$(((A^{/n+d})^{/n+d-1})…)^{/n+1} = \mathbf{B}$$</p>
+<p>se excluirmos as últimas $d$ colunas da direita.</p>
+<p>Isso tudo foi para cones, mas todo fecho convexo no $\mathbb{R}^n$ pode ser relacionado com um cone no $\mathbb{R}^{n+1}$, colocando $1$ no final dos vetores e gerando o cone a partir disso. Daí fazer todo o processo de eliminação que descrevemos e substituir o $1$ na variável $n+1$ do sistema de inequações depois de acabar.</p>
+
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/matematica/">matematica</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://impression28.github.io/tags/algebra-linear/">algebra-linear</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://impression28.github.io/exercicios/prova2_iedo/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Prova 2 — Introdução às Equações Diferenciais Ordinárias</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://impression28.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#questão-46-">Questão 46 ⭐⭐⭐⭐⭐</a>
+      <ul>
+        <li><a href="#enunciado">Enunciado</a></li>
+        <li><a href="#resolução">Resolução</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

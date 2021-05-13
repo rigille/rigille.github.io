@@ -6,7 +6,22 @@
     <description>Recent content in algebra linear on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 09 May 2021 08:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 10:01:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>o fecho convexo de um conjunto finito é um politopo</title>
+      <link>https://impression28.github.io/exercicios/teorema-fundamental-dos-politopos/</link>
+      <pubDate>Thu, 13 May 2021 10:01:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/teorema-fundamental-dos-politopos/</guid>
+      <description>este post foi criado porque me animei na resolução da lista de tópicos de álgebra linear .
+Questão 46 ⭐⭐⭐⭐⭐ Enunciado Um poliedro é o conjunto solução de um sistema do tipo
+$$a_{11} + \cdots + a_{1n}x_n \leq b_1\\
+\vdots \\
+a_{m1}x_1 + \cdots + a_{mn}x_n \leq b_m$$
+com variáveis reais. Um polítopo é um poliedro limitado. Prove que o fecho convexo de um conjunto finito é um polítopo.
+Resolução Para resolver essa questão primeiro vamos considerar o cone gerado por um conjunto de pontos.</description>
+    </item>
+    
     <item>
       <title>Prova 2 — Introdução às Equações Diferenciais Ordinárias</title>
       <link>https://impression28.github.io/exercicios/prova2_iedo/</link>
