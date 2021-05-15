@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Resolvendo um Jogo | dessages</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Resolvendo um Jogo" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/impression28" />
+  <meta name="twitter:creator" content="https://twitter.com/impression28" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/rigille.github.io\/exercicios\/resolvendo-um-jogo\/",
+      "name": "Resolvendo um Jogo",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/exercicios">exercicios</a>
+      </li>
+    
+      <li>
+        <a  href="/">sobre</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Resolvendo um Jogo</h1>
+            <time datetime="2021-05-15 11:43:00 -0300 -03" class="post__date">May 15 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Considere um jogo para duas pessoas onde o primeiro jogador tem três opções de ataque — simples, arriscado ou armadilha — e o segundo jogador tem duas opções apenas — ofensivo ou defensivo. Quando o primeiro jogador dá um ataque simples e o segundo jogador é ofensivo, o primeiro jogador tira $1$ ponto do segundo jogador. Se o segundo jogador tivesse defendido, ninguém perderia pontos. O ataque arriscado é particularmente efetivo quando o segundo jogador está na defensiva, tira $4$ pontos dele. Contra um jogador ofensivo, o ataque arriscado te faz perder $3$ pontos. Se você usa a armadilha em um jogador ofensivo, tira $3$ pontos dele. Mas um jogador na defensiva consegue detectar a armadilha, desviar dela e tirar $2$ pontos seus.</p>
+<p>O parágrafo acima pode ser resumido na seguinte matriz</p>
+<p>$$\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix} = A$$</p>
+<p>onde as linhas correspondem de cima para baixo a simples, arriscado e armadilha, e as colunas correspondem a ofensivo e defensivo, da esquerda para a direita. Agora a pergunta é, qual a combinação racional de estratégias para os dois jogadores? Para responder isso, primeiro vamos considerar qual é o resultado esperado para cada combinação de estratégias.</p>
+<p>Se primeiro jogador escolhe simples, arriscado e armadilha com probabilidades de respectivamente $a_1$, $a_2$ e $a_3$, e o segundo jogador escolhe ofensivo e defensivo com probabilidades de respectivamente $b_1$ e $b_2$. O resultado esperado é dado por</p>
+<p>$$
+\begin{bmatrix}
+b_1 &amp; b_2 &amp; b_3
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+a_1 \\<br>
+a_2 \\<br>
+\end{bmatrix}
+$$</p>
+<p>por exemplo</p>
+<p>$$
+\begin{bmatrix}
+1/3 &amp; 1/3 &amp; 1/3
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+1/2 \\<br>
+1/2 \\<br>
+\end{bmatrix} =
+\frac{1}{2}
+$$</p>
+<p>espera-se que o primeiro jogador ganhe em média $1/2$ pontos a cada rodada nessa combinação de estratégias. Note que nessas condições o segundo jogador poderia melhorar as suas chances se fosse ofensivo com mais frequência.</p>
+<p>$$
+\begin{bmatrix}
+1/3 &amp; 1/3 &amp; 1/3
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+2/3 \\<br>
+1/3 \\<br>
+\end{bmatrix} =
+\frac{4}{9} &lt; \frac{1}{2}
+$$</p>
+<p>mas agora o primeiro jogador pode melhorar seu desempenho usando mais armadilhas.</p>
+<p>$$
+\begin{bmatrix}
+3/5 &amp; 1/5 &amp; 1/5
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+2/3 \\<br>
+1/3 \\<br>
+\end{bmatrix} =
+\frac{4}{5} &gt; \frac{1}{2}
+$$</p>
+<p>Será que essa troca de estratégias nunca acaba? Bem, existe um caso em que as estratégias se equilibram, e nenhum jogador consegue trocar de estratégia sem prejudicar. Essa combinação de estratégias é</p>
+<p>$$
+\begin{bmatrix}
+0.875 &amp; 0.125 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 0 \\<br>
+-3 &amp; 4 \\<br>
+3 &amp; -2 \\<br>
+\end{bmatrix}
+\begin{bmatrix}
+0.5 \\<br>
+0.5 \\<br>
+\end{bmatrix} =
+0.5
+$$</p>
+<p>A forma que encontramos esses valores é via dois problemas de programação linear. O primeiro é o programa que pede para maximizar</p>
+<p>$$
+\begin{bmatrix}
+1 &amp; 1
+\end{bmatrix}
+x$$</p>
+<p>sujeito a</p>
+<p>$$Ax \geq
+\begin{bmatrix}
+1 \\<br>
+1 \\<br>
+1 \\<br>
+\end{bmatrix}$$</p>
+<p>O segundo pede para minimizar</p>
+<p>$$
+y
+\begin{bmatrix}
+1 \\<br>
+1 \\<br>
+1 \\<br>
+\end{bmatrix}$$</p>
+<p>sujeito a</p>
+<p>$$yA \leq
+\begin{bmatrix}
+1 &amp; 1
+\end{bmatrix}$$</p>
+<p>E para garantir que é possível satisfazer essas condições, somamos $5$ em todas as entradas de $A$. Isso aumenta 5 no resultado de cada estratégia, mas não afeta o resultado da comparação de duas combinações de estratégias.</p>
+<p>Os dois programas são duais. O teorema da dualidade da programação linear garante que existem ótimos $x^{*}$ e $y^{*}$ para ambos os problemas e que</p>
+<p>$$\begin{bmatrix}
+1 &amp; 1
+\end{bmatrix}
+x^{*} =
+y^{*}
+\begin{bmatrix}
+1 \\<br>
+1 \\<br>
+1 \\<br>
+\end{bmatrix} = S$$</p>
+<p>Então se os vetores não correspondiam a distribuições de probabilidade, basta dividir ambos por $S$. Isso realmente dá a combinação ótima de estratégias pois</p>
+<p>$$A(x^*/S) \geq
+\begin{bmatrix}
+1/S \\<br>
+1/S \\<br>
+1/S \\<br>
+\end{bmatrix}$$</p>
+<p>implica que pra toda estratégia $y$</p>
+<p>$$yA(x^*/S) \geq
+y
+\begin{bmatrix}
+1/S \\<br>
+1/S \\<br>
+1/S \\<br>
+\end{bmatrix} = 1/S$$</p>
+<p>e do outro lado</p>
+<p>$$(y^*/S)A \leq
+\begin{bmatrix}
+1/S &amp; 1/S
+\end{bmatrix}$$</p>
+<p>implica que pra toda estratégia $x$</p>
+<p>$$(y^*/S)Ax \leq
+\begin{bmatrix}
+1/S &amp; 1/S
+\end{bmatrix}x = 1/S$$</p>
+<p>Voltando ao problema original, foi especialmente surpreendente para mim que a estratégia ótima do primeiro jogado não incluía ataques simples, já que eles eram os menos arriscados. Realmente mostra o valor desse tipo de análise.</p>
+
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://rigille.github.io/tags/matematica/">matematica</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://rigille.github.io/tags/algebra-linear/">algebra-linear</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://rigille.github.io/exercicios/lista2-gd/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Lista 2 — Geometria Diferencial</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/impression28"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents"></nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

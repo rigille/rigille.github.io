@@ -6,7 +6,16 @@
     <description>Recent content in algebra linear on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 13 May 2021 10:01:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 May 2021 11:43:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resolvendo um Jogo</title>
+      <link>https://rigille.github.io/exercicios/resolvendo-um-jogo/</link>
+      <pubDate>Sat, 15 May 2021 11:43:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/exercicios/resolvendo-um-jogo/</guid>
+      <description>Considere um jogo para duas pessoas onde o primeiro jogador tem três opções de ataque — simples, arriscado ou armadilha — e o segundo jogador tem duas opções apenas — ofensivo ou defensivo. Quando o primeiro jogador dá um ataque simples e o segundo jogador é ofensivo, o primeiro jogador tira $1$ ponto do segundo jogador. Se o segundo jogador tivesse defendido, ninguém perderia pontos. O ataque arriscado é particularmente efetivo quando o segundo jogador está na defensiva, tira $4$ pontos dele.</description>
+    </item>
+    
     <item>
       <title>o fecho convexo de um conjunto finito é um politopo</title>
       <link>https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/</link>
