@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>algebra linear on dessages</title>
-    <link>https://impression28.github.io/tags/algebra-linear/</link>
+    <link>https://rigille.github.io/tags/algebra-linear/</link>
     <description>Recent content in algebra linear on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 13 May 2021 10:01:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 10:01:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/algebra-linear/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>o fecho convexo de um conjunto finito é um politopo</title>
-      <link>https://impression28.github.io/exercicios/teorema-fundamental-dos-politopos/</link>
+      <link>https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/</link>
       <pubDate>Thu, 13 May 2021 10:01:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/teorema-fundamental-dos-politopos/</guid>
+      <guid>https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/</guid>
       <description>este post foi criado porque me animei na resolução da lista de tópicos de álgebra linear .
 Questão 46 ⭐⭐⭐⭐⭐ Enunciado Um poliedro é o conjunto solução de um sistema do tipo
 $$a_{11} + \cdots + a_{1n}x_n \leq b_1\\
@@ -24,10 +24,10 @@ Resolução Para resolver essa questão primeiro vamos considerar o cone gerado 
     
     <item>
       <title>Prova 2 — Introdução às Equações Diferenciais Ordinárias</title>
-      <link>https://impression28.github.io/exercicios/prova2_iedo/</link>
+      <link>https://rigille.github.io/exercicios/prova2_iedo/</link>
       <pubDate>Sun, 09 May 2021 08:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/prova2_iedo/</guid>
+      <guid>https://rigille.github.io/exercicios/prova2_iedo/</guid>
       <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
 $$x&#39;&#39; = F(x)$$
 num intervalo da reta. Claramente ela é equivalente ao sistema
@@ -39,20 +39,20 @@ b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</
     
     <item>
       <title>Prova 5 — Tópicos de Álgebra Linear</title>
-      <link>https://impression28.github.io/exercicios/prova5-tal/</link>
+      <link>https://rigille.github.io/exercicios/prova5-tal/</link>
       <pubDate>Sat, 08 May 2021 08:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/prova5-tal/</guid>
+      <guid>https://rigille.github.io/exercicios/prova5-tal/</guid>
       <description>Enunciado Seja $X \subset \mathbb{R}^2$ um conjunto finito. Prove que o fecho convexo de $X$, $\mathrm{conv}(X)$, é a intersecção de todos os semi-planos fechados contendo $X$.
 Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é um conjunto compacto. Ele é, afinal, a imagem de um conjunto compacto — nomeadamente $[0, 1]^{|X|} \subset \mathbb{R}^{|X|}$ — sob uma aplicação contínua — nomeadamente a combinação linear dos elementos de $X$. A partir daqui mostraremos o resultado mais geral: todo compacto convexo do espaço $\mathbb{R}^n$ é a intersecção de todos os semi-planos fechados contendo $X$.</description>
     </item>
     
     <item>
       <title>Lista 1 — Tópicos de Álgebra Linear</title>
-      <link>https://impression28.github.io/exercicios/lista1-tal/</link>
+      <link>https://rigille.github.io/exercicios/lista1-tal/</link>
       <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/lista1-tal/</guid>
+      <guid>https://rigille.github.io/exercicios/lista1-tal/</guid>
       <description>Questão 3 ⭐ Enunciado Seja $A$ uma matriz real simétrica, $k$ um número inteiro positivo. Mostre que se $A^k \cdot v = 0$ para $v \in \mathbb{R}^k$. Então $A \cdot v = 0$.
 Resolução A questão nos pede para mostrar que
 $$\forall k \in \mathbb{N}^*\ \forall v \in \mathbb{R}^k\ \forall A \in M_{k\times k}(A^k \cdot v = 0 \rightarrow A \cdot v = 0) \tag{3.P0}$$
@@ -61,10 +61,10 @@ Provarei a versão mais forte</description>
     
     <item>
       <title>Solução da Prova de IEDO</title>
-      <link>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</link>
+      <link>https://rigille.github.io/exercicios/solucao-prova-1-iedo/</link>
       <pubDate>Sun, 04 Apr 2021 21:50:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/solucao-prova-1-iedo/</guid>
+      <guid>https://rigille.github.io/exercicios/solucao-prova-1-iedo/</guid>
       <description>Enunciado E. 4. b) Seja
 $$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
@@ -78,10 +78,10 @@ $$ \begin{cases} x&#39; = Bx \\</description>
     
     <item>
       <title>Lista 1 — Tópicos de Álgebra Linear — Questão 23</title>
-      <link>https://impression28.github.io/exercicios/tal-23/</link>
+      <link>https://rigille.github.io/exercicios/tal-23/</link>
       <pubDate>Thu, 25 Mar 2021 17:34:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/tal-23/</guid>
+      <guid>https://rigille.github.io/exercicios/tal-23/</guid>
       <description>Enunciado Seja $u$ um vetor unitário num espaço real com produto interno $V$. Defina $T(x) = x - 2\langle x, u \rangle u$.
 a) Mostre que $T$ é um operador linear e uma isometria.
 b) Encontre $\mathrm{det}(T)$ no caso em que $\mathrm{dim}(V) &amp;lt; \infty$.
@@ -91,20 +91,20 @@ De fato $$T(x + \alpha y) = x + \alpha y - 2\langle x + \alpha y, u \rangle u$$ 
     
     <item>
       <title>Atividade Semanal 3 de IEDO</title>
-      <link>https://impression28.github.io/exercicios/atividade-semanal-5-iedo/</link>
+      <link>https://rigille.github.io/exercicios/atividade-semanal-5-iedo/</link>
       <pubDate>Mon, 15 Mar 2021 23:43:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/atividade-semanal-5-iedo/</guid>
+      <guid>https://rigille.github.io/exercicios/atividade-semanal-5-iedo/</guid>
       <description>i) Pelo fato de $f : \mathbb{R}^{n+1} \rightarrow \mathbb{R}^n$, temos que $D(f) = \mathbb{R}^{n+1}$. Se para toda condição inicial $(t_0, u_0) \in \mathbb{R}^{n+1}$ a solução está definida em todo $\mathbb{R}$, então para qualquer escolha de condições iniciais $\omega_{-}(t_0, u_0) = -\infty$ e $\omega_{+}(t_0, u_0) = \infty$. Como a definição de $E$ é
 $$E := \left\{(t, r, x) \in \mathbb{R}^{n+2} : (r, x) \in D(f) \wedge\omega_{-}(t_0, u_0) &amp;lt; t &amp;lt; \omega_{+}(t_0, u_0) \right\}$$</description>
     </item>
     
     <item>
       <title>prova de tópicos de álgebra linear</title>
-      <link>https://impression28.github.io/exercicios/prova-topicos-de-algebra-linear/</link>
+      <link>https://rigille.github.io/exercicios/prova-topicos-de-algebra-linear/</link>
       <pubDate>Sat, 06 Mar 2021 12:00:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/prova-topicos-de-algebra-linear/</guid>
+      <guid>https://rigille.github.io/exercicios/prova-topicos-de-algebra-linear/</guid>
       <description>postando a solução da primeira prova de álgebra linear.
  Seja A uma matriz não singular com $n \times n$ entradas reais. para $x \in \mathbb{R}^n \setminus \{ 0 \}$, defina $f(x) := \frac{Ax}{|| A x ||}$.
 a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\rightarrow \infty} f^n(x)$ então $L$ é um autovetor de $A$.

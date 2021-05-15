@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>geometria-diferencial on dessages</title>
-    <link>https://impression28.github.io/tags/geometria-diferencial/</link>
+    <link>https://rigille.github.io/tags/geometria-diferencial/</link>
     <description>Recent content in geometria-diferencial on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 14 May 2021 13:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 May 2021 13:14:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lista 2 — Geometria Diferencial</title>
-      <link>https://impression28.github.io/exercicios/lista2-gd/</link>
+      <link>https://rigille.github.io/exercicios/lista2-gd/</link>
       <pubDate>Fri, 14 May 2021 13:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/lista2-gd/</guid>
+      <guid>https://rigille.github.io/exercicios/lista2-gd/</guid>
       <description>Exercício 1 Enunciado Considere o Toro com parametrização
 $$X(u, v) = \left((a + r \cos u) \cos v, (a + r \cos u) \sin v, r \sin u\right)$$
 onde
@@ -22,10 +22,10 @@ Mostre que os meridianos ($v$ constante e $u$ variando) e os equadores interno e
     
     <item>
       <title>Lista 1 — Geometria Diferencial</title>
-      <link>https://impression28.github.io/exercicios/lista1-gd/</link>
+      <link>https://rigille.github.io/exercicios/lista1-gd/</link>
       <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/exercicios/lista1-gd/</guid>
+      <guid>https://rigille.github.io/exercicios/lista1-gd/</guid>
       <description>Capítulo 1 — Seção 3 Questão 8 🖋️ Seja $\alpha : I \rightarrow R^3$ uma curva diferenciável e seja $[a, b] \subset I$ ser um intervalo fechado. Pra cada partição
 $$a = t_0 &amp;lt; t_1 &amp;lt; &amp;hellip; &amp;lt; t_n = b$$
 de $[a, b]$, considere a soma $\sum_{i=1}^n |\alpha(t_i) - \alpha(t_{i-1})| = I(\alpha, P)$ onde $P$ representa a partição. A norma $|P|$ de uma partição $|P|$ é definida como
@@ -34,10 +34,10 @@ $$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</description>
     
     <item>
       <title>as curvas e as quinas</title>
-      <link>https://impression28.github.io/blog/as-curvas-e-as-quinas/</link>
+      <link>https://rigille.github.io/blog/as-curvas-e-as-quinas/</link>
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
-      <guid>https://impression28.github.io/blog/as-curvas-e-as-quinas/</guid>
+      <guid>https://rigille.github.io/blog/as-curvas-e-as-quinas/</guid>
       <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
