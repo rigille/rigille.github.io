@@ -6,7 +6,20 @@
     <description>Recent content in geometria-diferencial on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 10 Apr 2021 17:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 May 2021 13:14:00 -0300</lastBuildDate><atom:link href="https://impression28.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 2 — Geometria Diferencial</title>
+      <link>https://impression28.github.io/exercicios/lista2-gd/</link>
+      <pubDate>Fri, 14 May 2021 13:14:00 -0300</pubDate>
+      
+      <guid>https://impression28.github.io/exercicios/lista2-gd/</guid>
+      <description>Exercício 1 Enunciado Considere o Toro com parametrização
+$$X(u, v) = \left((a + r \cos u) \cos v, (a + r \cos u) \sin v, r \sin u\right)$$
+onde
+$$0 &amp;lt; u &amp;lt; 2\pi \wedge 0 &amp;lt; v &amp;lt; 2\pi$$
+Mostre que os meridianos ($v$ constante e $u$ variando) e os equadores interno e externo ($u = 0$ e $u = \pi$, respectivamente, com $v$ variando) são geodésicas do Toro.</description>
+    </item>
+    
     <item>
       <title>Lista 1 — Geometria Diferencial</title>
       <link>https://impression28.github.io/exercicios/lista1-gd/</link>
