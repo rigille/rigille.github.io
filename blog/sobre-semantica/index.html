@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Lista 1 — Tópicos de Álgebra Linear — Questão 23 | dessages</title>
+  <title>sobre semântica | dessages</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lista 1 — Tópicos de Álgebra Linear — Questão 23" />
+  <meta name="twitter:title" content="sobre semântica" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/impression28" />
   <meta name="twitter:creator" content="https://twitter.com/impression28" />
@@ -47,16 +47,29 @@
 
 <script type="application/ld+json">
   
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "https:\/\/rigille.github.io\/exercicios\/tal-23\/",
-      "name": "Lista 1 — Tópicos de Álgebra Linear — Questão 23",
-      "author": {
-        "@type": "Person",
-        "name": ""
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/rigille.github.io"
       },
-      "description": ""
+      "articleSection" : "blog",
+      "name" : "sobre semântica",
+      "headline" : "sobre semântica",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-06-16 01:55:00 -0300 -03",
+      "dateModified" : "2021-06-16 01:55:00 -0300 -03",
+      "url" : "https:\/\/rigille.github.io\/blog\/sobre-semantica\/",
+      "wordCount" : "229",
+      "keywords" : ["Blog"]
     }
   
   </script>
@@ -77,12 +90,12 @@
     
     
       <li>
-        <a  href="/blog">blog</a>
+        <a  class="active"
+         href="/blog">blog</a>
       </li>
     
       <li>
-        <a  class="active"
-         href="/exercicios">exercicios</a>
+        <a  href="/exercicios">exercicios</a>
       </li>
     
       <li>
@@ -101,35 +114,15 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Lista 1 — Tópicos de Álgebra Linear — Questão 23</h1>
-            <time datetime="2021-03-25 17:34:00 -0300 -03" class="post__date">Mar 25 2021</time> 
+            <h1 id="post__title">sobre semântica</h1>
+            <time datetime="2021-06-16 01:55:00 -0300 -03" class="post__date">Jun 16 2021</time> 
           </header>
           <article class="post__content">
               
-<h1 id="enunciado">Enunciado</h1>
-<p>Seja $u$ um vetor unitário num espaço real com produto interno $V$. Defina $T(x) = x - 2\langle x, u \rangle u$.</p>
-<p><strong>a)</strong> Mostre que $T$ é um operador linear e uma isometria.</p>
-<p><strong>b)</strong> Encontre $\mathrm{det}(T)$ no caso em que $\mathrm{dim}(V) &lt; \infty$.</p>
-<h1 id="resolução">Resolução</h1>
-<p><strong>a)</strong> Para mostrar que é um operador linear vamos mostrar que para todo $u$, vale $T(x + \alpha y) = T(x) + \alpha T(y)$.</p>
-<p>De fato
-$$T(x + \alpha y) = x + \alpha y - 2\langle x + \alpha y, u \rangle u$$
-$$= x + \alpha y - 2\langle x, u \rangle u - 2\langle \alpha y, u \rangle u$$
-$$= x - 2\langle x, u \rangle u + \alpha y - 2\langle \alpha y, u \rangle u$$
-$$= x - 2\langle x, u \rangle u + \alpha \left(y - 2\langle y, u \rangle u\right)$$
-$$= T(x) + \alpha T(y)$$</p>
-<p>Para mostrar que é uma isometria vamos mostrar que, para todo $y$ $\in V$, vale que $\langle T(y), T(y) \rangle = \langle y, y \rangle$</p>
-<p>$$ \langle T(y), T(y) \rangle = \langle y - 2\langle y, u \rangle u, y - 2\langle y, u \rangle u \rangle$$
-$$ = \langle y, y\rangle + \langle y, - 2\langle y, u \rangle u \rangle + \langle - 2\langle y, u \rangle u, y\rangle + \langle - 2\langle y, u \rangle u, - 2\langle y, u \rangle u \rangle$$</p>
-<p>$$ = \langle y, y\rangle - 2\langle y, u \rangle \langle y, u \rangle - 2\langle y, u \rangle \langle u, y\rangle + \langle - 2\langle y, u \rangle u, - 2\langle y, u \rangle u \rangle$$</p>
-<p>$$ = \langle y, y\rangle - 2\langle y, u \rangle \langle y, u \rangle - 2\langle y, u \rangle \langle u, y\rangle + 4\langle y, u \rangle^2 \langle  u, u \rangle$$</p>
-<p>como $ \langle u, u \rangle = 1$, todos os termos além do primeiro se cancelam, e chegamos em</p>
-<p>$$= \langle y, y \rangle$$</p>
-<p>como queríamos demonstrar.</p>
-<p><strong>b)</strong> o determinante é invariante em relação a escolha de base, então vamos escolher uma base conveniente para calculá-lo. Primeiro observamos que, restrito ao espaço ortogonal de $u$, o operador $T$ é a função identidade. então, se definíssemos $n := \mathrm{dim}(V)$, e escolhêssemos uma base $\{e_1, e_2, …, e_{n-1}\}$ do espaço ortogonal de $u$, teríamos que $\{e_1, e_2, …, e_{n-1}, u\}$ seria umba base de $V$.</p>
-<p>Nessa base, a matriz de $T$ seria.
-$$ A = \begin{bmatrix}1 &amp; 0 &amp; \dots \\ 0 &amp; 1 \\ \vdots &amp; &amp; \ddots  \\ &amp; &amp; &amp; 1 &amp; 0 \\ &amp; &amp; &amp; 0 &amp; -1\end{bmatrix} $$</p>
-<p>portanto $\mathrm{det}(T) = -1$.</p>
+<p>no tratamento matemático da linguagem a sintaxe sempre foi mais fácil. existe um objeto muito bem definido pra trabalhar: uma sequência de caracteres. com isso a teoria das linguagens formais foi longe. o bastante para descrever completamente a gramática de uma linguagem natural? não, mas foi longe o bastante para linguagens de programação, até pra descrever um pouco de genética, ouvi dizer.</p>
+<p>a semântica não tem esse luxo, qual a estrutura do significado? como definir isso? vindo da lógica, onde a linguagem é descritiva e formula proposições, dá vontade de dizer que a linguagem descreve a realidade e que a estrutura do significado é a estrutura da própria realidade.</p>
+<p>pra lógica essa ideia funciona, mas ela não explica a poesia. e a poesia têm significado, que ofensa seria dizer que não tem! o significado não é uma descrição realidade, é o efeito que ela provoca no leitor. no caso deste texto, o significado é sobre você, e sobre como esse texto vai interagir com a sua mente. essa é a estrutura.</p>
+<p>por isso admito que fico, não desencorajado, mas ainda assim frustrado quando descubro que não consegui expressar o que queria para alguém. o meme de &ldquo;não entendo o que o rígille posta&rdquo; surge espontaneamente em vários círculos de amigos. é engraçado, eu rio, todos riem, e enquanto isso continuo procurando formas melhores de falar sobre o que gostaria.</p>
 
 
               
@@ -148,26 +141,14 @@ $$ A = \begin{bmatrix}1 &amp; 0 &amp; \dots \\ 0 &amp; 1 \\ \vdots &amp; &amp; \
           </article>
           
 
-<ul class="tags__list">
-    
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/matematica/">matematica</a>
-    </li>
-    </ul>
-
  <div class="pagination">
   
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/atividade-semanal-5-iedo/">
+    <a class="pagination__item" href="https://rigille.github.io/blog/liberdade-de-associacao/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Atividade Semanal 3 de IEDO</span>
+        <span class="pagination__title">o teorema da liberdade de associação</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/solucao-prova-1-iedo/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Solução da Prova de IEDO</span>
-    </a>
   
 </div>
 

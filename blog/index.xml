@@ -6,7 +6,26 @@
     <description>Recent content in Blogs on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 02 Jun 2021 00:55:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jun 2021 01:55:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sobre semântica</title>
+      <link>https://rigille.github.io/blog/sobre-semantica/</link>
+      <pubDate>Wed, 16 Jun 2021 01:55:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/blog/sobre-semantica/</guid>
+      <description>no tratamento matemático da linguagem a sintaxe sempre foi mais fácil. existe um objeto muito bem definido pra trabalhar: uma sequência de caracteres. com isso a teoria das linguagens formais foi longe. o bastante para descrever completamente a gramática de uma linguagem natural? não, mas foi longe o bastante para linguagens de programação, até pra descrever um pouco de genética, ouvi dizer.
+a semântica não tem esse luxo, qual a estrutura do significado?</description>
+    </item>
+    
+    <item>
+      <title>o teorema da liberdade de associação</title>
+      <link>https://rigille.github.io/blog/liberdade-de-associacao/</link>
+      <pubDate>Wed, 09 Jun 2021 00:55:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/blog/liberdade-de-associacao/</guid>
+      <description>quando você soma uma lista de números, ou multiplica uma lista de matrizes, não importa como você arranja os parênteses. isso é porque essas são operações associativas: $a + (b + c) = (a + b) + c$ e $A(BC) = (AB)C$. a ideia é que aplicando essas identidades do jeito certo, é possível sair de um arranjo de parênteses e chegar em qualquer outro que você desejar. mas como isso acontece?</description>
+    </item>
+    
     <item>
       <title>cenários para o futuro</title>
       <link>https://rigille.github.io/blog/cenarios-para-o-futuro/</link>
