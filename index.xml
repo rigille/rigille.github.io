@@ -18,15 +18,6 @@ a semântica não tem esse luxo, qual a estrutura do significado?</description>
     </item>
     
     <item>
-      <title>o teorema da liberdade de associação</title>
-      <link>https://rigille.github.io/blog/liberdade-de-associacao/</link>
-      <pubDate>Wed, 09 Jun 2021 00:55:00 -0300</pubDate>
-      
-      <guid>https://rigille.github.io/blog/liberdade-de-associacao/</guid>
-      <description>quando você soma uma lista de números, ou multiplica uma lista de matrizes, não importa como você arranja os parênteses. isso é porque essas são operações associativas: $a + (b + c) = (a + b) + c$ e $A(BC) = (AB)C$. a ideia é que aplicando essas identidades do jeito certo, é possível sair de um arranjo de parênteses e chegar em qualquer outro que você desejar. mas como isso acontece?</description>
-    </item>
-    
-    <item>
       <title>cenários para o futuro</title>
       <link>https://rigille.github.io/blog/cenarios-para-o-futuro/</link>
       <pubDate>Wed, 02 Jun 2021 00:55:00 -0300</pubDate>
