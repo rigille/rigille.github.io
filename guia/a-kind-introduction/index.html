@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Lista 1 — Tópicos de Álgebra Linear — Questão 23 | dessages</title>
+  <title>Guia de programação do Rígille | dessages</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lista 1 — Tópicos de Álgebra Linear — Questão 23" />
+  <meta name="twitter:title" content="Guia de programação do Rígille" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/impression28" />
   <meta name="twitter:creator" content="https://twitter.com/impression28" />
@@ -50,8 +50,8 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/rigille.github.io\/exercicios\/tal-23\/",
-      "name": "Lista 1 — Tópicos de Álgebra Linear — Questão 23",
+      "url": "https:\/\/rigille.github.io\/guia\/a-kind-introduction\/",
+      "name": "Guia de programação do Rígille",
       "author": {
         "@type": "Person",
         "name": ""
@@ -81,12 +81,12 @@
       </li>
     
       <li>
-        <a  class="active"
-         href="/exercicios">exercicios</a>
+        <a  href="/exercicios">exercicios</a>
       </li>
     
       <li>
-        <a  href="/guia">guia</a>
+        <a  class="active"
+         href="/guia">guia</a>
       </li>
     
       <li>
@@ -105,36 +105,33 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Lista 1 — Tópicos de Álgebra Linear — Questão 23</h1>
-            <time datetime="2021-03-25 17:34:00 -0300 -03" class="post__date">Mar 25 2021</time> 
+            <h1 id="post__title">Guia de programação do Rígille</h1>
+            <time datetime="2021-05-22 18:00:00 -0300 -03" class="post__date">May 22 2021</time> 
           </header>
           <article class="post__content">
               
-<h1 id="enunciado">Enunciado</h1>
-<p>Seja $u$ um vetor unitário num espaço real com produto interno $V$. Defina $T(x) = x - 2\langle x, u \rangle u$.</p>
-<p><strong>a)</strong> Mostre que $T$ é um operador linear e uma isometria.</p>
-<p><strong>b)</strong> Encontre $\mathrm{det}(T)$ no caso em que $\mathrm{dim}(V) &lt; \infty$.</p>
-<h1 id="resolução">Resolução</h1>
-<p><strong>a)</strong> Para mostrar que é um operador linear vamos mostrar que para todo $u$, vale $T(x + \alpha y) = T(x) + \alpha T(y)$.</p>
-<p>De fato
-$$T(x + \alpha y) = x + \alpha y - 2\langle x + \alpha y, u \rangle u$$
-$$= x + \alpha y - 2\langle x, u \rangle u - 2\langle \alpha y, u \rangle u$$
-$$= x - 2\langle x, u \rangle u + \alpha y - 2\langle \alpha y, u \rangle u$$
-$$= x - 2\langle x, u \rangle u + \alpha \left(y - 2\langle y, u \rangle u\right)$$
-$$= T(x) + \alpha T(y)$$</p>
-<p>Para mostrar que é uma isometria vamos mostrar que, para todo $y$ $\in V$, vale que $\langle T(y), T(y) \rangle = \langle y, y \rangle$</p>
-<p>$$ \langle T(y), T(y) \rangle = \langle y - 2\langle y, u \rangle u, y - 2\langle y, u \rangle u \rangle$$
-$$ = \langle y, y\rangle + \langle y, - 2\langle y, u \rangle u \rangle + \langle - 2\langle y, u \rangle u, y\rangle + \langle - 2\langle y, u \rangle u, - 2\langle y, u \rangle u \rangle$$</p>
-<p>$$ = \langle y, y\rangle - 2\langle y, u \rangle \langle y, u \rangle - 2\langle y, u \rangle \langle u, y\rangle + \langle - 2\langle y, u \rangle u, - 2\langle y, u \rangle u \rangle$$</p>
-<p>$$ = \langle y, y\rangle - 2\langle y, u \rangle \langle y, u \rangle - 2\langle y, u \rangle \langle u, y\rangle + 4\langle y, u \rangle^2 \langle  u, u \rangle$$</p>
-<p>como $ \langle u, u \rangle = 1$, todos os termos além do primeiro se cancelam, e chegamos em</p>
-<p>$$= \langle y, y \rangle$$</p>
-<p>como queríamos demonstrar.</p>
-<p><strong>b)</strong> o determinante é invariante em relação a escolha de base, então vamos escolher uma base conveniente para calculá-lo. Primeiro observamos que, restrito ao espaço ortogonal de $u$, o operador $T$ é a função identidade. então, se definíssemos $n := \mathrm{dim}(V)$, e escolhêssemos uma base $\{e_1, e_2, …, e_{n-1}\}$ do espaço ortogonal de $u$, teríamos que $\{e_1, e_2, …, e_{n-1}, u\}$ seria umba base de $V$.</p>
-<p>Nessa base, a matriz de $T$ seria.
-$$ A = \begin{bmatrix}1 &amp; 0 &amp; \dots \\ 0 &amp; 1 \\ \vdots &amp; &amp; \ddots  \\ &amp; &amp; &amp; 1 &amp; 0 \\ &amp; &amp; &amp; 0 &amp; -1\end{bmatrix} $$</p>
-<p>portanto $\mathrm{det}(T) = -1$.</p>
-
+<blockquote>
+<p>ainda estou escrevendo este guia, espere rascunhos e mudanças.</p>
+<p>quer me ajudar a escrever? faça um <a href="https://github.com/rigille/blog" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>pull request</a>
+ 🙂</p>
+</blockquote>
+<h1 id="introdução">Introdução</h1>
+<p>Computadores são ferramentas versáteis. Dados os programas certos, eles podem desenhar um site, te imergir em um jogo, <a href="https://github.com/chrislgarry/Apollo-11" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>guiar</a>
+ um foguete até a lua, verificar teoremas… Eu não consigo pensar em nada que seja tão útil em tantas situações diferentes — exceto talvez os potes. Ainda assim, se você está aqui, suponho que eles não façam exatamente o que você precisa <em>ainda</em>. Mas você pode mudar isso, e gostaria de te ajudar a descobrir como.</p>
+<p>Todos os projetos começam com você dizendo para o computador o que deve ser feito, mas a dinâmica muda quando eles crescem. As consequências de códigos novos começam a ficar imprevisíveis. Surgem bugs, e você precisa investigá-los. Funcionalidades novas vão ficando mais difíceis de adicionar. O projeto começa a dizer o que você deve fazer.</p>
+<p>O Kind é uma linguagem de programação criada para manter, até onde for possível, você no comando tanto em projetos grandes quanto pequenos. Por isso vamos estudá-la aqui. Ela também é uma linguagem bem simples, então pode ser aprendida rápido.</p>
+<h1 id="hello-world">hello, world!</h1>
+<p>Sem mais delongas, vamos começar a escrever alguns programas, que tal?</p>
+<p><em>TODO: syntax highlight, opção de rodar e dar typecheck no programa, dar nome aos exemplos e numerar linhas dos programas</em></p>
+<pre><code>Test: String
+  &quot;hello, world!&quot;
+</code></pre>
 
               
                   
@@ -152,26 +149,9 @@ $$ A = \begin{bmatrix}1 &amp; 0 &amp; \dots \\ 0 &amp; 1 \\ \vdots &amp; &amp; \
           </article>
           
 
-<ul class="tags__list">
-    
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/matematica/">matematica</a>
-    </li>
-    </ul>
-
  <div class="pagination">
   
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/atividade-semanal-5-iedo/">
-        <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Atividade Semanal 3 de IEDO</span>
-    </a>
-  
 
-  
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/solucao-prova-1-iedo/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Solução da Prova de IEDO</span>
-    </a>
   
 </div>
 
