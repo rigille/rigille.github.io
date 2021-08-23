@@ -6,7 +6,20 @@
     <description>Recent content on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 16 Jun 2021 01:55:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 20:20:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://rigille.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>barcos são surpreendentemente eficientes</title>
+      <link>https://rigille.github.io/blog/transporte-maritimo/</link>
+      <pubDate>Sun, 22 Aug 2021 20:20:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/blog/transporte-maritimo/</guid>
+      <description>estou achando bem legal pensar sobre como fatos bem fundamentais e imutáveis, como as leis da física, influenciam as ações das pessoas em larga escala. o livro sobre seasteading — o projeto de residências permanentes no mar — coincidentemente tinha bastante disso. geralmente quem idealiza um projeto tão ambicioso projeta cuidadosamente o cenário idealizado de como deveria ser… e para nisso. a abordagem no livro é diferente. eles analisam como as ideias de vários indivíduos diferentes se encaixam nas cadeias produtivas, no ecossistema marinho, como elas vão dar lucro e como elas convergem para o mar.</description>
+    </item>
+    
     <item>
       <title>sobre semântica</title>
       <link>https://rigille.github.io/blog/sobre-semantica/</link>
@@ -28,14 +41,14 @@ a grande financeirização vamos começar com otimismo. as inteligências artifi
     </item>
     
     <item>
-      <title>Guia de programação do Rígille</title>
+      <title>Rígille&#39;s programming guide</title>
       <link>https://rigille.github.io/guia/a-kind-introduction/</link>
       <pubDate>Sat, 22 May 2021 18:00:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/guia/a-kind-introduction/</guid>
-      <description>ainda estou escrevendo este guia, espere rascunhos e mudanças.
-sinta-se a vontade para fazer sugestões com um pull request 🙂
- Introdução Computadores são ferramentas versáteis. Dados os programas certos, eles podem desenhar um site, te imergir em um jogo, guiar um foguete até a lua, verificar teoremas… Eu não consigo pensar em nada que seja tão útil em tantas situações diferentes — exceto talvez os potes. Ainda assim, se você está aqui, suponho que eles não façam exatamente o que você precisa ainda.</description>
+      <description>i&amp;rsquo;m still writing that guide, expect drafts and changes.
+also feel free to make suggestions with an issue or a pull request. 🙂
+ Introduction Computers can help people in many many different ways. When told to, they can draw a webpage, put you inside a game world, point a rocket towards space, prove theorems&amp;hellip; I can&amp;rsquo;t think of any other machine that can do so many things. However if you&amp;rsquo;re here I suppose they don&amp;rsquo;t do exactly what you need yet.</description>
     </item>
     
     <item>
@@ -66,7 +79,7 @@ Mostre que os meridianos ($v$ constante e $u$ variando) e os equadores interno e
       <pubDate>Thu, 13 May 2021 10:01:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/</guid>
-      <description>este post foi criado porque me animei na resolução da lista de tópicos de álgebra linear .
+      <description>este post foi criado porque me animei na resolução da lista de tópicos de álgebra linear.
 Questão 46 ⭐⭐⭐⭐⭐ Enunciado Um poliedro é o conjunto solução de um sistema do tipo
 $$a_{11} + \cdots + a_{1n}x_n \leq b_1\\
 \vdots \\
@@ -82,10 +95,10 @@ Resolução Para resolver essa questão primeiro vamos considerar o cone gerado 
       
       <guid>https://rigille.github.io/exercicios/prova2_iedo/</guid>
       <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
-$$x&#39;&#39; = F(x)$$
+$$x&amp;rsquo;&amp;rsquo; = F(x)$$
 num intervalo da reta. Claramente ela é equivalente ao sistema
-$$ \begin{cases} x&#39; = v \\
-v&#39; = F(x) \end{cases} \tag{1} $$
+$$ \begin{cases} x&amp;rsquo; = v \\
+v&amp;rsquo; = F(x) \end{cases} \tag{1} $$
 a) Mostre que a energia total $E = T+U$ é uma integral primeira do sistema, onde $T(v) = \frac{v^2}{2}$ é a energia cinética e $U(x) = - \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$ é a energia potencial.
 b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</description>
     </item>
@@ -107,7 +120,8 @@ Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é 
       
       <guid>https://rigille.github.io/blog/memorizar-prejudica-o-aprendizado/</guid>
       <description>Descobri um fenômeno muito estranho: eu podia fazer uma pergunta e os alunos respondiam imediatamente. Mas quando eu fizesse a pergunta de novo – o mesmo assunto e a mesma pergunta, até onde eu conseguia –, eles simplesmente não conseguiam responder!
-— Richard Feynman  nesse trecho feynman estava falando do recém-nascido ensino de física no brasil, mas ele poderia muito bem estar falando de algumas escolas em que estudei e tenho certeza que está soando familiar para você também.</description>
+— Richard Feynman
+ nesse trecho feynman estava falando do recém-nascido ensino de física no brasil, mas ele poderia muito bem estar falando de algumas escolas em que estudei e tenho certeza que está soando familiar para você também.</description>
     </item>
     
     <item>
@@ -148,7 +162,7 @@ $$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 &amp;amp; 0 \\
 \end{bmatrix} $$
 Encontre a solução $\varphi$ para o PVI
-$$ \begin{cases} x&#39; = Bx \\</description>
+$$ \begin{cases} x&amp;rsquo; = Bx \\</description>
     </item>
     
     <item>
@@ -192,7 +206,7 @@ a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\right
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/blog/as-curvas-e-as-quinas/</guid>
-      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
+      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&amp;rsquo;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
     
@@ -203,7 +217,7 @@ essa definição foi pensada visando excluir as curvas que têm quinas e outras 
       
       <guid>https://rigille.github.io/blog/expectativa-dos-imortais/</guid>
       <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
- Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider 1
+ Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider1
  mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
     </item>
     

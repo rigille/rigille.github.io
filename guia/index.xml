@@ -6,16 +6,20 @@
     <description>Recent content in Guia on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 22 May 2021 18:00:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/guia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 May 2021 18:00:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://rigille.github.io/guia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>Guia de programação do Rígille</title>
+      <title>Rígille&#39;s programming guide</title>
       <link>https://rigille.github.io/guia/a-kind-introduction/</link>
       <pubDate>Sat, 22 May 2021 18:00:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/guia/a-kind-introduction/</guid>
-      <description>ainda estou escrevendo este guia, espere rascunhos e mudanças.
-sinta-se a vontade para fazer sugestões com um pull request 🙂
- Introdução Computadores são ferramentas versáteis. Dados os programas certos, eles podem desenhar um site, te imergir em um jogo, guiar um foguete até a lua, verificar teoremas… Eu não consigo pensar em nada que seja tão útil em tantas situações diferentes — exceto talvez os potes. Ainda assim, se você está aqui, suponho que eles não façam exatamente o que você precisa ainda.</description>
+      <description>i&amp;rsquo;m still writing that guide, expect drafts and changes.
+also feel free to make suggestions with an issue or a pull request. 🙂
+ Introduction Computers can help people in many many different ways. When told to, they can draw a webpage, put you inside a game world, point a rocket towards space, prove theorems&amp;hellip; I can&amp;rsquo;t think of any other machine that can do so many things. However if you&amp;rsquo;re here I suppose they don&amp;rsquo;t do exactly what you need yet.</description>
     </item>
     
   </channel>

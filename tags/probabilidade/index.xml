@@ -6,7 +6,11 @@
     <description>Recent content in probabilidade on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 22 Jan 2021 21:50:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/probabilidade/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 21:50:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://rigille.github.io/tags/probabilidade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>a expectativa de vida dos imortais</title>
       <link>https://rigille.github.io/blog/expectativa-dos-imortais/</link>
@@ -14,7 +18,7 @@
       
       <guid>https://rigille.github.io/blog/expectativa-dos-imortais/</guid>
       <description>em 2019 um usuário do reddit perguntou pro resto do site se valia a pena se tornar imortal ao custo de voltar 2000 anos no tempo. foram 11 mil respostas, inevitavelmente você simpatiza com algumas delas.
- Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider 1
+ Yeah, that should give me just enough time to put off all the things I should actually be doing right now. — WorgRider1
  mas falando de imortalidade sem a invulnerabilidade — assassinatos e acidentes ainda seriam possibilidades —, será que existiria alguma esperança de chegar vivo a 2021?</description>
     </item>
     

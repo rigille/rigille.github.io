@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Prova 5 — Tópicos de Álgebra Linear | dessages</title>
+  <title>barcos são surpreendentemente eficientes | dessages</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Prova 5 — Tópicos de Álgebra Linear" />
+  <meta name="twitter:title" content="barcos são surpreendentemente eficientes" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/impression28" />
   <meta name="twitter:creator" content="https://twitter.com/impression28" />
@@ -46,16 +46,29 @@
 
 <script type="application/ld+json">
   
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "https:\/\/rigille.github.io\/exercicios\/prova5-tal\/",
-      "name": "Prova 5 — Tópicos de Álgebra Linear",
-      "author": {
-        "@type": "Person",
-        "name": ""
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/rigille.github.io"
       },
-      "description": ""
+      "articleSection" : "blog",
+      "name" : "barcos são surpreendentemente eficientes",
+      "headline" : "barcos são surpreendentemente eficientes",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-08-22 20:20:00 -0300 -03",
+      "dateModified" : "2021-08-22 20:20:00 -0300 -03",
+      "url" : "https:\/\/rigille.github.io\/blog\/transporte-maritimo\/",
+      "wordCount" : "410",
+      "keywords" : ["Blog"]
     }
   
   </script>
@@ -76,12 +89,12 @@
     
     
       <li>
-        <a  href="/blog">blog</a>
+        <a  class="active"
+         href="/blog">blog</a>
       </li>
     
       <li>
-        <a  class="active"
-         href="/exercicios">exercicios</a>
+        <a  href="/exercicios">exercicios</a>
       </li>
     
       <li>
@@ -104,25 +117,18 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Prova 5 — Tópicos de Álgebra Linear</h1>
-            <time datetime="2021-05-08 08:14:00 -0300 -03" class="post__date">May 8 2021</time> 
+            <h1 id="post__title">barcos são surpreendentemente eficientes</h1>
+            <time datetime="2021-08-22 20:20:00 -0300 -03" class="post__date">Aug 22 2021</time> 
           </header>
           <article class="post__content">
               
-<h1 id="enunciado">Enunciado</h1>
-<p>Seja $X \subset \mathbb{R}^2$ um conjunto finito. Prove que o fecho convexo de $X$, $\mathrm{conv}(X)$, é a intersecção de todos os semi-planos fechados contendo $X$.</p>
-<h1 id="resolução">Resolução</h1>
-<p>Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é um conjunto compacto. Ele é, afinal, a imagem de um conjunto compacto — nomeadamente $[0, 1]^{|X|} \subset \mathbb{R}^{|X|}$ — sob uma aplicação contínua — nomeadamente a combinação linear dos elementos de $X$. A partir daqui mostraremos o resultado mais geral: todo compacto convexo do espaço $\mathbb{R}^n$ é a intersecção de todos os semi-planos fechados contendo $X$. Chamemos tal intersecção de $Y$. Precisamos mostrar que $Y \subset X$ e $X \subset Y$.</p>
-<p>A continência $X \subset Y$ não usa nossas hipóteses, apenas a definição de $Y$. Se $X$ está contido em cada elemento da intersecção, ele também está contido na intersecção.</p>
-<p>Para $Y \subset X$, vamos mostrar a contrapositiva: se $x \not\in X$ então $x \not\in Y$. Para mostrar que $x \not\in Y$, vamos exibir um hiperplano $P \subset \mathbb{R}^n$ tal que $X \subset P$ e $x \not\in P$. De fato, pelo fato de $X$ ser compacto, existe um $m \in X$ que minimiza a distância $||m - x||$. O $m$ nos permite definir um $P$</p>
-<p>$$P = \{ v \in \mathbb{R}^n;\ \langle v-x, m - x \rangle \geq \langle m - x, m - x \rangle \} \tag{0}$$</p>
-<p>Que você pode pensar como o plano tangente a $X$ que passa por $m$. Será que realmente $x \not\in P$? Sim, porque qualquer ponto fora de um conjunto fechado está a uma distância maior que $0$ do conjunto. Será que $X \subset P$? Esta é a parte crucial da demonstração, em que usaremos a convexidade.</p>
-<p>Suponha que exista $p$ tal que $p \in X$, mas $p \not\in P$:</p>
-<p>$$\langle p-x, m - x \rangle &lt; \langle m - x, m - x \rangle \tag{1}$$</p>
-<p>Pela convexidade de $X$, para todo $1 \geq \varepsilon &gt; 0$, também temos $k := \varepsilon(p-m) + m \in X$. Mas dá uma olhada na distância que esse vetor está de $x$, ou melhor, no quadrado dela:</p>
-<p>$$\langle \varepsilon(p-m) + m - x,\ \varepsilon(p-m) + m - x\rangle$$</p>
-<p>$$\langle m - x,\ m - x \rangle + \left(2 \varepsilon \langle p - m, m - x \rangle + \varepsilon^2\langle p - m, p - m \rangle \right)$$</p>
-<p>pra valores pequenos de $\varepsilon$ a segunda parcela é negativa e $k$ estaria mais perto de $x$ do que $m$. De fato, reorganizando $(1)$, vemos que $\langle p - m, m - x \rangle &lt; 0$ e podemos pegar $\varepsilon &lt; \frac{-\langle p - m, m - x \rangle}{\langle p - m, p - m \rangle}$. Isso é um absurdo! Então é necessário que $X \subset P$, o que conclui a demonstração.</p>
+<p>estou achando bem legal pensar sobre como fatos bem fundamentais e imutáveis, como as leis da física, influenciam as ações das pessoas em larga escala. o livro sobre <a href="https://br1lib.org/book/2880631/7134a0">seasteading</a> — o projeto de residências permanentes no mar — coincidentemente tinha bastante disso. geralmente quem idealiza um projeto tão ambicioso projeta cuidadosamente o cenário idealizado de como deveria ser… e para nisso. a abordagem no livro é diferente. eles analisam como as ideias de vários indivíduos diferentes se encaixam nas cadeias produtivas, no ecossistema marinho, como elas vão dar lucro e como elas convergem para o mar. não é uma análise científica, tem o hype e otimismo de uma startup, ainda assim não deixa de ser informativo e contagiante.</p>
+<p>em particular, lá no início do livro tem uma nota sobre transporte que me surpreendeu.</p>
+<blockquote>
+<p>More than a hundred thousand ships are crossing the ocean right now. It’s easier to move a cargo ship the size of a skyscraper across the ocean than it is to move your house to the next town. The amount of energy needed to move massive structures is a tiny proportion of what you would need on land, and the energy per ton required gets smaller as the structure gets larger. Ninety percent of all international trade occurs not on trains and trucks among bordering neighbors, but across vast distances on ships. The ocean isn’t the middle of nowhere, but a superhighway to everywhere.</p>
+</blockquote>
+<p>comparando com a terra e o ar, a água não deveria oferecer muito mais resistência? sim, pra corpos pequenos, a lei do quadrado vs. cubo começa a agir para veículos grandes e a energia perdida para a água vira uma fração pequena da energia usada para se mover. em um planeta com um oceano mais viscoso, provavelmente os barcos seriam maiores. o mesmo argumento vale para o ar, mas a diferença é que no ar pesos maiores exigem mais força de sustentação, que exige mais velocidade. assim a resistência do ar cresce demais e mata os ganhos que você teria com a lei do quadrado vs. cubo. na terra um trem é também muito eficiente, mas ele precisa de mais infraestrutura, mais manutenção, e ainda assim não consegue transportar tantos produtos quanto um barco.</p>
+<p>estou tentado a dizer que a eficiência dos barcos são a principal razão para a maioria das pessoas do mundo morarem perto da costa, mas aposto que alguém vai comentar um motivo mais importante que eu não considerei :p</p>
 
 
               
@@ -141,28 +147,14 @@
           </article>
           
 
-<ul class="tags__list">
-    
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/matematica/">matematica</a>
-    </li>
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/algebra-linear/">algebra-linear</a>
-    </li></ul>
-
  <div class="pagination">
   
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/lista1-gd/">
+    <a class="pagination__item" href="https://rigille.github.io/blog/sobre-semantica/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Lista 1 — Geometria Diferencial</span>
+        <span class="pagination__title">sobre semântica</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/prova2_iedo/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Prova 2 — Introdução às Equações Diferenciais Ordinárias</a>
-    </a>
   
 </div>
 
@@ -217,11 +209,6 @@
           </div>
       </div>
       
-      <div class="toc-container">
-          
-        <nav id="TableOfContents"></nav>
-      </div>
-      
     </div>
     
 
@@ -239,8 +226,6 @@
   <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
 
-  
-    <script src="/js/table-of-contents.js"></script>
   
 
 

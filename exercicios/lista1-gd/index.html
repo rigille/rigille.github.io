@@ -23,7 +23,6 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-
   
   
     
@@ -35,7 +34,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -118,25 +117,25 @@
 <p>$$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</p>
 <p>Geometricamente, $I(\alpha, P)$ é o comprimento de um polígono inscrito em $\alpha([a, b])$ com vértices em $\alpha(t_i)$. O objetivo deste exercício é mostrar que o comprimento de arco de $\alpha([a, b])$ é, em certo sentido, um limite dos comprimentos dos polígonos inscritos.</p>
 <p>Prove que, dado um $\varepsilon &gt; 0$, existe um $\delta &gt; 0$ tal que $|P| &lt; \delta$ então</p>
-<p>$$\left|\int_a^b |\alpha'(t)|\mathrm{d}t - I(\alpha, P)\right| &lt; \varepsilon$$</p>
+<p>$$\left|\int_a^b |\alpha&rsquo;(t)|\mathrm{d}t - I(\alpha, P)\right| &lt; \varepsilon$$</p>
 <h4 id="resolução">Resolução</h4>
 <p>Primeiro consideremos que</p>
-<p>$$I(\alpha, P) = \sum_{i=0}^{n-1} \left| \int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| \leq \sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t = \int_a^b |\alpha'(t)| \mathrm{d}t \tag{0}$$</p>
+<p>$$I(\alpha, P) = \sum_{i=0}^{n-1} \left| \int_{t_i}^{t_{i+1}} \alpha&rsquo;(t) \mathrm{d}t \right| \leq \sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t)| \mathrm{d}t = \int_a^b |\alpha&rsquo;(t)| \mathrm{d}t \tag{0}$$</p>
 <p>Como $\alpha'$ é contínua no intervalo compacto $[a, b]$, ela é uniformemente contínua. Isto significa que, dado $\varepsilon &gt; 0$, existe $\delta &gt; 0$ tal que</p>
-<p>$$|\alpha'(s) - \alpha'(t)| &lt; \varepsilon$$</p>
+<p>$$|\alpha&rsquo;(s) - \alpha&rsquo;(t)| &lt; \varepsilon$$</p>
 <p>sempre que $|s - t| &lt; \delta$. Em particular, se $|P| &lt; \delta$ e $t_i &lt; k &lt; t_{i+1}$</p>
-<p>$$|\alpha'(k)| \leq |\alpha'(t_{i+1})| + \varepsilon$$</p>
+<p>$$|\alpha&rsquo;(k)| \leq |\alpha&rsquo;(t_{i+1})| + \varepsilon$$</p>
 <p>daí que</p>
-<p>$$\int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq |\alpha'(t_{i+1})|(t_{i+1} - t_i) + \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$= \int_{t_i}^{t_{i+1}} |\alpha'(t) + \alpha'(t_{i+1}) - \alpha'(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + \int_{t_i}^{t_{i+1}} |\alpha'(t_{i+1}) - \alpha'(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$
-$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
+<p>$$\int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t)| \mathrm{d}t \leq |\alpha&rsquo;(t_{i+1})|(t_{i+1} - t_i) + \varepsilon (t_{i+1} - t_i)$$</p>
+<p>$$= \int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t) + \alpha&rsquo;(t_{i+1}) - \alpha&rsquo;(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$</p>
+<p>$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha&rsquo;(t) \mathrm{d}t \right| + \int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t_{i+1}) - \alpha&rsquo;(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$
+$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha&rsquo;(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
 <p>ou seja</p>
-<p>$$\int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq \sum_{i=0}^{n-1}\left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\int_a^b |\alpha'(t)| \mathrm{d}t \leq I(\alpha, P) + 2 \varepsilon (b - a)$$</p>
+<p>$$\int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t)| \mathrm{d}t \leq \left|\int_{t_i}^{t_{i+1}} \alpha&rsquo;(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
+<p>$$\sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha&rsquo;(t)| \mathrm{d}t \leq \sum_{i=0}^{n-1}\left|\int_{t_i}^{t_{i+1}} \alpha&rsquo;(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
+<p>$$\int_a^b |\alpha&rsquo;(t)| \mathrm{d}t \leq I(\alpha, P) + 2 \varepsilon (b - a)$$</p>
 <p>por fim, juntando $(0)$ e a linha de cima</p>
-<p>$$0 \leq \int_a^b |\alpha'(t)| \mathrm{d}t - I(\alpha, P) \leq 2 \varepsilon (b - a)$$</p>
+<p>$$0 \leq \int_a^b |\alpha&rsquo;(t)| \mathrm{d}t - I(\alpha, P) \leq 2 \varepsilon (b - a)$$</p>
 <p>como o $\varepsilon$ é genérico, isso conclui a demonstração</p>
 <h3 id="questão-9-">Questão 9 🖋️<a class="anchor" href="#questão-9-">#</a></h3>
 <p><strong>a)</strong> Seja $\alpha: I \rightarrow R^3$ uma curva de classe $C^0$. Use a aproximação de polígonos descrita no Exercício 8 para dar uma definição razoável do comprimento de arco de $\alpha$.</p>
@@ -151,41 +150,41 @@ $$P_2 = (1/n, 0)$$</p>
 <p>para conseguir a nossa cota inferior de comprimento no intervalo. Ficaria</p>
 <p>$$ |P_1 - P_0| + |P_1 - P_2| \leq \frac{2}{n + 1/2} $$</p>
 <p>e, de fato, usando essa estimativa</p>
-<p>$$\int_{1/N}^1 |\alpha'(t)|\mathrm{d}t = \sum_{k = 1}^{N-1} \int_{1/(k+1)}^{1/k} |\alpha'(t)| \mathrm{d}t \leq \sum_{k = 1}^{N-1} \frac{2}{n + 1/2}$$</p>
+<p>$$\int_{1/N}^1 |\alpha&rsquo;(t)|\mathrm{d}t = \sum_{k = 1}^{N-1} \int_{1/(k+1)}^{1/k} |\alpha&rsquo;(t)| \mathrm{d}t \leq \sum_{k = 1}^{N-1} \frac{2}{n + 1/2}$$</p>
 <p>A série da direita pode ser comparada com a série harmônica</p>
 <p>$$\sum_{k = 1}^{\infty} \frac{2}{n + 1/2} \geq \sum_{k = 1}^{\infty} \frac{1}{n} = +\infty$$</p>
 <p>A curva não é retificável.</p>
 <h3 id="questão-10-">Questão 10 🖋️<a class="anchor" href="#questão-10-">#</a></h3>
 <p>(Linhas retas como as mais curtas) Seja $\alpha: I \rightarrow R^3$ uma curva parametrizada. Seja $[a, b] \subset I$ e fixe $\alpha(a) = p$, $\alpha(b) = q$.</p>
 <p><strong>a)</strong> Mostre que, para qualquer vetor constante $v$, com $|v| = 1$,</p>
-<p>$$(q - p) \cdot v = \int_a^b \alpha'(t) \cdot v \mathrm{d}t \leq \int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
+<p>$$(q - p) \cdot v = \int_a^b \alpha&rsquo;(t) \cdot v \mathrm{d}t \leq \int_a^b |\alpha&rsquo;(t)| \mathrm{d}t$$</p>
 <h4 id="resolução-2">Resolução</h4>
 <p>Pelo teorema fundamental do cálculo</p>
-<p>$$q - p = \int_a^b \alpha'(t) \mathrm{d}t$$</p>
+<p>$$q - p = \int_a^b \alpha&rsquo;(t) \mathrm{d}t$$</p>
 <p>tirando o produto interno de ambos os lados</p>
-<p>$$\langle q - p, v \rangle = \left\langle \int_a^b \alpha'(t) \mathrm{d}t, v \right\rangle$$</p>
+<p>$$\langle q - p, v \rangle = \left\langle \int_a^b \alpha&rsquo;(t) \mathrm{d}t, v \right\rangle$$</p>
 <p>pela linearidade da integral</p>
-<p>$$\langle q - p, v \rangle = \int_a^b \left\langle \alpha'(t), v \right\rangle \mathrm{d}t $$</p>
+<p>$$\langle q - p, v \rangle = \int_a^b \left\langle \alpha&rsquo;(t), v \right\rangle \mathrm{d}t $$</p>
 <p>para fechar, pela desigualdade de cauchy-schwarz</p>
-<p>$$\int_a^b \left\langle \alpha'(t), v \right\rangle \mathrm{d}t \leq \int_a^b | \alpha'(t)| \cdot | v | \mathrm{d}t = \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
+<p>$$\int_a^b \left\langle \alpha&rsquo;(t), v \right\rangle \mathrm{d}t \leq \int_a^b | \alpha&rsquo;(t)| \cdot | v | \mathrm{d}t = \int_a^b | \alpha&rsquo;(t)| \mathrm{d}t$$</p>
 <p><strong>b)</strong> Fixe</p>
 <p>$$v = \frac{q-p}{|q-p|}$$</p>
 <p>e mostre que</p>
-<p>$$|\alpha(b) - \alpha(a)| \leq \int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
+<p>$$|\alpha(b) - \alpha(a)| \leq \int_a^b |\alpha&rsquo;(t)| \mathrm{d}t$$</p>
 <p>Isto é, que a curva de menor comprimento ligando $\alpha(a)$ e $\alpha(b)$ é a linha reta ligando esses pontos.</p>
 <h4 id="resolução-3">Resolução</h4>
 <p>Como $v$ é unitário, vale a identidade da letra anterior. Substituindo</p>
-<p>$$\left\langle \alpha(b) - \alpha(a), \frac{\alpha(b)-\alpha(a)}{|\alpha(b)-\alpha(a)|} \right\rangle \leq \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
-<p>$$|\alpha(b)-\alpha(a)| \leq \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
+<p>$$\left\langle \alpha(b) - \alpha(a), \frac{\alpha(b)-\alpha(a)}{|\alpha(b)-\alpha(a)|} \right\rangle \leq \int_a^b | \alpha&rsquo;(t)| \mathrm{d}t$$</p>
+<p>$$|\alpha(b)-\alpha(a)| \leq \int_a^b | \alpha&rsquo;(t)| \mathrm{d}t$$</p>
 <h2 id="capítulo-1--seção-5">Capítulo 1 — Seção 5<a class="anchor" href="#capítulo-1--seção-5">#</a></h2>
 <h3 id="questão-4-">Questão 4 🖋️<a class="anchor" href="#questão-4-">#</a></h3>
 <p>Assuma que todas as normais de uma curva parametrizada passam por um ponto fixado, prove que a curva está contida em um círculo.</p>
 <h4 id="resolução-4">Resolução</h4>
 <p>Sem perda de generalidade, vamos assumir que o ponto fixado é a origem, do contrário poderíamos aplicar um movimento rígido para movimentar o ponto para origem. Dizer que as normais passam pela origem é a mesma coisa que dizer que o vetor posição e o vetor tangente são ortogonais. Então:</p>
-<p>$$ \langle \alpha(t), \alpha'(t) \rangle = 0$$</p>
+<p>$$ \langle \alpha(t), \alpha&rsquo;(t) \rangle = 0$$</p>
 <p>Sabendo dessa identidade, vamos analizar a derivada do quadrado da norma do vetor posição</p>
 <p>$$\frac{\mathrm{d}}{\mathrm{d}t} \langle \alpha(t), \alpha(t) \rangle$$</p>
-<p>$$\langle \alpha(t), \alpha'(t) \rangle + \langle \alpha'(t), \alpha(t) \rangle$$</p>
+<p>$$\langle \alpha(t), \alpha&rsquo;(t) \rangle + \langle \alpha&rsquo;(t), \alpha(t) \rangle$$</p>
 <p>$$0$$</p>
 <p>Ahá! Então a derivada é zero. Daí concluímos que a norma é constante e que a curva está contida no círculo.</p>
 <h3 id="questão-6-">Questão 6 🖋️<a class="anchor" href="#questão-6-">#</a></h3>
@@ -223,27 +222,27 @@ $$P_2 = (1/n, 0)$$</p>
 <p>Usaremos as identidades que mostramos e as identidades que mostraremos no exercício 12 para demonstrar esta questão.</p>
 <p>Comprimento de arco:</p>
 <p>$$\int_a^b |(\rho \circ \alpha)'(t)| \mathrm{d}t$$</p>
-<p>$$\int_a^b |\rho \cdot \alpha'(t)| \mathrm{d}t$$</p>
-<p>$$\int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
+<p>$$\int_a^b |\rho \cdot \alpha&rsquo;(t)| \mathrm{d}t$$</p>
+<p>$$\int_a^b |\alpha&rsquo;(t)| \mathrm{d}t$$</p>
 <p>Curvatura:</p>
-<p>$$\frac{|(\rho \circ \alpha)' \wedge (\rho \circ \alpha)''|}{|\rho \circ \alpha'|^3}$$</p>
-<p>$$\frac{|\rho \cdot \alpha' \wedge \rho \cdot \alpha''|}{|\rho \cdot \alpha'|^3}$$</p>
-<p>$$\frac{|\rho \cdot (\alpha' \wedge \alpha'')|}{|\rho \cdot \alpha'|^3}$$</p>
-<p>$$\frac{|\alpha' \wedge \alpha''|}{|\alpha'|^3}$$</p>
+<p>$$\frac{|(\rho \circ \alpha)&rsquo; \wedge (\rho \circ \alpha)&lsquo;&lsquo;|}{|\rho \circ \alpha'|^3}$$</p>
+<p>$$\frac{|\rho \cdot \alpha&rsquo; \wedge \rho \cdot \alpha'&lsquo;|}{|\rho \cdot \alpha'|^3}$$</p>
+<p>$$\frac{|\rho \cdot (\alpha&rsquo; \wedge \alpha&rsquo;')|}{|\rho \cdot \alpha'|^3}$$</p>
+<p>$$\frac{|\alpha&rsquo; \wedge \alpha'&lsquo;|}{|\alpha'|^3}$$</p>
 <p>Torção:</p>
-<p>$$-\frac{((\rho \circ \alpha)' \wedge (\rho \circ \alpha)'') \cdot (\rho \circ \alpha)'''}{|(\rho \circ \alpha) \wedge (\rho \circ \alpha)''|^2}$$</p>
-<p>$$-\frac{(\rho \cdot \alpha' \wedge \rho \cdot \alpha'') \cdot \rho \cdot \alpha'''}{|\rho \cdot \alpha \wedge \rho \cdot \alpha''|^2}$$</p>
-<p>$$-\frac{(\rho \cdot (\alpha' \wedge \alpha'')) \cdot \rho \cdot \alpha'''}{|\rho \cdot (\alpha \wedge \alpha'')|^2}$$</p>
-<p>$$-\frac{(\alpha' \wedge \alpha'') \cdot \alpha'''}{|\alpha \wedge \alpha''|^2}$$</p>
+<p>$$-\frac{((\rho \circ \alpha)&rsquo; \wedge (\rho \circ \alpha)'') \cdot (\rho \circ \alpha)'''}{|(\rho \circ \alpha) \wedge (\rho \circ \alpha)&lsquo;&lsquo;|^2}$$</p>
+<p>$$-\frac{(\rho \cdot \alpha&rsquo; \wedge \rho \cdot \alpha&rsquo;') \cdot \rho \cdot \alpha&rsquo;''}{|\rho \cdot \alpha \wedge \rho \cdot \alpha'&lsquo;|^2}$$</p>
+<p>$$-\frac{(\rho \cdot (\alpha&rsquo; \wedge \alpha&rsquo;')) \cdot \rho \cdot \alpha&rsquo;''}{|\rho \cdot (\alpha \wedge \alpha&rsquo;')|^2}$$</p>
+<p>$$-\frac{(\alpha&rsquo; \wedge \alpha&rsquo;') \cdot \alpha&rsquo;''}{|\alpha \wedge \alpha'&lsquo;|^2}$$</p>
 <h3 id="questão-12">Questão 12<a class="anchor" href="#questão-12">#</a></h3>
-<p>Seja $\alpha: I \rightarrow R^3$ uma curva regular parametrizada (não necessariamente por comprimento de arco) e seja $\beta: J \rightarrow R^3$ uma parametrização de $\alpha(I)$ pelo comprimento de arco $s = s(t)$, medida de $t_0 \in I$s. Seja $t = t(s)$ a função inversa de $s$ e fixe $\mathrm{d}\alpha/\mathrm{d}t = \alpha'$, $\mathrm{d}^2\alpha/\mathrm{d}t^2 = \alpha''$, etc. Prove que</p>
-<p><strong>a)</strong> $\mathrm{d}t/\mathrm{d}s = 1/|\alpha'|$, $\mathrm{d}^2t/\mathrm{d}s^2 = -(\alpha'\cdot \alpha''/|\alpha'|^4)$.</p>
+<p>Seja $\alpha: I \rightarrow R^3$ uma curva regular parametrizada (não necessariamente por comprimento de arco) e seja $\beta: J \rightarrow R^3$ uma parametrização de $\alpha(I)$ pelo comprimento de arco $s = s(t)$, medida de $t_0 \in I$s. Seja $t = t(s)$ a função inversa de $s$ e fixe $\mathrm{d}\alpha/\mathrm{d}t = \alpha'$, $\mathrm{d}^2\alpha/\mathrm{d}t^2 = \alpha'&lsquo;$, etc. Prove que</p>
+<p><strong>a)</strong> $\mathrm{d}t/\mathrm{d}s = 1/|\alpha'|$, $\mathrm{d}^2t/\mathrm{d}s^2 = -(\alpha&rsquo;\cdot \alpha&rsquo;'/|\alpha'|^4)$.</p>
 <p><strong>b)</strong> A curvatora de $\alpha$ em $t \in I$ é</p>
-<p>$$k(t) = \frac{|\alpha'\wedge \alpha''|}{|\alpha'|^3}$$</p>
+<p>$$k(t) = \frac{|\alpha&rsquo;\wedge \alpha'&lsquo;|}{|\alpha'|^3}$$</p>
 <p><strong>c)</strong> A torção de $\alpha$ em $t \in I$ é</p>
-<p>$$\tau(t) = - \frac{(\alpha' \wedge \alpha'') \cdot \alpha'''}{|\alpha \wedge \alpha''|^2}$$</p>
+<p>$$\tau(t) = - \frac{(\alpha&rsquo; \wedge \alpha&rsquo;') \cdot \alpha&rsquo;''}{|\alpha \wedge \alpha'&lsquo;|^2}$$</p>
 <p><strong>d)</strong> Se $\alpha: I \rightarrow R^2$ é uma curva plana $\alpha(t) = (x(t), y(t))$, a curvatura com sinal de $\alpha$ no $t$ é</p>
-<p>$$k(t) = \frac{x&rsquo;y'' - x'' y'}{\left( (x')^2 + (y')^2 \right)^{3/2}}$$</p>
+<p>$$k(t) = \frac{x&rsquo;y&rsquo;&rsquo; - x&rsquo;&rsquo; y&rsquo;}{\left( (x&rsquo;)^2 + (y&rsquo;)^2 \right)^{3/2}}$$</p>
 <h2 id="capítulo-2--seção-2">Capítulo 2 — Seção 2<a class="anchor" href="#capítulo-2--seção-2">#</a></h2>
 <h3 id="questão-16-">Questão 16 🖋️<a class="anchor" href="#questão-16-">#</a></h3>
 <p>Uma forma de definir um sistema de coordenadas para a esfera $S^2$, dada por $x^2 + y^2 + (z-1)^2 = 1$$ é considerar a chamada <em>projeção estereográfica</em> $\pi: S^2 \setminus {N} \rightarrow R^2$ que carrega um ponto $p = (x, y, z)$ da esfera $S^2$ menos o polo norte $N = (0, 0, 2)$ na intersecção com o plano $xy$ com a linha reta que conecta $N$ a $p$. Seja $(u, v) = \pi(x, y, z)$, onde $(x, y, z) \in S^2 \setminus {N}$ e $(u, v)$ pertence ao plano $xy$.</p>
@@ -285,13 +284,13 @@ z = \frac{2(u^2 + v^2)}{u^2 + v^2 + 4} \\<br>
 <ol>
 <li>$\mathbf{x}$ é diferenciável</li>
 <li>$\mathbf{x}$ é homeomorfismo</li>
-<li>para todo $t \in I$ temos $\mathbf{x}' \neq 0$</li>
+<li>para todo $t \in I$ temos $\mathbf{x}&rsquo; \neq 0$</li>
 </ol>
 <p><strong>a)</strong> A imagem inversa de um valor regular de uma função diferenciável</p>
 <p>$$f: U \subset R^2 \rightarrow R$$</p>
 <p>é uma curva plana regular. Dê um exemplo de tal curva que não é conexa.</p>
 <h4 id="resolução-10">Resolução</h4>
-<p>Suponha que $u \in R$ é um valor regular de $f$ e seja $p = (x_0, y_0)$ um ponto de $f^{-1}(p)$. Sabemos que $f'(u) \neq 0$, então alguma das coordenadas dessa derivada seria diferente de $0$. Sem perda de generalizada podemos assumir que é o $y$. Vamos definir uma $F : R^2 \rightarrow R^2$ tal que $F(x, y) = (x, f(x, y))$. A derivada de $F$ é dada por
+<p>Suponha que $u \in R$ é um valor regular de $f$ e seja $p = (x_0, y_0)$ um ponto de $f^{-1}(p)$. Sabemos que $f&rsquo;(u) \neq 0$, então alguma das coordenadas dessa derivada seria diferente de $0$. Sem perda de generalizada podemos assumir que é o $y$. Vamos definir uma $F : R^2 \rightarrow R^2$ tal que $F(x, y) = (x, f(x, y))$. A derivada de $F$ é dada por
 $$\mathrm{d}F_p =
 \begin{pmatrix}
 1 &amp; 0 \\<br>
@@ -310,9 +309,9 @@ f_x &amp; f_y \\<br>
 <p>Suponha que tivéssemos uma $\varphi: (-\varepsilon, \varepsilon) \rightarrow R^2$ que parametrizasse uma vizinhança do $0$ de forma que $\varphi(0) = (0, 0)$ e</p>
 <p>$$t^2 = \varphi(t)^3$$</p>
 <p>derivando ambos os lados duas vezes</p>
-<p>$$2 \cdot t = 3 \cdot \varphi(t)^2 \varphi'(t)$$</p>
-<p>$$2 = 3 \cdot (2\varphi(t) \varphi'(t)^2 + \varphi(t)^2 \varphi''(t))$$
-$$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
+<p>$$2 \cdot t = 3 \cdot \varphi(t)^2 \varphi&rsquo;(t)$$</p>
+<p>$$2 = 3 \cdot (2\varphi(t) \varphi&rsquo;(t)^2 + \varphi(t)^2 \varphi&rsquo;'(t))$$
+$$2 = 3 \varphi(t) \cdot (2\varphi&rsquo;(t)^2 + \varphi(t) \varphi&rsquo;'(t))$$</p>
 <p>mas $\varphi(0) = 0$, absurdo. Daí que a curva não pode ser regular.</p>
 <h2 id="capítulo-2---seção-3">Capítulo 2 - Seção 3<a class="anchor" href="#capítulo-2---seção-3">#</a></h2>
 <h3 id="questão-6">Questão 6<a class="anchor" href="#questão-6">#</a></h3>
@@ -355,7 +354,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
   
     <a class="pagination__item" href="https://rigille.github.io/exercicios/prova5-tal/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Prova 5 — Tópicos de Álgebra Linear</span>
+      <span class="pagination__title" >Prova 5 — Tópicos de Álgebra Linear</a>
     </a>
   
 </div>
@@ -388,7 +387,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
+      <a class="social-icons__link" title="GitHub"
          href="https://github.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
@@ -397,7 +396,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
+      <a class="social-icons__link" title="Twitter"
          href="https://twitter.com/impression28"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
@@ -452,7 +451,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
    
 
   
-  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
