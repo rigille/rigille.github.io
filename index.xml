@@ -6,10 +6,19 @@
     <description>Recent content on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 22 Aug 2021 20:20:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 21 Oct 2021 10:00:00 -0300</lastBuildDate>
     
 	<atom:link href="https://rigille.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>why i&#39;m interested in constructive mathematics</title>
+      <link>https://rigille.github.io/blog/why-constructive/</link>
+      <pubDate>Thu, 21 Oct 2021 10:00:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/blog/why-constructive/</guid>
+      <description>i want to live in a future where if a mathematician proves that a certain subset of the plane is path-connected then a programmer could import the theorem and use it for the pathfinding of his game.</description>
+    </item>
     
     <item>
       <title>barcos são surpreendentemente eficientes</title>
