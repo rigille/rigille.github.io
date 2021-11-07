@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 21 Oct 2021 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 27 Oct 2021 19:00:00 -0300</lastBuildDate>
     
 	<atom:link href="https://rigille.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>uma estratégia para atacar problemas grandes</title>
+      <link>https://rigille.github.io/blog/uma-estrategia-para-atacar-problemas-grandes/</link>
+      <pubDate>Wed, 27 Oct 2021 19:00:00 -0300</pubDate>
+      
+      <guid>https://rigille.github.io/blog/uma-estrategia-para-atacar-problemas-grandes/</guid>
+      <description>Felizmente é várias possível conseguir o que queremos com ações nossas, sem muitas outras pessoas envolvidas e sem muitas variáveis externas. Nesses casos é fácil determinar as causas e efeitos, e a nossa intuição funciona muito bem. Por outro lado pode ser que haja milhões, bilhões de pessoas envolvidas. Nesse caso a nossa intuição nos joga pro caminho errado, que além de não funcionar pode desperdiçar nosso tempo. Eu gostaria de explorar como isso acontece e propor uma estratégia que, apesar de não ser fácil, tem mais chance de funcionar nesses casos complicados.</description>
+    </item>
     
     <item>
       <title>why i&#39;m interested in constructive mathematics</title>
