@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -113,17 +114,17 @@
 <p><strong>E. 4. b)</strong> Seja</p>
 <p>$$B =
 \begin{bmatrix}
--1 &amp;  1 &amp; 0 &amp; 0 &amp;  0 \\<br>
-0 &amp; -1 &amp; 0 &amp; 0 &amp;  0 \\<br>
-0 &amp;  0 &amp; 2 &amp; 0 &amp;  0 \\<br>
-0 &amp;  0 &amp; 0 &amp; 0 &amp; -3 \\<br>
-0 &amp;  0 &amp; 0 &amp; 3 &amp;  0 \\<br>
+-1 &amp;  1 &amp; 0 &amp; 0 &amp;  0 \\
+0 &amp; -1 &amp; 0 &amp; 0 &amp;  0 \\
+0 &amp;  0 &amp; 2 &amp; 0 &amp;  0 \\
+0 &amp;  0 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp;  0 &amp; 0 &amp; 3 &amp;  0 \\
 \end{bmatrix}
 $$</p>
 <p>Encontre a solução $\varphi$ para o PVI</p>
 <p>$$
 \begin{cases}
-x&rsquo; = Bx \\<br>
+x' = Bx \\
 x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5
 \end{cases}
 $$</p>
@@ -132,67 +133,67 @@ $$</p>
 <p>Sabemos, pelo <strong>Teorema 2.63</strong> (pág. 198) que a solução é da forma $x(t) = e^{Bt}x(0)$. Então para encontrar a solução é suficiente calcular $e^{Bt}$. Para isso, vamos aproveitar que a matriz está na forma canônica de Jordan. Nomeadamente, $B = \mathrm{diag}(J_1, J_2,J_3)$ onde.</p>
 <p>$$J_1 =
 \begin{bmatrix}
--1 &amp;  1\\<br>
-0 &amp; -1\\<br>
+-1 &amp;  1\\
+0 &amp; -1\\
 \end{bmatrix}
 $$</p>
 <p>$$
 J_2 =
 \begin{bmatrix}
-2\\<br>
+2\\
 \end{bmatrix}
 $$</p>
 <p>$$
 J_3 =
 \begin{bmatrix}
-0 &amp; -3 \\<br>
-3 &amp;  0 \\<br>
+0 &amp; -3 \\
+3 &amp;  0 \\
 \end{bmatrix}
 $$</p>
 <p>Isso ajuda porque a identidade $B^n = \mathrm{diag}(J_1^n, J_2^n, J_3^n)$ garante que $e^{Bt} = \mathrm{diag}(e^{J_1 t}, e^{J_2 t}, e^{J_3 t})$.</p>
 <p>Primeiramente
 $$e^{J_2 t} =
 \begin{bmatrix}
-e^{2t}\\<br>
+e^{2t}\\
 \end{bmatrix}$$</p>
 <p>igual no caso escalar. Por outro lado, no caso de $J_1$</p>
 <p>$$
 e^{J_1 t} =
 \begin{bmatrix}
-e^{-t} &amp;  te^t\\<br>
-0 &amp; e^{-t}\\<br>
+e^{-t} &amp;  te^t\\
+0 &amp; e^{-t}\\
 \end{bmatrix}
 $$</p>
 <p>que é parecido com o caso anterior, tomando a exponencial da diagonal mas com esse termo a mais na parte superior direita. podemos agradecer ao $1$ na superdiagonal por eles. Por último no caso do $J_3$</p>
 <p>$$
 e^{J_3 t} =
 \begin{bmatrix}
-\mathrm{cos}(3t) &amp; \mathrm{sin}(3t)\\<br>
--\mathrm{sin}(3t) &amp; \mathrm{cos}(3t)\\<br>
+\mathrm{cos}(3t) &amp; \mathrm{sin}(3t)\\
+-\mathrm{sin}(3t) &amp; \mathrm{cos}(3t)\\
 \end{bmatrix}
 $$</p>
 <p>tem pelo menos duas formas de ver isso, a primeira e fazendo as contas e reparando as séries de taylor que aparecem. a segunda é fazendo um isomorfismo entre a álgebra de matrizes da forma
 $
 \begin{bmatrix}
-a &amp; b\\<br>
--b &amp; a\\<br>
+a &amp; b\\
+-b &amp; a\\
 \end{bmatrix}
 $
 e os números complexos. Juntando tudo temos que a solução é</p>
 <p>$$x(t) = e^{Bt}x(0) =
 \begin{bmatrix}
-e^{-t} &amp; te^t &amp; 0 &amp; 0 &amp; 0\\<br>
-0 &amp; e^{-t} &amp; 0 &amp; 0 &amp; 0\\<br>
-0 &amp; 0 &amp; e^{2t} &amp; 0 &amp; 0\\<br>
-0 &amp; 0 &amp; 0 &amp; \mathrm{cos}(3t) &amp; \mathrm{sin}(3t)\\<br>
-0 &amp; 0 &amp; 0 &amp; -\mathrm{sin}(3t) &amp; \mathrm{cos}(3t)\\<br>
+e^{-t} &amp; te^t &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; e^{-t} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; e^{2t} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \mathrm{cos}(3t) &amp; \mathrm{sin}(3t)\\
+0 &amp; 0 &amp; 0 &amp; -\mathrm{sin}(3t) &amp; \mathrm{cos}(3t)\\
 \end{bmatrix}
 \begin{bmatrix}
-a_1\\<br>
-a_2\\<br>
-a_3\\<br>
-a_4\\<br>
-a_5\\<br>
+a_1\\
+a_2\\
+a_3\\
+a_4\\
+a_5\\
 \end{bmatrix}
 $$</p>
 <p>Se $a_1 = a_2 = a_3 = 0$ então as coordenadas da solução são todas combinações lineares de senos e cossenos, o que é limitado.
@@ -241,7 +242,7 @@ $$\geq M$$</p>
   
     <a class="pagination__item" href="https://rigille.github.io/exercicios/lista1-tal/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Lista 1 — Tópicos de Álgebra Linear</a>
+      <span class="pagination__title" >Lista 1 — Tópicos de Álgebra Linear</span>
     </a>
   
 </div>
@@ -274,18 +275,26 @@ $$\geq M$$</p>
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -305,7 +314,7 @@ $$\geq M$$</p>
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

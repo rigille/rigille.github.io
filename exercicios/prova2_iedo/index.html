@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -112,12 +113,12 @@
 <h2 id="questão-1">Questão 1<a class="anchor" href="#questão-1">#</a></h2>
 <h3 id="enunciado">Enunciado<a class="anchor" href="#enunciado">#</a></h3>
 <p>Sistemas conservativos unidimensionais: Considere a equação</p>
-<p>$$x&rsquo;&rsquo; = F(x)$$</p>
+<p>$$x'' = F(x)$$</p>
 <p>num intervalo da reta. Claramente ela é equivalente ao sistema</p>
 <p>$$
 \begin{cases}
-x&rsquo; = v \\<br>
-v&rsquo; = F(x)
+x' = v \\
+v' = F(x)
 \end{cases}
 \tag{1}
 $$</p>
@@ -128,24 +129,24 @@ $$</p>
 <p>$$\frac{\mathrm{d}}{\mathrm{d}t} E$$
 $$\frac{\mathrm{d}}{\mathrm{d}t} T + \frac{\mathrm{d}}{\mathrm{d}t} U$$
 $$\frac{\mathrm{d}}{\mathrm{d}t} \frac{v^2}{2} - \frac{\mathrm{d}}{\mathrm{d}t} \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$$
-$$v v&rsquo; - F(x)x'$$
-$$x&rsquo; F(x) - F(x)x'$$
+$$v v' - F(x)x'$$
+$$x' F(x) - F(x)x'$$
 $$0$$</p>
 <p>sendo assim $E$ é constante! De fato uma integral primeira.</p>
 <p><strong>b)</strong> Um ponto de equilíbrio do sistema precisa satisfazer o sistema</p>
 <p>$$
 \begin{cases}
-x&rsquo; = v = 0\\<br>
-v&rsquo; = F(x) = 0
+x' = v = 0\\
+v' = F(x) = 0
 \end{cases}
 $$</p>
 <p>a primeira equação já nos diz que $v = 0$ e que o ponto de equilíbrio precisa estar no eixo dos $x.$</p>
 <p>Agora suponha que a solução é periódica, isso é, que existe $\Delta t$ tal que, para todo $t$, vale $x(t + \Delta t) = x(t)$ e $v(t + \Delta t) = v(t)$. Queremos demonstrar que, se $(a, b)$ faz parte de uma órbita, então $(a, -b)$ também faz.</p>
-<p>Primeiramente, como $t \mapsto x(t)$ é uma função contínua, ela deve assumir um valor de máximo $x(m)$ no intervalo compacto $[-\Delta t, \Delta t]$. Se o máximo que encontramos está no interior do intervalo, então ele é um ponto crítico. Se o máximo estivesse na borda do compacto, seria um ponto crítico <em>também</em>, porque poderia ser visto como um máximo no interior do intervalo $[0, 2 \Delta t]$. Em todo caso $x&rsquo;(m) = v(m) = 0$ e essa é a nossa intersecção com o eixo dos $x$.</p>
+<p>Primeiramente, como $t \mapsto x(t)$ é uma função contínua, ela deve assumir um valor de máximo $x(m)$ no intervalo compacto $[-\Delta t, \Delta t]$. Se o máximo que encontramos está no interior do intervalo, então ele é um ponto crítico. Se o máximo estivesse na borda do compacto, seria um ponto crítico <em>também</em>, porque poderia ser visto como um máximo no interior do intervalo $[0, 2 \Delta t]$. Em todo caso $x'(m) = v(m) = 0$ e essa é a nossa intersecção com o eixo dos $x$.</p>
 <p>Além disso, a função $t \mapsto (x(2m - t), -v(2m - t))$ também é uma solução. Como podemos verificar com</p>
-<p>$$\frac{\mathrm{d}}{\mathrm{d}t} x(2m - t) = -x&rsquo;(2m - t) = -v(2m - t)$$</p>
+<p>$$\frac{\mathrm{d}}{\mathrm{d}t} x(2m - t) = -x'(2m - t) = -v(2m - t)$$</p>
 <p>e</p>
-<p>$$\frac{\mathrm{d}}{\mathrm{d}t} (-v(2m - t)) = v&rsquo;(2m - t) = F(x(2m - t))$$</p>
+<p>$$\frac{\mathrm{d}}{\mathrm{d}t} (-v(2m - t)) = v'(2m - t) = F(x(2m - t))$$</p>
 <p>e ela também passa pelo ponto</p>
 <p>$$(x(m), v(m)) = (x(m), -v(m)) = (x(m), 0)$$</p>
 <p>Daí, pelo teorema de existência e unicidade</p>
@@ -159,22 +160,25 @@ $$</p>
 <p>Já a volta vem do teorema de Poincaré-Bendixon. Se uma órbita faz parte de um conjunto minimal, o seu conjunto $\omega$-limite também faz. Ele é composto por limites de sequências de pontos do compacto, e sequências no compacto convergem no compacto. O teorema diz que, se não há singularidades, o conjunto $\omega$-limite é uma órbita periódica. Se há singularidades, o $\omega$-limite é uma singularidade ou singularidades conectadas por órbitas homoclínicas ou heteroclínicas. Esta última possibilidade não é um conjunto minimal, visto que o subconjunto das singularidades é invariante. Então as duas primeiras opções são as únicas.</p>
 <p>Esse teorema não é necessariamente valido para dimensões maiores. Meu raciocínio é que a equação diferencial</p>
 <p>$$\begin{cases}
-x&rsquo; = 1 \\<br>
-y&rsquo; = \sqrt{2}
+x' = 1 \\
+y' = \sqrt{2}
 \end{cases}
 \tag{3}$$</p>
-<p>definida no toro $\mathbb{R}^2/\mathbb{Z}^2$ só tem órbitas não-periódicas e densas em seu domínio. O <a href="https://en.wikipedia.org/wiki/Kronecker%27s_theorem">Teorema de Kronecker</a> nos garante isso. Sendo assim o único conjunto minimal é o próprio domínio, e isso não se encaixa em nenhum dos casos do teorema. Claro que $\mathbb{R}^2/\mathbb{Z}^2$ não é nenhum $\mathbb{R}^n$, mas podemos imergir ele no $\mathbb{R}^4$ com a aplicação</p>
+<p>definida no toro $\mathbb{R}^2/\mathbb{Z}^2$ só tem órbitas não-periódicas e densas em seu domínio. O <a href="https://en.wikipedia.org/wiki/Kronecker%27s_theorem" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Teorema de Kronecker</a> nos garante isso. Sendo assim o único conjunto minimal é o próprio domínio, e isso não se encaixa em nenhum dos casos do teorema. Claro que $\mathbb{R}^2/\mathbb{Z}^2$ não é nenhum $\mathbb{R}^n$, mas podemos imergir ele no $\mathbb{R}^4$ com a aplicação</p>
 <p>$$(u, v) \mapsto (\sin u, \cos u, \sin v, \cos v)$$</p>
 <p>que é uma isometria (mas de $\mathbb{R}^2/2\pi\mathbb{Z}^2$)!. Nessa imersão um exemplo de solução de $(3)$ se torna</p>
 <p>$$\varphi(t) = (\sin t, \cos t, \sin \sqrt{2}t, \cos \sqrt{2}t)$$</p>
 <p>derivando</p>
-<p>$$\varphi&rsquo;(t) = (\cos t, -\sin t, \sqrt{2}\cos \sqrt{2}t, -\sin \sqrt{2}t)$$</p>
+<p>$$\varphi'(t) = (\cos t, -\sin t, \sqrt{2}\cos \sqrt{2}t, -\sin \sqrt{2}t)$$</p>
 <p>a partir daí podemos relacionar $\varphi$ e $\varphi'$ em uma EDO de primeira ordem.</p>
 <p>$$\begin{cases}
-x_1&rsquo; = x_2 \\<br>
-x_2&rsquo; = -x_1 \\<br>
-x_3&rsquo; = \sqrt{2}x_4 \\<br>
-x_4&rsquo; = -\sqrt{2}x_3
+x_1' = x_2 \\
+x_2' = -x_1 \\
+x_3' = \sqrt{2}x_4 \\
+x_4' = -\sqrt{2}x_3
 \end{cases}$$</p>
 <p>que serve como exemplo. Acredito que poderíamos fazer o mesmo com uma imersão do toro em $\mathbb{R}^3$… mas as contas ficariam mais complicadas.</p>
 <h2 id="questão-3">Questão 3<a class="anchor" href="#questão-3">#</a></h2>
@@ -182,9 +186,9 @@ x_4&rsquo; = -\sqrt{2}x_3
 <p>Mostre que, para quaisquer valores positivos nos parâmetros $s, r, b$ existe $R &gt; 0$ tal que $V : \mathbb{R}^3 \rightarrow \mathbb{R}$ dada por $V(x, y, z) = rx^2 + sy^2 + s(z - 2r)^2$ é uma função de Lyapunov da equação de Lorenz</p>
 <p>$$
 \begin{cases}
-x&rsquo; = -sx + sy \\<br>
-y&rsquo; = rx - y - xz \\<br>
-z&rsquo; = xy - bz
+x' = -sx + sy \\
+y' = rx - y - xz \\
+z' = xy - bz
 \end{cases}
 \tag{2}
 $$</p>
@@ -195,8 +199,8 @@ $$</p>
 <p>para que $V$ seja uma função de Lyapunov. Então primeiro calculemos $\nabla V$</p>
 <p>$$\nabla V(x, y, z) =
 \begin{bmatrix}
-2rx \\<br>
-2sy \\<br>
+2rx \\
+2sy \\
 2s(z-2r)
 \end{bmatrix}$$</p>
 <p>em seguida o produto interno</p>
@@ -211,10 +215,10 @@ $$</p>
 <p>Daí que todas as soluções são limitadas, todas elas estarão contidas dentro dessa esfera depois de certo tempo. Portanto estarão definidas em todo $[0, \infty)$.</p>
 <h2 id="questão-4">Questão 4<a class="anchor" href="#questão-4">#</a></h2>
 <h3 id="enunciado-3">Enunciado<a class="anchor" href="#enunciado-3">#</a></h3>
-<p>Seja $f: \mathbb{R}^n \rightarrow \mathbb{R}^n$ de classe $C^1$ tal que $f(0) = 0$. A solução $0 \in \mathbb{R}^n$ diz-se globalmente estável quando for estável e $\lim_{t \rightarrow +\infty} \varphi(t) = 0$ para toda solução $\varphi$ de $x&rsquo; = f(x)$. Seja $V: \mathbb{R} \rightarrow \mathbb{R}$ uma função de Liapunov estrita para a EDO em $0$. Suponha que para cada $c &gt; 0$ dado que exista $R &gt; 0$ tal que $|x| &gt; R$ implica $V(x) &gt; c$, para todo $x \in \mathbb{R}^n$. Prove que $0$ é uma solução globalmente estável. Observe que não é necessária a condição $\{ x \in \mathbb{R}^n; V(x) = 0 \} = \{ 0 \}$ e é suficiente supor que este conjunto não contém trajetória inteira e distinta de $x(t) \equiv 0$.</p>
+<p>Seja $f: \mathbb{R}^n \rightarrow \mathbb{R}^n$ de classe $C^1$ tal que $f(0) = 0$. A solução $0 \in \mathbb{R}^n$ diz-se globalmente estável quando for estável e $\lim_{t \rightarrow +\infty} \varphi(t) = 0$ para toda solução $\varphi$ de $x' = f(x)$. Seja $V: \mathbb{R} \rightarrow \mathbb{R}$ uma função de Liapunov estrita para a EDO em $0$. Suponha que para cada $c &gt; 0$ dado que exista $R &gt; 0$ tal que $|x| &gt; R$ implica $V(x) &gt; c$, para todo $x \in \mathbb{R}^n$. Prove que $0$ é uma solução globalmente estável. Observe que não é necessária a condição $\{ x \in \mathbb{R}^n; V(x) = 0 \} = \{ 0 \}$ e é suficiente supor que este conjunto não contém trajetória inteira e distinta de $x(t) \equiv 0$.</p>
 <h3 id="resolução-3">Resolução<a class="anchor" href="#resolução-3">#</a></h3>
 <p>A primeira afirmação que podemos concluir do enunciado é que pra todo $c &gt; 0$ vale que $V^{-1}([0, c])$ é limitado, ele está contido na bola centrada na origem de raio $R$. Além disso é fechado, pré-imagem de uma função contínua em um intervalo fechado. Juntando as duas informações, ele é compacto. Para toda solução $\varphi(t)$ vale $\varphi(t) \in V^{-1}([0, \varphi(t_0)])$.</p>
-<p>Como a órbita está dentro do compacto, existe uma sequência de $t_n$'s tais que $\varphi(t_n)$ converge para um ponto que chamaremos $x_1$. Pelo fato de $V$ ser Lyapunov estrita, vale para todo $t$ que</p>
+<p>Como a órbita está dentro do compacto, existe uma sequência de $t_n$&rsquo;s tais que $\varphi(t_n)$ converge para um ponto que chamaremos $x_1$. Pelo fato de $V$ ser Lyapunov estrita, vale para todo $t$ que</p>
 <p>$$V(\varphi(t)) &gt; V(x_1) \tag{🙂}$$</p>
 <p>Até aí tudo bem, mas quem é $x_1$? Se $x_1$ for uma singularidade, então precisa ser $0$ para que a solução constante igual a $x_1$ não viole a hipótese de $V$ ser Lyapunov estrita e o teorema está demonstrado. Se $x_1$ não é uma singularidade, então ele tem uma vizinhança tubular, ilustrada abaixo.</p>
 <p><img src="/prova5_iedo.png" alt="teste"></p>
@@ -258,7 +262,7 @@ $$</p>
   
     <a class="pagination__item" href="https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >o fecho convexo de um conjunto finito é um politopo</a>
+      <span class="pagination__title" >o fecho convexo de um conjunto finito é um politopo</span>
     </a>
   
 </div>
@@ -291,18 +295,26 @@ $$</p>
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -354,7 +366,7 @@ $$</p>
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -67,7 +68,7 @@
       "datePublished": "2021-02-07 17:43:00 -0300 -03",
       "dateModified" : "2021-02-07 17:43:00 -0300 -03",
       "url" : "https:\/\/rigille.github.io\/blog\/as-curvas-e-as-quinas\/",
-      "wordCount" : "1374",
+      "wordCount" : "1368",
       "keywords" : ["geometria-diferencial", "Blog"]
     }
   
@@ -122,7 +123,7 @@
           </header>
           <article class="post__content">
               
-<p>o curso de geometria diferencial abre com a definição de uma <em>curva diferencial parametrizada</em>, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&rsquo;(p) \neq 0$ para todo $p \in I$.</p>
+<p>o curso de geometria diferencial abre com a definição de uma <em>curva diferencial parametrizada</em>, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f'(p) \neq 0$ para todo $p \in I$.</p>
 <p>essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> que saem serpenteando suavemente pelo espaço. para esse fim a última condição parece desnecessária. não é possível que uma curva que tenha derivadas de todas as ordens tenha uma quina, certo? mesmo se a derivada for $0$.</p>
 <p>é possível, o primeiro contraexemplo para isso é a função $f : \mathbb{R} \rightarrow \mathbb{R}^2$ tal que $f(t) = (-t^3, t^2)$. ela se parece mais ou menos assim:</p>
 
@@ -136,27 +137,33 @@
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/800px-Absolute_value.svg.png" alt="gráfico valor absoluto"></p>
 <p>a primeira parametrização que vem a mente é $f(t) = (t, |t|)$, mas ela não tem nem a primeira derivada. spoiler: existe uma parametrização que traça a mesma curva e que tem todas as derivadas, mas se eu a mostrasse agora para você ela pareceria ridiculamente tirada do chapeu. em vez disso, tentaremos chegar nela dando passos razoáveis.</p>
 <p>a primeira ideia é a seguinte: se tivermos uma bijeção crescente $\varphi : \mathbb{R} \rightarrow \mathbb{R}$, então $f \circ \varphi$ seria uma outra parametrização da curva. poderíamos calcular a sua derivada aplicando a regra da cadeia<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>:</p>
-<p>$$(f \circ \varphi)&rsquo; = (f&rsquo; \circ \varphi) \cdot \varphi'$$</p>
-<p>então… se déssemos um jeito de deixar $\varphi&rsquo;(0) = 0$, teríamos que $f \circ \varphi$ possuiria uma primeira derivada.</p>
+<p>$$(f \circ \varphi)' = (f' \circ \varphi) \cdot \varphi'$$</p>
+<p>então… se déssemos um jeito de deixar $\varphi'(0) = 0$, teríamos que $f \circ \varphi$ possuiria uma primeira derivada.</p>
 <p>um exemplo disso seria se fizéssemos $\varphi(t) = t\cdot|t|$, isso realmente faz com que $f \circ \varphi (t) = (t\cdot|t|, |t\cdot|t||) = (t\cdot|t|, t^2)$ seja uma função derivável. progresso! no entanto não acabamos. a sua derivada é $(f \circ \varphi)'(t) = \left(|t|, t\right)$, a segunda derivada não existe.</p>
 <p>a regra da cadeia nos deu a ideia de zerar a primeira derivada, vejamos então o que ela nos diz sobre a segunda.</p>
-<p>$$(f \circ \varphi)&rsquo;&rsquo; = ((f&rsquo; \circ \varphi) \cdot \varphi&rsquo;)&lsquo;$$</p>
+<p>$$(f \circ \varphi)'' = ((f' \circ \varphi) \cdot \varphi')'$$</p>
 <p>usando a regra do produto</p>
-<p>$$((f&rsquo; \circ \varphi) \cdot \varphi&rsquo;)&rsquo; = (f&rsquo; \circ \varphi)&rsquo; \cdot \varphi&rsquo; + (f&rsquo; \circ \varphi) \cdot \varphi'&lsquo;$$
-$$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \varphi) \cdot \varphi'&lsquo;$$</p>
-<p>então precisamos que $\varphi&rsquo;'(0) = \varphi&rsquo;(0) = 0$ para chegar em uma parametrização derivável duas vezes. pra isso $\varphi(t) = t\cdot|t|^2$ funciona. para conseguir derivar três vezes, provavelmente $\varphi(t) = t\cdot|t|^3$ funciona. além disso $\varphi(t) = t\cdot|t|^n$ deve funcionar para $n$ derivadas.</p>
+<p>$$((f' \circ \varphi) \cdot \varphi')' = (f' \circ \varphi)' \cdot \varphi' + (f' \circ \varphi) \cdot \varphi''$$
+$$= f'' \circ \varphi \cdot (\varphi')^2 + (f' \circ \varphi) \cdot \varphi''$$</p>
+<p>então precisamos que $\varphi''(0) = \varphi'(0) = 0$ para chegar em uma parametrização derivável duas vezes. pra isso $\varphi(t) = t\cdot|t|^2$ funciona. para conseguir derivar três vezes, provavelmente $\varphi(t) = t\cdot|t|^3$ funciona. além disso $\varphi(t) = t\cdot|t|^n$ deve funcionar para $n$ derivadas.</p>
 <p>provavelmente…</p>
-<p>talvez se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$ poderíamos garantir a existência de $(f \circ \varphi)^{(n)}$, mas a expressão da derivada está começando a ficar fora de controle. existe uma <a href="https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula">fórmula</a> pra $n$-ésima derivada de uma função composta dada pela regra da cadeia. sublime! profunda! dá-me pesadelos só de olhar. felizmente não precisaremos dela, mas precisaremos da <a href="https://en.wikipedia.org/wiki/General_Leibniz_rule">regra geral de leibnitz</a>.</p>
+<p>talvez se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$ poderíamos garantir a existência de $(f \circ \varphi)^{(n)}$, mas a expressão da derivada está começando a ficar fora de controle. existe uma <a href="https://en.wikipedia.org/wiki/Fa%C3%A0_di_Bruno%27s_formula" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>fórmula</a> pra $n$-ésima derivada de uma função composta dada pela regra da cadeia. sublime! profunda! dá-me pesadelos só de olhar. felizmente não precisaremos dela, mas precisaremos da <a href="https://en.wikipedia.org/wiki/General_Leibniz_rule" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>regra geral de leibnitz</a>.</p>
 <h1 id="teorema-0">teorema 0</h1>
 <p>se $\varphi^{(i)}(0) = 0$ para todo $0 \leq i \leq n$, então $(f \circ \varphi)^{(n)}(0) = 0$.</p>
 <p><strong>prova:</strong> vamos fazer a primeira derivada pela regra da cadeia:</p>
 <p>$$(f \circ \varphi)^{(n+1)}(0)$$</p>
 <p>$$= ((f \circ \varphi)')^{(n)}(0)$$</p>
-<p>$$= ((f&rsquo; \circ \varphi)\cdot \varphi&rsquo;)^{(n)}(0)$$</p>
+<p>$$= ((f' \circ \varphi)\cdot \varphi')^{(n)}(0)$$</p>
 <p>agora aplicamos a regra geral de leibnitz</p>
-<p>$$= \sum_{k=0}^{n} {n \choose k} (f&rsquo; \circ \varphi)^{(n-k)}\cdot (\varphi&rsquo;)^{(k)}(0)$$</p>
-<p>$$= \sum_{k=0}^{n} {n \choose k} (f&rsquo; \circ \varphi)^{(n-k)}(0)\cdot (\varphi&rsquo;)^{(k)}(0)$$</p>
-<p>por hipótese $(\varphi&rsquo;)^{(k)}(0) = 0$ sempre no somatório, então o resultado dessa soma toda é $0$. $\blacksquare$</p>
+<p>$$= \sum_{k=0}^{n} {n \choose k} (f' \circ \varphi)^{(n-k)}\cdot (\varphi')^{(k)}(0)$$</p>
+<p>$$= \sum_{k=0}^{n} {n \choose k} (f' \circ \varphi)^{(n-k)}(0)\cdot (\varphi')^{(k)}(0)$$</p>
+<p>por hipótese $(\varphi')^{(k)}(0) = 0$ sempre no somatório, então o resultado dessa soma toda é $0$. $\blacksquare$</p>
 <p>em particular, se $\varphi^{(n)}(0)$ fosse $0$ para todo $n$ natural não-nulo, o <strong>teorema 0</strong> poderia ser aplicado em todo $(f \circ \varphi)^{(n)}(0)$ para mostrar que ele é $0$. a função seria infinitamente derivável. agora é só achar uma $\varphi$ adequada.</p>
 <p>será que existe tal $\varphi$? tá, existe $\varphi(t) = 0$, mas ela não é uma bijeção crescente $\mathbb{R} \rightarrow \mathbb{R}$ e não traça a curva quando fazemos $f \circ \varphi$. pensar na expansão de taylor da $\varphi$ em torno do $0$ é outro balde de água fria, porque também resulta na função constante $0$.</p>
 <p>não grite, não se desespere, o que o teorema de taylor diz é que os polinômios de taylor aproximam a função em torno daquele ponto com erro polinomial. isso não significa que os polinômios convergem para a função dentro de um intervalo. o que a expansão de taylor de $\varphi$ em torno de $0$ realmente está nos dizendo é que $\varphi$ precisa ir para $0$ extremamente rápido, mais rápido que qualquer polinômio. qual é a função menos exótica que cresce mais rápido que qualquer polinômio? a exponencial. além disso, se $f$ explode para $+\infty$ em torno de $0$, então $1/f$ se aproxima muito rápido de $0$.</p>
@@ -167,14 +174,17 @@ $$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \va
 <p>que explode <strong>muito rápido</strong> perto de $0$. agora pegarímos a inversa</p>
 <p>$$\frac{1}{\mathrm{exp} \circ p}(x) = \frac{1}{\mathrm{exp}\left(\frac{1}{x^2}\right)} = \mathrm{exp}\left(-\frac{1}{x^2}\right)$$</p>
 <p>e temos algo que diminui ridiculamente rápido perto de $0$. será que $\varphi(x) = \mathrm{exp}\left(-\frac{1}{x^2}\right)$ funcionaria então? bem nesse caso a derivada ficaria<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
-<p>$$\varphi&rsquo;(x) = \frac{2}{x^3}\cdot\mathrm{exp}\left(-\frac{1}{x^2}\right) = \frac{2}{x^3}\cdot\varphi(x)$$</p>
+<p>$$\varphi'(x) = \frac{2}{x^3}\cdot\mathrm{exp}\left(-\frac{1}{x^2}\right) = \frac{2}{x^3}\cdot\varphi(x)$$</p>
 <p>e deve dar pra mostrar que, no limite pra $0$, isso iria pra $0$. se a gente tivesse isso, essa equação diferencial nos permitiria generalizar.</p>
 <h1 id="teorema-1">teorema 1</h1>
 <p>para todos $n$ e $m$ naturais e todo $c$ real.</p>
 <p>$$\lim_{x \rightarrow 0} \frac{c}{x^m}\cdot\varphi^{(n)}(x) = 0$$</p>
-<p><strong>prova:</strong> faremos a prova por <a href="https://en.wikipedia.org/wiki/Mathematical_induction#Complete_(strong)_induction">indução completa</a> em $n$. lembrando que assumirei o caso em que $n = 0$ porque não sei prová-lo agora. dito isso suponha que o teorema vale pra todos os números até $n$, faremos $p(x) = \frac{c}{x^m}$ e $q(x) = \frac{2}{x^3}$ — para não carregar a notação — e analisaremos o caso $n+1$:</p>
+<p><strong>prova:</strong> faremos a prova por <a href="https://en.wikipedia.org/wiki/Mathematical_induction#Complete_%28strong%29_induction" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>indução completa</a> em $n$. lembrando que assumirei o caso em que $n = 0$ porque não sei prová-lo agora. dito isso suponha que o teorema vale pra todos os números até $n$, faremos $p(x) = \frac{c}{x^m}$ e $q(x) = \frac{2}{x^3}$ — para não carregar a notação — e analisaremos o caso $n+1$:</p>
 <p>$$\lim_{x \rightarrow 0} p \cdot \varphi^{(n+1)}(x)$$</p>
-<p>$$= \lim_{x \rightarrow 0} p \cdot (\varphi&rsquo;)^{(n)}(x)$$</p>
+<p>$$= \lim_{x \rightarrow 0} p \cdot (\varphi')^{(n)}(x)$$</p>
 <p>$$= \lim_{x \rightarrow 0} p \cdot (q\cdot\varphi)^{(n)}(x)$$</p>
 <p>aplicando novamente a regra geral de leibnitz e fazendo algumas simplificações.</p>
 <p>$$= \sum_{k = 0}^n \lim_{x \rightarrow 0} {n \choose k} \cdot p \cdot q^{(n-k)}(x) \cdot\varphi^{(k)}(x)$$</p>
@@ -195,22 +205,28 @@ $$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \va
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>cuidado para não confundir com as <a href="https://www.amazon.com/Sensual-Quadratic-Carus-Mathematical-Monographs/dp/0883850400">formas sensuais</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>cuidado para não confundir com as <a href="https://www.amazon.com/Sensual-Quadratic-Carus-Mathematical-Monographs/dp/0883850400" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>formas sensuais</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>admito, essa não é uma descrição muito precisa, talvez olhar para $\frac{f&rsquo;(t)}{ \Vert f&rsquo;(t) \Vert }$ seja mais esclarecedor. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>admito, essa não é uma descrição muito precisa, talvez olhar para $\frac{f'(t)}{ \Vert f'(t) \Vert }$ seja mais esclarecedor.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>estamos sendo descuidados aqui. a regra da cadeia assume que $f$ é diferenciável. quando isso não é verdade, realmente há $f$'s tais que $(f \circ \varphi)&rsquo; (0) \neq 0$ mesmo quando $\varphi&rsquo;(0) = 0$. um exemplo seria $f(t) = \sqrt[3]{t}$ e $\varphi(t) = t^3$. estou supondo que, por $f$ ser <a href="https://en.wikipedia.org/wiki/Lipschitz_continuity">lipschitz</a>, poderíamos traduzir os raciocínios que faremos com a regra da cadeia em raciocínios com desigualdades, que dariam prova rigorosa de que a derivada é zero. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>estamos sendo descuidados aqui. a regra da cadeia assume que $f$ é diferenciável. quando isso não é verdade, realmente há $f$&rsquo;s tais que $(f \circ \varphi)' (0) \neq 0$ mesmo quando $\varphi'(0) = 0$. um exemplo seria $f(t) = \sqrt[3]{t}$ e $\varphi(t) = t^3$. estou supondo que, por $f$ ser <a href="https://en.wikipedia.org/wiki/Lipschitz_continuity" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>lipschitz</a>, poderíamos traduzir os raciocínios que faremos com a regra da cadeia em raciocínios com desigualdades, que dariam prova rigorosa de que a derivada é zero.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>eu totalmente não fiz essa derivada simples no wolframalpha… <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>eu totalmente não fiz essa derivada simples no wolframalpha…&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>uso a mesma numeração porque, no fundo, lemas, exemplos, proposições, corolários e teoremas são todos a mesma coisa. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>uso a mesma numeração porque, no fundo, lemas, exemplos, proposições, corolários e teoremas são todos a mesma coisa.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>é o sinal de $t$. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>é o sinal de $t$.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -252,7 +268,7 @@ $$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \va
   
     <a class="pagination__item" href="https://rigille.github.io/blog/memorizar-prejudica-o-aprendizado/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >memorizar prejudica o aprendizado?</a>
+      <span class="pagination__title" >memorizar prejudica o aprendizado?</span>
     </a>
   
 </div>
@@ -285,18 +301,26 @@ $$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \va
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -316,7 +340,7 @@ $$= f&rsquo;&rsquo; \circ \varphi \cdot (\varphi&rsquo;)^2 + (f&rsquo; \circ \va
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

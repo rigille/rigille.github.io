@@ -6,11 +6,7 @@
     <description>Recent content in geometria-diferencial on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 14 May 2021 13:14:00 -0300</lastBuildDate>
-    
-	<atom:link href="https://rigille.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 14 May 2021 13:14:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/tags/geometria-diferencial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lista 2 — Geometria Diferencial</title>
       <link>https://rigille.github.io/exercicios/lista2-gd/</link>
@@ -42,7 +38,7 @@ $$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</description>
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/blog/as-curvas-e-as-quinas/</guid>
-      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&amp;rsquo;(p) \neq 0$ para todo $p \in I$.
+      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
     

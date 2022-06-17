@@ -1,169 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://rigille.github.io/</loc>
-    <lastmod>2021-10-27T19:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-05-13T12:00:00-03:00</lastmod>
+  </url><url>
     <loc>https://rigille.github.io/blog/</loc>
-    <lastmod>2021-10-27T19:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-05-13T12:00:00-03:00</lastmod>
+  </url><url>
+    <loc>https://rigille.github.io/blog/designing_telegram_bot_0/</loc>
+    <lastmod>2022-05-13T12:00:00-03:00</lastmod>
+  </url><url>
     <loc>https://rigille.github.io/blog/uma-estrategia-para-atacar-problemas-grandes/</loc>
     <lastmod>2021-10-27T19:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/why-constructive/</loc>
     <lastmod>2021-10-21T10:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/transporte-maritimo/</loc>
     <lastmod>2021-08-22T20:20:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/sobre-semantica/</loc>
     <lastmod>2021-06-16T01:55:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/cenarios-para-o-futuro/</loc>
     <lastmod>2021-06-02T00:55:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/guia/</loc>
     <lastmod>2021-05-22T18:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/guia/a-kind-introduction/</loc>
     <lastmod>2021-05-22T18:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/algebra-linear/</loc>
     <lastmod>2021-05-15T11:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/</loc>
     <lastmod>2021-05-15T11:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/matematica/</loc>
     <lastmod>2021-05-15T11:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/resolvendo-um-jogo/</loc>
     <lastmod>2021-05-15T11:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/</loc>
     <lastmod>2021-05-15T11:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/geometria-diferencial/</loc>
     <lastmod>2021-05-14T13:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/lista2-gd/</loc>
     <lastmod>2021-05-14T13:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/teorema-fundamental-dos-politopos/</loc>
     <lastmod>2021-05-13T10:01:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/prova2_iedo/</loc>
     <lastmod>2021-05-09T08:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/prova5-tal/</loc>
     <lastmod>2021-05-08T08:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/dessage/</loc>
     <lastmod>2021-04-24T20:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/memorizar-prejudica-o-aprendizado/</loc>
     <lastmod>2021-04-24T20:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/lista1-gd/</loc>
     <lastmod>2021-04-10T17:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/lista1-tal/</loc>
     <lastmod>2021-04-10T17:14:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/solucao-prova-1-iedo/</loc>
     <lastmod>2021-04-04T21:50:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/tal-23/</loc>
     <lastmod>2021-03-25T17:34:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/atividade-semanal-5-iedo/</loc>
     <lastmod>2021-03-15T23:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/exercicios/prova-topicos-de-algebra-linear/</loc>
     <lastmod>2021-03-06T12:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/as-curvas-e-as-quinas/</loc>
     <lastmod>2021-02-07T17:43:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/expectativa-dos-imortais/</loc>
     <lastmod>2021-01-22T21:50:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/tags/probabilidade/</loc>
     <lastmod>2021-01-22T21:50:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/os-reais-mais-valiosos/</loc>
     <lastmod>2020-12-02T22:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/blog/confusao-diferencial/</loc>
     <lastmod>2020-09-30T16:13:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rigille.github.io/categories/</loc>
   </url>
-  
 </urlset>

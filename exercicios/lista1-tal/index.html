@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -158,7 +159,7 @@ $$A^n \cdot v = 0$$</p>
 <p>Encontre um espaço vetorial $V$ com produto interno e um subespaço $W$ tais que $W^{\perp \perp} \neq W$</p>
 <h3 id="resolução-1">Resolução<a class="anchor" href="#resolução-1">#</a></h3>
 <p>No caso em que $V$ tem finitas dimensões $W^{\perp \perp} = W$. No geral suspeito que, infelizmente, não seja possível construir um vetor $v$ tal que $v \in W^{\perp \perp}$ e $v \not\in W$. Mas podemos mostrar que ele existe.</p>
-<p>Vamos fazer de $V$ o espaço de sequências de números reais com quadrado somável. Nosso subespaço $W$ será o conjunto das sequências com apenas finitos termos não-nulos. Pra todo vetor $v \in V$, podemos definir o funcional linear $v^* : W \rightarrow \mathbb{R}$ tal que  $v^*(u) = \langle v, u \rangle$. Além disso sempre que $u \neq v$ vale $u^* \neq v^*$. Afinal se $u \neq v$ então existe um termo das sequências que discorda, e se considerarmos $w \in W$ a sequência que é $1$ neste termo e zero no resto, teremos $v^*(w) \neq u^*(w)$.</p>
+<p>Vamos fazer de $V$ o espaço de sequências de números reais com quadrado somável. Nosso subespaço $W$ será o conjunto das sequências com apenas finitos termos não-nulos. Pra todo vetor $v \in V$, podemos definir o funcional linear $v^* : W \rightarrow \mathbb{R}$ tal que  $v^<em>(u) = \langle v, u \rangle$. Além disso sempre que $u \neq v$ vale $u^</em> \neq v^<em>$. Afinal se $u \neq v$ então existe um termo das sequências que discorda, e se considerarmos $w \in W$ a sequência que é $1$ neste termo e zero no resto, teremos $v^</em>(w) \neq u^*(w)$.</p>
 <p>Existe uma transformação linear injetiva $v \mapsto v^*$ de $V$ para $W^{\perp}$. Assumindo o axioma da escolha, existe uma base para $V$. Qual a cardinalidade dessa base? Por um lado os subespaços de $V$ com base enumerável são uma união enumerável de conjuntos fechados com o interior vazio, nomeadamente a união dos espaços gerados pelos $n$ primeiros vetores da base. Por outro, $V$ é um espaço métrico completo, então o Teorema da Categoria de Baire nos diz que ele não pode ser a união enumerável de conjuntos fechados com interior vazio. Não resta outra opção para a base de $V$, ela deverá ser não-enumerável.</p>
 <p>Em $W^{\perp \perp}$, o isomorfismo $v \mapsto v^*$ nos dá um conjunto LI de $W^{\perp \perp}$ a partir da base de $V$. Daí que a dimensão de $W^{\perp \perp}$ é não-enumerável, e portanto não existe bijeção nem muito menos isomorfismo entre $W^{\perp \perp}$ e $W$.</p>
 <h2 id="questão-33-">Questão 33 ⭐⭐⭐<a class="anchor" href="#questão-33-">#</a></h2>
@@ -168,8 +169,8 @@ $$A^n \cdot v = 0$$</p>
 <p>Pode ser que tanto $T$ quanto $T^2$ não tenham autovalores reais. Como no caso de $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ dado pela matriz</p>
 <p>$$
 \begin{bmatrix}
-1 &amp; -1 \\<br>
-1 &amp;  1 \\<br>
+1 &amp; -1 \\
+1 &amp;  1 \\
 \end{bmatrix}
 $$</p>
 <p>Porêm se $T$ tem um autovalor $\lambda$ associado a um autovetor $v$, então $T^2$ tem o autovalor $\lambda^2$ pois</p>
@@ -177,9 +178,9 @@ $$</p>
 <p>Mas os autovalores de $T^2$ são autovalores de $T$, então $\lambda^2$ é autovalor de $T$. Fazendo indução nesse raciocínio, concluímos que a existência de $\lambda$ como autovalor implica na existência de $\lambda^{2^k}$ para todo $k\in\mathbb{N}$. Quando $|\lambda| = 1$ não tem medo não, esse conjunto tem tamanho no máximo $2$. De fato segue abaixo um exemplo em que o conjunto tem tamanho exatamente $2$.</p>
 <p>$$
 \begin{bmatrix}
--1 &amp; 0 &amp; 0 \\<br>
-0 &amp;  0 &amp; -1 \\<br>
-0 &amp;  1 &amp; 0 \\<br>
+-1 &amp; 0 &amp; 0 \\
+0 &amp;  0 &amp; -1 \\
+0 &amp;  1 &amp; 0 \\
 \end{bmatrix}
 $$</p>
 <p>Quando $|\lambda| \neq 1$ o conjunto é infinito. Considerando que um operador linear num espaço vetorial finito tem finitos autovalores, temos um absurdo.</p>
@@ -262,7 +263,7 @@ $$</p>
   
     <a class="pagination__item" href="https://rigille.github.io/exercicios/lista1-gd/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Lista 1 — Geometria Diferencial</a>
+      <span class="pagination__title" >Lista 1 — Geometria Diferencial</span>
     </a>
   
 </div>
@@ -295,18 +296,26 @@ $$</p>
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -364,7 +373,7 @@ $$</p>
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

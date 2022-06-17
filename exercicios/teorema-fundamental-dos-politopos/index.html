@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -109,12 +110,15 @@
           </header>
           <article class="post__content">
               
-<p>este post foi criado porque me animei na resolução da <a href="/exercicios/lista1-tal">lista de tópicos de álgebra linear</a>.</p>
+<p>este post foi criado porque me animei na resolução da <a href="/exercicios/lista1-tal" 
+  
+  
+>lista de tópicos de álgebra linear</a>.</p>
 <h2 id="questão-46-">Questão 46 ⭐⭐⭐⭐⭐<a class="anchor" href="#questão-46-">#</a></h2>
 <h3 id="enunciado">Enunciado<a class="anchor" href="#enunciado">#</a></h3>
 <p>Um poliedro é o conjunto solução de um sistema do tipo</p>
-<p>$$a_{11} + \cdots + a_{1n}x_n \leq b_1\\<br>
-\vdots \\<br>
+<p>$$a_{11} + \cdots + a_{1n}x_n \leq b_1\\
+\vdots \\
 a_{m1}x_1 + \cdots + a_{mn}x_n \leq b_m$$</p>
 <p>com variáveis reais. Um <strong>polítopo</strong> é um poliedro limitado. Prove que o fecho convexo de um conjunto finito é um polítopo.</p>
 <h3 id="resolução">Resolução<a class="anchor" href="#resolução">#</a></h3>
@@ -137,14 +141,14 @@ $$</p>
 <h4 id="eliminação-de-fourier-motzkin">Eliminação de Fourier-Motzkin</h4>
 <p>imagine que estamos considerando o sistema</p>
 <p>$$\begin{cases}
-x + 3y \leq 0 \\<br>
+x + 3y \leq 0 \\
 x - 2y \leq 0
 \end{cases} \tag{Sisteminha}$$</p>
 <p>podemos eliminar a segunda variável multiplicando a primeira equação por $2$, a segunda por $3$ e somando os resultados. Daí ficaríamos apenas com</p>
 <p>$$5x \leq 0 \tag{SisteminhaEliminado}$$</p>
 <p>essa é a chamada eliminação de Fourier-Motzkin. Por outro lado se, em vez de $(\mathrm{Sisteminha})$, tivéssemos</p>
 <p>$$\begin{cases}
-x + 3y \leq 0 \\<br>
+x + 3y \leq 0 \\
 x + 2y \leq 0
 \end{cases} \tag{SisteminhaRuim}$$</p>
 <p>a nossa estratégia não eliminaria o $y$. A multiplicação por número negativo, necessária para o cancelamento, invertiria o sentido da desigualdade e impediria que somássemos os resultados.</p>
@@ -152,38 +156,38 @@ x + 2y \leq 0
 <p>$$\mathrm{elim}_k(C) := \{\mathbf{v} + ye_k;\ \mathbf{v} \in C \wedge y \in \mathbb{R}\}$$</p>
 <p>Considere agora o sistema maior de inequações</p>
 <p>$$\begin{bmatrix}
-1 &amp; 3 &amp; 0 \\<br>
-2 &amp; 3 &amp; -2\\<br>
-3 &amp; 1 &amp; 4 \\<br>
-2 &amp; 5 &amp; -4 \\<br>
-1 &amp; 2 &amp; 2 \\<br>
+1 &amp; 3 &amp; 0 \\
+2 &amp; 3 &amp; -2\\
+3 &amp; 1 &amp; 4 \\
+2 &amp; 5 &amp; -4 \\
+1 &amp; 2 &amp; 2 \\
 \end{bmatrix}
 \begin{bmatrix}
-x_1 \\<br>
-x_2 \\<br>
-x_3 \\<br>
+x_1 \\
+x_2 \\
+x_3 \\
 \end{bmatrix}
 \leq 0 \tag{Sistemão}$$</p>
 <p>Como eliminar a terceira variável? Nesse caso não precisamos eliminar da primeira linha porque o coeficiente já é $0$. Além disso temos quatro pares de linhas que podemos combinar: linhas $2$ e $3$, ou $2$ e $5$, ou $4$ e $3$, ou $4$ e $5$. Faremos todas as combinações possíveis. O resultado é:</p>
 <p>$$\begin{bmatrix}
-1 &amp; 3 &amp; 0 \\<br>
-7 &amp; 7 &amp; 0 \\<br>
-3 &amp; 5 &amp; 0 \\<br>
-5 &amp; 6 &amp; 0 \\<br>
-4 &amp; 9 &amp; 0 \\<br>
+1 &amp; 3 &amp; 0 \\
+7 &amp; 7 &amp; 0 \\
+3 &amp; 5 &amp; 0 \\
+5 &amp; 6 &amp; 0 \\
+4 &amp; 9 &amp; 0 \\
 \end{bmatrix}
 \begin{bmatrix}
-x_1 \\<br>
-x_2 \\<br>
-x_3 \\<br>
+x_1 \\
+x_2 \\
+x_3 \\
 \end{bmatrix}
 \leq 0 \tag{SistemãoEliminado}$$</p>
 <p>onde a segunda linha combina $2$ e $3$ e a terceira linha combina $2$ e $5$, a quarta linha combina $4$ e $3$ e a quinta combina $4$ e $5$. Será que o conjunto solução de $\mathrm{SistemãoEliminado}$ também é a eliminação do conjunto solução de $\mathrm{Sistemão}$? Isso exige uma demonstração.</p>
 <h4 id="teorema">Teorema</h4>
-<p>Seja $\mathbf{A}$ uma matriz. Queremos calcular a eliminação de $\mathbf{A}$ na $k$-ésima variável. Para isso, primeiro separe as linhas de $\mathbf{A}$ em três matrizes de acordo com o valor de $a_{ik}$. Em $\mathbf{A}_0$ ficarão as linhas em que $a_{ik} = 0$, em $\mathbf{B}$ as que $a_{ik} &gt; 0$, em $\mathbf{C}$ as que $a_{ik} &lt; 0$. Defina a eliminação de $A$ como</p>
+<p>Seja $\mathbf{A}$ uma matriz. Queremos calcular a eliminação de $\mathbf{A}$ na $k$-ésima variável. Para isso, primeiro separe as linhas de $\mathbf{A}$ em três matrizes de acordo com o valor de $a_{ik}$. Em $\mathbf{A}<em>0$ ficarão as linhas em que $a</em>{ik} = 0$, em $\mathbf{B}$ as que $a_{ik} &gt; 0$, em $\mathbf{C}$ as que $a_{ik} &lt; 0$. Defina a eliminação de $A$ como</p>
 <p>$$A^{/k} :=
 \begin{bmatrix}
-A_0 \\<br>
+A_0 \\
 D
 \end{bmatrix}$$</p>
 <p>onde as linhas de $D$ são $c_j b_{ik} + b_i (-c_{jk})$ para todas as linhas $b_i$ e $c_j$ de $\mathbf{B}$ e $\mathbf{C}$ respectivamente. Afirmo que</p>
@@ -199,9 +203,9 @@ D
 <p>$$A(\mathbf{v} - ye_k) \leq 0$$</p>
 <p>$$A\mathbf{v} - yAe_k \leq 0$$</p>
 <p>$$\begin{cases}
-a_1\mathbf{v} - ya_{1k} \leq 0 \\<br>
-&hellip; \\<br>
-a_n\mathbf{v} - ya_{nk} \leq 0 \\<br>
+a_1\mathbf{v} - ya_{1k} \leq 0 \\
+&hellip; \\
+a_n\mathbf{v} - ya_{nk} \leq 0 \\
 \end{cases}$$</p>
 <p>o que é equivalente a dizer que</p>
 <p>$$b_i\mathbf{v}/b_{ik} \leq  y \leq -c_j\mathbf{v}/(-c_{jk})$$</p>
@@ -249,7 +253,7 @@ a_n\mathbf{v} - ya_{nk} \leq 0 \\<br>
   
     <a class="pagination__item" href="https://rigille.github.io/exercicios/lista2-gd/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Lista 2 — Geometria Diferencial</a>
+      <span class="pagination__title" >Lista 2 — Geometria Diferencial</span>
     </a>
   
 </div>
@@ -282,18 +286,26 @@ a_n\mathbf{v} - ya_{nk} \leq 0 \\<br>
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -327,7 +339,7 @@ a_n\mathbf{v} - ya_{nk} \leq 0 \\<br>
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

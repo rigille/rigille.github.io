@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.37715ac2e6a385447b23080666d03f3741c739c183dc9d2f6b6ad7681f895b67.css" integrity="sha256-N3FawuajhUR7IwgGZtA/N0HHOcGD3J0va2rXaB&#43;JW2c="/>
@@ -112,9 +113,9 @@
 <p>Considere um jogo para duas pessoas onde o primeiro jogador tem três opções de ataque — simples, arriscado ou armadilha — e o segundo jogador tem duas opções apenas — ofensivo ou defensivo. Quando o primeiro jogador dá um ataque simples e o segundo jogador é ofensivo, o primeiro jogador tira $1$ ponto do segundo jogador. Se o segundo jogador tivesse defendido, ninguém perderia pontos. O ataque arriscado é particularmente efetivo quando o segundo jogador está na defensiva, tira $4$ pontos dele. Contra um jogador ofensivo, o ataque arriscado te faz perder $3$ pontos. Se você usa a armadilha em um jogador ofensivo, tira $3$ pontos dele. Mas um jogador na defensiva consegue detectar a armadilha, desviar dela e tirar $2$ pontos seus.</p>
 <p>O parágrafo acima pode ser resumido na seguinte matriz</p>
 <p>$$\begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix} = A$$</p>
 <p>onde as linhas correspondem de cima para baixo a simples, arriscado e armadilha, e as colunas correspondem a ofensivo e defensivo, da esquerda para a direita. Agora a pergunta é, qual a combinação racional de estratégias para os dois jogadores? Para responder isso, primeiro vamos considerar qual é o resultado esperado para cada combinação de estratégias.</p>
 <p>Se primeiro jogador escolhe simples, arriscado e armadilha com probabilidades de respectivamente $a_1$, $a_2$ e $a_3$, e o segundo jogador escolhe ofensivo e defensivo com probabilidades de respectivamente $b_1$ e $b_2$. O resultado esperado é dado por</p>
@@ -123,13 +124,13 @@
 b_1 &amp; b_2 &amp; b_3
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix}
 \begin{bmatrix}
-a_1 \\<br>
-a_2 \\<br>
+a_1 \\
+a_2 \\
 \end{bmatrix}
 $$</p>
 <p>por exemplo</p>
@@ -138,13 +139,13 @@ $$</p>
 1/3 &amp; 1/3 &amp; 1/3
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix}
 \begin{bmatrix}
-1/2 \\<br>
-1/2 \\<br>
+1/2 \\
+1/2 \\
 \end{bmatrix} =
 \frac{1}{2}
 $$</p>
@@ -154,13 +155,13 @@ $$</p>
 1/3 &amp; 1/3 &amp; 1/3
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix}
 \begin{bmatrix}
-2/3 \\<br>
-1/3 \\<br>
+2/3 \\
+1/3 \\
 \end{bmatrix} =
 \frac{4}{9} &lt; \frac{1}{2}
 $$</p>
@@ -170,13 +171,13 @@ $$</p>
 3/5 &amp; 1/5 &amp; 1/5
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix}
 \begin{bmatrix}
-2/3 \\<br>
-1/3 \\<br>
+2/3 \\
+1/3 \\
 \end{bmatrix} =
 \frac{4}{5} &gt; \frac{1}{2}
 $$</p>
@@ -186,13 +187,13 @@ $$</p>
 0.875 &amp; 0.125 &amp; 0
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 0 \\<br>
--3 &amp; 4 \\<br>
-3 &amp; -2 \\<br>
+1 &amp; 0 \\
+-3 &amp; 4 \\
+3 &amp; -2 \\
 \end{bmatrix}
 \begin{bmatrix}
-0.5 \\<br>
-0.5 \\<br>
+0.5 \\
+0.5 \\
 \end{bmatrix} =
 0.5
 $$</p>
@@ -205,17 +206,17 @@ x$$</p>
 <p>sujeito a</p>
 <p>$$Ax \geq
 \begin{bmatrix}
-1 \\<br>
-1 \\<br>
-1 \\<br>
+1 \\
+1 \\
+1 \\
 \end{bmatrix}$$</p>
 <p>O segundo pede para minimizar</p>
 <p>$$
 y
 \begin{bmatrix}
-1 \\<br>
-1 \\<br>
-1 \\<br>
+1 \\
+1 \\
+1 \\
 \end{bmatrix}$$</p>
 <p>sujeito a</p>
 <p>$$yA \leq
@@ -230,24 +231,24 @@ y
 x^{*} =
 y^{*}
 \begin{bmatrix}
-1 \\<br>
-1 \\<br>
-1 \\<br>
+1 \\
+1 \\
+1 \\
 \end{bmatrix} = S$$</p>
 <p>Então se os vetores não correspondiam a distribuições de probabilidade, basta dividir ambos por $S$. Isso realmente dá a combinação ótima de estratégias pois</p>
 <p>$$A(x^*/S) \geq
 \begin{bmatrix}
-1/S \\<br>
-1/S \\<br>
-1/S \\<br>
+1/S \\
+1/S \\
+1/S \\
 \end{bmatrix}$$</p>
 <p>implica que pra toda estratégia $y$</p>
 <p>$$yA(x^*/S) \geq
 y
 \begin{bmatrix}
-1/S \\<br>
-1/S \\<br>
-1/S \\<br>
+1/S \\
+1/S \\
+1/S \\
 \end{bmatrix} = 1/S$$</p>
 <p>e do outro lado</p>
 <p>$$(y^*/S)A \leq
@@ -326,18 +327,26 @@ y
   
      
     
-      <a class="social-icons__link" title="GitHub"
-         href="https://github.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" title="Twitter"
-         href="https://twitter.com/impression28"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/impression28"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('https://rigille.github.io/svg/twitter.svg')"></div>
       </a>
     
@@ -362,7 +371,7 @@ y
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

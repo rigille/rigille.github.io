@@ -6,11 +6,7 @@
     <description>Recent content in Guia on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 22 May 2021 18:00:00 -0300</lastBuildDate>
-    
-	<atom:link href="https://rigille.github.io/guia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 22 May 2021 18:00:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/guia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rígille&#39;s programming guide</title>
       <link>https://rigille.github.io/guia/a-kind-introduction/</link>

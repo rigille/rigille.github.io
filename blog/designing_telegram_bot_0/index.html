@@ -2,12 +2,12 @@
 <html lang="pt-br">
 
 <head>
-  <title>Prova 5 — Tópicos de Álgebra Linear | dessages</title>
+  <title>Designing a Telegram Bot - Part 0 | dessages</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
   <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="programming">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Prova 5 — Tópicos de Álgebra Linear" />
+  <meta name="twitter:title" content="Designing a Telegram Bot - Part 0" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/impression28" />
   <meta name="twitter:creator" content="https://twitter.com/impression28" />
@@ -47,16 +47,29 @@
 
 <script type="application/ld+json">
   
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "https:\/\/rigille.github.io\/exercicios\/prova5-tal\/",
-      "name": "Prova 5 — Tópicos de Álgebra Linear",
-      "author": {
-        "@type": "Person",
-        "name": ""
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/rigille.github.io"
       },
-      "description": ""
+      "articleSection" : "blog",
+      "name" : "Designing a Telegram Bot - Part 0",
+      "headline" : "Designing a Telegram Bot - Part 0",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-05-13 12:00:00 -0300 -03",
+      "dateModified" : "2022-05-13 12:00:00 -0300 -03",
+      "url" : "https:\/\/rigille.github.io\/blog\/designing_telegram_bot_0\/",
+      "wordCount" : "192",
+      "keywords" : ["programming", "Blog"]
     }
   
   </script>
@@ -77,12 +90,12 @@
     
     
       <li>
-        <a  href="/blog">blog</a>
+        <a  class="active"
+         href="/blog">blog</a>
       </li>
     
       <li>
-        <a  class="active"
-         href="/exercicios">exercicios</a>
+        <a  href="/exercicios">exercicios</a>
       </li>
     
       <li>
@@ -105,25 +118,25 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Prova 5 — Tópicos de Álgebra Linear</h1>
-            <time datetime="2021-05-08 08:14:00 -0300 -03" class="post__date">May 8 2021</time> 
+            <h1 id="post__title">Designing a Telegram Bot - Part 0</h1>
+            <time datetime="2022-05-13 12:00:00 -0300 -03" class="post__date">May 13 2022</time> 
           </header>
           <article class="post__content">
               
-<h1 id="enunciado">Enunciado</h1>
-<p>Seja $X \subset \mathbb{R}^2$ um conjunto finito. Prove que o fecho convexo de $X$, $\mathrm{conv}(X)$, é a intersecção de todos os semi-planos fechados contendo $X$.</p>
-<h1 id="resolução">Resolução</h1>
-<p>Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é um conjunto compacto. Ele é, afinal, a imagem de um conjunto compacto — nomeadamente $[0, 1]^{|X|} \subset \mathbb{R}^{|X|}$ — sob uma aplicação contínua — nomeadamente a combinação linear dos elementos de $X$. A partir daqui mostraremos o resultado mais geral: todo compacto convexo do espaço $\mathbb{R}^n$ é a intersecção de todos os semi-planos fechados contendo $X$. Chamemos tal intersecção de $Y$. Precisamos mostrar que $Y \subset X$ e $X \subset Y$.</p>
-<p>A continência $X \subset Y$ não usa nossas hipóteses, apenas a definição de $Y$. Se $X$ está contido em cada elemento da intersecção, ele também está contido na intersecção.</p>
-<p>Para $Y \subset X$, vamos mostrar a contrapositiva: se $x \not\in X$ então $x \not\in Y$. Para mostrar que $x \not\in Y$, vamos exibir um hiperplano $P \subset \mathbb{R}^n$ tal que $X \subset P$ e $x \not\in P$. De fato, pelo fato de $X$ ser compacto, existe um $m \in X$ que minimiza a distância $||m - x||$. O $m$ nos permite definir um $P$</p>
-<p>$$P = \{ v \in \mathbb{R}^n;\ \langle v-x, m - x \rangle \geq \langle m - x, m - x \rangle \} \tag{0}$$</p>
-<p>Que você pode pensar como o plano tangente a $X$ que passa por $m$. Será que realmente $x \not\in P$? Sim, porque qualquer ponto fora de um conjunto fechado está a uma distância maior que $0$ do conjunto. Será que $X \subset P$? Esta é a parte crucial da demonstração, em que usaremos a convexidade.</p>
-<p>Suponha que exista $p$ tal que $p \in X$, mas $p \not\in P$:</p>
-<p>$$\langle p-x, m - x \rangle &lt; \langle m - x, m - x \rangle \tag{1}$$</p>
-<p>Pela convexidade de $X$, para todo $1 \geq \varepsilon &gt; 0$, também temos $k := \varepsilon(p-m) + m \in X$. Mas dá uma olhada na distância que esse vetor está de $x$, ou melhor, no quadrado dela:</p>
-<p>$$\langle \varepsilon(p-m) + m - x,\ \varepsilon(p-m) + m - x\rangle$$</p>
-<p>$$\langle m - x,\ m - x \rangle + \left(2 \varepsilon \langle p - m, m - x \rangle + \varepsilon^2\langle p - m, p - m \rangle \right)$$</p>
-<p>pra valores pequenos de $\varepsilon$ a segunda parcela é negativa e $k$ estaria mais perto de $x$ do que $m$. De fato, reorganizando $(1)$, vemos que $\langle p - m, m - x \rangle &lt; 0$ e podemos pegar $\varepsilon &lt; \frac{-\langle p - m, m - x \rangle}{\langle p - m, p - m \rangle}$. Isso é um absurdo! Então é necessário que $X \subset P$, o que conclui a demonstração.</p>
+<p>I was challenged by my <a href="https://twitter.com/ggleicec" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>girlfriend</a> to practice or study something for 30 days and post it online. A great excuse to start a project, don&rsquo;t you think? This time I want to work in a project that ends up being useful for ordinary people and actually has users. The last time this happened was when I plotted <a href="https://rigille.github.io/LMC-markets/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>market data</a> from a minecraft server.</p>
+<p>But I also want to focus on quality. That is I would like the codebase to be small, well-documented, minimize the frequency of bugs and also to quickly discover the bugs that end up happening.</p>
+<h1 id="the-problem">The Problem</h1>
+<p>When I hang out with my friends I would like to split the bill proportionally what each person ordered. Generally someone pays everything, or the bill is split evenly because more precise calculations and payments would take so long it&rsquo;s not worth it.</p>
+<blockquote>
+<p>To split the bill nicely it&rsquo;s sufficient to write some kind of software that does it precisely and quicker than the aforementioned alternatives.</p>
+</blockquote>
+<p>We already concluded something interesting! When we have something running we should compare it to the alternatives to see if we have achieved our goal.</p>
 
 
               
@@ -142,28 +155,14 @@
           </article>
           
 
-<ul class="tags__list">
-    
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/matematica/">matematica</a>
-    </li>
-    <li class="tag__item">
-        <a class="tag__link" href="https://rigille.github.io/tags/algebra-linear/">algebra-linear</a>
-    </li></ul>
-
  <div class="pagination">
   
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/lista1-gd/">
+    <a class="pagination__item" href="https://rigille.github.io/blog/uma-estrategia-para-atacar-problemas-grandes/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Lista 1 — Geometria Diferencial</span>
+        <span class="pagination__title">uma estratégia para atacar problemas grandes</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://rigille.github.io/exercicios/prova2_iedo/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Prova 2 — Introdução às Equações Diferenciais Ordinárias</span>
-    </a>
   
 </div>
 
@@ -226,11 +225,6 @@
           </div>
       </div>
       
-      <div class="toc-container">
-          
-        <nav id="TableOfContents"></nav>
-      </div>
-      
     </div>
     
 
@@ -248,8 +242,6 @@
   <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
 
-  
-    <script src="/js/table-of-contents.js"></script>
   
 
 
