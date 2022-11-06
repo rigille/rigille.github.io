@@ -110,213 +110,19 @@
           </header>
           <article class="post__content">
               
-<h2 id="capítulo-1--seção-3">Capítulo 1 — Seção 3<a class="anchor" href="#capítulo-1--seção-3">#</a></h2>
-<h3 id="questão-8-">Questão 8 🖋️<a class="anchor" href="#questão-8-">#</a></h3>
-<p>Seja $\alpha : I \rightarrow R^3$ uma curva diferenciável e seja $[a, b] \subset I$ ser um intervalo fechado. Pra cada partição</p>
-<p>$$a = t_0 &lt; t_1 &lt; &hellip; &lt; t_n = b$$</p>
-<p>de $[a, b]$, considere a soma $\sum_{i=1}^n |\alpha(t_i) - \alpha(t_{i-1})| = I(\alpha, P)$ onde $P$ representa a partição. A norma $|P|$ de uma partição $|P|$ é definida como</p>
-<p>$$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</p>
-<p>Geometricamente, $I(\alpha, P)$ é o comprimento de um polígono inscrito em $\alpha([a, b])$ com vértices em $\alpha(t_i)$. O objetivo deste exercício é mostrar que o comprimento de arco de $\alpha([a, b])$ é, em certo sentido, um limite dos comprimentos dos polígonos inscritos.</p>
-<p>Prove que, dado um $\varepsilon &gt; 0$, existe um $\delta &gt; 0$ tal que $|P| &lt; \delta$ então</p>
-<p>$$\left|\int_a^b |\alpha'(t)|\mathrm{d}t - I(\alpha, P)\right| &lt; \varepsilon$$</p>
-<h4 id="resolução">Resolução</h4>
-<p>Primeiro consideremos que</p>
-<p>$$I(\alpha, P) = \sum_{i=0}^{n-1} \left| \int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| \leq \sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t = \int_a^b |\alpha'(t)| \mathrm{d}t \tag{0}$$</p>
-<p>Como $\alpha'$ é contínua no intervalo compacto $[a, b]$, ela é uniformemente contínua. Isto significa que, dado $\varepsilon &gt; 0$, existe $\delta &gt; 0$ tal que</p>
-<p>$$|\alpha'(s) - \alpha'(t)| &lt; \varepsilon$$</p>
-<p>sempre que $|s - t| &lt; \delta$. Em particular, se $|P| &lt; \delta$ e $t_i &lt; k &lt; t_{i+1}$</p>
-<p>$$|\alpha'(k)| \leq |\alpha'(t_{i+1})| + \varepsilon$$</p>
-<p>daí que</p>
-<p>$$\int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq |\alpha'(t_{i+1})|(t_{i+1} - t_i) + \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$= \int_{t_i}^{t_{i+1}} |\alpha'(t) + \alpha'(t_{i+1}) - \alpha'(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + \int_{t_i}^{t_{i+1}} |\alpha'(t_{i+1}) - \alpha'(t)| \mathrm{d}t + \varepsilon (t_{i+1} - t_i)$$
-$$\leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
-<p>ou seja</p>
-<p>$$\int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq \left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\sum_{i=0}^{n-1} \int_{t_i}^{t_{i+1}} |\alpha'(t)| \mathrm{d}t \leq \sum_{i=0}^{n-1}\left|\int_{t_i}^{t_{i+1}} \alpha'(t) \mathrm{d}t \right| + 2 \varepsilon (t_{i+1} - t_i)$$</p>
-<p>$$\int_a^b |\alpha'(t)| \mathrm{d}t \leq I(\alpha, P) + 2 \varepsilon (b - a)$$</p>
-<p>por fim, juntando $(0)$ e a linha de cima</p>
-<p>$$0 \leq \int_a^b |\alpha'(t)| \mathrm{d}t - I(\alpha, P) \leq 2 \varepsilon (b - a)$$</p>
-<p>como o $\varepsilon$ é genérico, isso conclui a demonstração</p>
-<h3 id="questão-9-">Questão 9 🖋️<a class="anchor" href="#questão-9-">#</a></h3>
-<p><strong>a)</strong> Seja $\alpha: I \rightarrow R^3$ uma curva de classe $C^0$. Use a aproximação de polígonos descrita no Exercício 8 para dar uma definição razoável do comprimento de arco de $\alpha$.</p>
-<h4 id="resolução-1">Resolução</h4>
-<p>No caso $C^0$, não faz sentido falar em integrar a derivada, ela pode não existir. Mas continua fazendo todo sentido falar no comprimento da poligonal inscrita $I(\alpha, P)$. Assim seria bem razoável definir o comprimento de $\alpha$ como</p>
-<p>$$\lim_{|P| \rightarrow 0} I(\alpha, P)$$</p>
-<p><strong>b)</strong> (Uma curva não-retificável) O exemplo a seguir mostra que, com qualquer definição razoável, o comprimento de uma curva pode ser ilimitado. Seja $\alpha: [0, 1] \rightarrow R^2$ dado como $\alpha(t) = (t, t \mathrm{sin}(\pi/t))$ se $t \neq 0$, e $\alpha(0) = (0, 0)$. Mostre, geometricamente que o comprimento de arco da porção da curva correspondendo a $1/(n+1) \leq t \leq 1/n$ é pelo menos $2/\left(n+\frac{1}{2}\right)$. Use isso para mostrar que o comprimento da curva no intevalo $1/N \leq t \leq 1$ é maior que $2 \sum_{n=1}^N 1/(n+1)$ e portanto que ele tende a infinito conforme $N \rightarrow \infty$.</p>
-<p>Usaremos a poligonal que passa pelos pontos</p>
-<p>$$P_0 = (1/(n+1), 0)$$
-$$P_1 = (1/(n+1/2), 1/(n+1/2)$$
-$$P_2 = (1/n, 0)$$</p>
-<p>para conseguir a nossa cota inferior de comprimento no intervalo. Ficaria</p>
-<p>$$ |P_1 - P_0| + |P_1 - P_2| \leq \frac{2}{n + 1/2} $$</p>
-<p>e, de fato, usando essa estimativa</p>
-<p>$$\int_{1/N}^1 |\alpha'(t)|\mathrm{d}t = \sum_{k = 1}^{N-1} \int_{1/(k+1)}^{1/k} |\alpha'(t)| \mathrm{d}t \leq \sum_{k = 1}^{N-1} \frac{2}{n + 1/2}$$</p>
-<p>A série da direita pode ser comparada com a série harmônica</p>
-<p>$$\sum_{k = 1}^{\infty} \frac{2}{n + 1/2} \geq \sum_{k = 1}^{\infty} \frac{1}{n} = +\infty$$</p>
-<p>A curva não é retificável.</p>
-<h3 id="questão-10-">Questão 10 🖋️<a class="anchor" href="#questão-10-">#</a></h3>
-<p>(Linhas retas como as mais curtas) Seja $\alpha: I \rightarrow R^3$ uma curva parametrizada. Seja $[a, b] \subset I$ e fixe $\alpha(a) = p$, $\alpha(b) = q$.</p>
-<p><strong>a)</strong> Mostre que, para qualquer vetor constante $v$, com $|v| = 1$,</p>
-<p>$$(q - p) \cdot v = \int_a^b \alpha'(t) \cdot v \mathrm{d}t \leq \int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
-<h4 id="resolução-2">Resolução</h4>
-<p>Pelo teorema fundamental do cálculo</p>
-<p>$$q - p = \int_a^b \alpha'(t) \mathrm{d}t$$</p>
-<p>tirando o produto interno de ambos os lados</p>
-<p>$$\langle q - p, v \rangle = \left\langle \int_a^b \alpha'(t) \mathrm{d}t, v \right\rangle$$</p>
-<p>pela linearidade da integral</p>
-<p>$$\langle q - p, v \rangle = \int_a^b \left\langle \alpha'(t), v \right\rangle \mathrm{d}t $$</p>
-<p>para fechar, pela desigualdade de cauchy-schwarz</p>
-<p>$$\int_a^b \left\langle \alpha'(t), v \right\rangle \mathrm{d}t \leq \int_a^b | \alpha'(t)| \cdot | v | \mathrm{d}t = \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
-<p><strong>b)</strong> Fixe</p>
-<p>$$v = \frac{q-p}{|q-p|}$$</p>
-<p>e mostre que</p>
-<p>$$|\alpha(b) - \alpha(a)| \leq \int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
-<p>Isto é, que a curva de menor comprimento ligando $\alpha(a)$ e $\alpha(b)$ é a linha reta ligando esses pontos.</p>
-<h4 id="resolução-3">Resolução</h4>
-<p>Como $v$ é unitário, vale a identidade da letra anterior. Substituindo</p>
-<p>$$\left\langle \alpha(b) - \alpha(a), \frac{\alpha(b)-\alpha(a)}{|\alpha(b)-\alpha(a)|} \right\rangle \leq \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
-<p>$$|\alpha(b)-\alpha(a)| \leq \int_a^b | \alpha'(t)| \mathrm{d}t$$</p>
-<h2 id="capítulo-1--seção-5">Capítulo 1 — Seção 5<a class="anchor" href="#capítulo-1--seção-5">#</a></h2>
-<h3 id="questão-4-">Questão 4 🖋️<a class="anchor" href="#questão-4-">#</a></h3>
-<p>Assuma que todas as normais de uma curva parametrizada passam por um ponto fixado, prove que a curva está contida em um círculo.</p>
-<h4 id="resolução-4">Resolução</h4>
-<p>Sem perda de generalidade, vamos assumir que o ponto fixado é a origem, do contrário poderíamos aplicar um movimento rígido para movimentar o ponto para origem. Dizer que as normais passam pela origem é a mesma coisa que dizer que o vetor posição e o vetor tangente são ortogonais. Então:</p>
-<p>$$ \langle \alpha(t), \alpha'(t) \rangle = 0$$</p>
-<p>Sabendo dessa identidade, vamos analizar a derivada do quadrado da norma do vetor posição</p>
-<p>$$\frac{\mathrm{d}}{\mathrm{d}t} \langle \alpha(t), \alpha(t) \rangle$$</p>
-<p>$$\langle \alpha(t), \alpha'(t) \rangle + \langle \alpha'(t), \alpha(t) \rangle$$</p>
-<p>$$0$$</p>
-<p>Ahá! Então a derivada é zero. Daí concluímos que a norma é constante e que a curva está contida no círculo.</p>
-<h3 id="questão-6-">Questão 6 🖋️<a class="anchor" href="#questão-6-">#</a></h3>
-<p>Uma translação por um vetor $v$ em $R^3$ é uma aplicação $A: R^3 \rightarrow R^3$ que é dado por $A(p) = p + v$, $p \in R^3$. Uma aplicação linear $\rho : R^3 \rightarrow R^3$ é uma <em>transformação ortogonal</em> quando $\rho u \cdot \rho v = u \cdot v$ para todos os vetores $u,\ v \in R^3$. Um <em>movimento rígido</em> em $R^3$ é o resultado de compor uma translação com uma transformação ortogonal com determinante positivo (esta última condição é incluída porque esperamos que movimentos rígidos preservem orientações).</p>
-<p><strong>a)</strong> Demonstre que a norma de um vetor e o ângulo $\theta$ entre dois vetores, $0 \leq \theta \leq \pi$, são invariantes sob transformações ortogonais com determinante positivo.</p>
-<h4 id="resolução-5">Resolução</h4>
-<p>Seja $u \in R^3$, vamos investigar $| \rho(u) |$:</p>
-<p>$$| \rho(u) |$$</p>
-<p>$$\sqrt{\langle \rho(u), \rho(u) \rangle}$$</p>
-<p>$$\sqrt{\langle u, u \rangle}$$</p>
-<p>$$| u |$$</p>
-<p>Agora sejam $u,\ v \in R^3$, o ângulo $\theta$ entre $\rho(u)$ e $\rho(v)$ é:</p>
-<p>$$\theta = \mathrm{arccos}\left(\frac{\langle \rho(u), \rho(v) \rangle}{| \rho(u) | \cdot | \rho(v) |}\right)$$</p>
-<p>simplificando</p>
-<p>$$\theta = \mathrm{arccos}\left(\frac{\langle u, v \rangle}{| u | \cdot | v |}\right)$$</p>
-<p>que é o mesmo que o ângulo entre $u$ e $v$.</p>
-<p><strong>b)</strong> Mostre que o produto vetorial de dois vetores é invariante sob transformações ortogonais com determinante positivo. Essa afirmação ainda é válida se removermos a condição do determinante?</p>
-<h4 id="resolução-6">Resolução</h4>
-<p>Essa é mais complicada. A ortogonalidade da transformação, por si só, não é o bastante para determinar qual o sentido do produto vetorial. Para conseguir usar a hipótese do determinante efetivamente, o que me deixou surpreso, fica mais fácil considerar o caso mais geral. Primeiro considere que</p>
-<p>$$ \langle u, v \times w \rangle = \mathrm{det}(u, v, w)$$</p>
-<p>onde $\mathrm{det}(u, v, w)$ é o determinante da matriz que tem linhas $u$, $v$ e $w$.</p>
-<p>$$ \mathrm{det}(A)\langle u, v \times w \rangle = \mathrm{det}(A)\mathrm{det}(u, v, w) $$</p>
-<p>$$ \langle u, \mathrm{det}(A) (v \times w) \rangle = \mathrm{det}(A)\mathrm{det}(u, v, w) $$</p>
-<p>$$ \langle u, \mathrm{det}(A) (v \times w) \rangle = \mathrm{det}(Au, Av, Aw) $$</p>
-<p>$$ \langle u, \mathrm{det}(A) (v \times w) \rangle = \langle Au, Av \times Aw \rangle $$</p>
-<p>$$ \langle u, \mathrm{det}(A) (v \times w) \rangle = \langle u, A^T (Av \times Aw) \rangle $$</p>
-<p>como esta identidade vale para qualquer escolha de $u$, os dois fatores do produto devem ser iguais.</p>
-<p>$$\mathrm{det}(A) (v \times w) = A^T (Av \times Aw)$$</p>
-<p>no belíssimo caso em que $A^T$ é invertível, isso é equivalente a</p>
-<p>$$\mathrm{det}(A) (A^T)^{-1} (v \times w) = Av \times Aw$$</p>
-<p>especializando $A = \rho$</p>
-<p>$$\mathrm{det}(\rho) (\rho^T)^{-1} (v \times w) = \rho(v) \times \rho(w)$$</p>
-<p>$$ \rho (v \times w) = \rho(v) \times \rho(w) $$</p>
-<p><strong>c)</strong> Mostre que o comprimento de arco, a curvatora e a torção de uma curva parametrizada são (sempre que definidos) invariantes sob movimentos rígidos.</p>
-<p>Usaremos as identidades que mostramos e as identidades que mostraremos no exercício 12 para demonstrar esta questão.</p>
-<p>Comprimento de arco:</p>
-<p>$$\int_a^b |(\rho \circ \alpha)'(t)| \mathrm{d}t$$</p>
-<p>$$\int_a^b |\rho \cdot \alpha'(t)| \mathrm{d}t$$</p>
-<p>$$\int_a^b |\alpha'(t)| \mathrm{d}t$$</p>
-<p>Curvatura:</p>
-<p>$$\frac{|(\rho \circ \alpha)' \wedge (\rho \circ \alpha)''|}{|\rho \circ \alpha'|^3}$$</p>
-<p>$$\frac{|\rho \cdot \alpha' \wedge \rho \cdot \alpha''|}{|\rho \cdot \alpha'|^3}$$</p>
-<p>$$\frac{|\rho \cdot (\alpha' \wedge \alpha'')|}{|\rho \cdot \alpha'|^3}$$</p>
-<p>$$\frac{|\alpha' \wedge \alpha''|}{|\alpha'|^3}$$</p>
-<p>Torção:</p>
-<p>$$-\frac{((\rho \circ \alpha)' \wedge (\rho \circ \alpha)'') \cdot (\rho \circ \alpha)'''}{|(\rho \circ \alpha) \wedge (\rho \circ \alpha)''|^2}$$</p>
-<p>$$-\frac{(\rho \cdot \alpha' \wedge \rho \cdot \alpha'') \cdot \rho \cdot \alpha'''}{|\rho \cdot \alpha \wedge \rho \cdot \alpha''|^2}$$</p>
-<p>$$-\frac{(\rho \cdot (\alpha' \wedge \alpha'')) \cdot \rho \cdot \alpha'''}{|\rho \cdot (\alpha \wedge \alpha'')|^2}$$</p>
-<p>$$-\frac{(\alpha' \wedge \alpha'') \cdot \alpha'''}{|\alpha \wedge \alpha''|^2}$$</p>
-<h3 id="questão-12">Questão 12<a class="anchor" href="#questão-12">#</a></h3>
-<p>Seja $\alpha: I \rightarrow R^3$ uma curva regular parametrizada (não necessariamente por comprimento de arco) e seja $\beta: J \rightarrow R^3$ uma parametrização de $\alpha(I)$ pelo comprimento de arco $s = s(t)$, medida de $t_0 \in I$s. Seja $t = t(s)$ a função inversa de $s$ e fixe $\mathrm{d}\alpha/\mathrm{d}t = \alpha'$, $\mathrm{d}^2\alpha/\mathrm{d}t^2 = \alpha''$, etc. Prove que</p>
-<p><strong>a)</strong> $\mathrm{d}t/\mathrm{d}s = 1/|\alpha'|$, $\mathrm{d}^2t/\mathrm{d}s^2 = -(\alpha'\cdot \alpha''/|\alpha'|^4)$.</p>
-<p><strong>b)</strong> A curvatora de $\alpha$ em $t \in I$ é</p>
-<p>$$k(t) = \frac{|\alpha'\wedge \alpha''|}{|\alpha'|^3}$$</p>
-<p><strong>c)</strong> A torção de $\alpha$ em $t \in I$ é</p>
-<p>$$\tau(t) = - \frac{(\alpha' \wedge \alpha'') \cdot \alpha'''}{|\alpha \wedge \alpha''|^2}$$</p>
-<p><strong>d)</strong> Se $\alpha: I \rightarrow R^2$ é uma curva plana $\alpha(t) = (x(t), y(t))$, a curvatura com sinal de $\alpha$ no $t$ é</p>
-<p>$$k(t) = \frac{x&rsquo;y'' - x'' y'}{\left( (x')^2 + (y')^2 \right)^{3/2}}$$</p>
-<h2 id="capítulo-2--seção-2">Capítulo 2 — Seção 2<a class="anchor" href="#capítulo-2--seção-2">#</a></h2>
-<h3 id="questão-16-">Questão 16 🖋️<a class="anchor" href="#questão-16-">#</a></h3>
-<p>Uma forma de definir um sistema de coordenadas para a esfera $S^2$, dada por $x^2 + y^2 + (z-1)^2 = 1$$ é considerar a chamada <em>projeção estereográfica</em> $\pi: S^2 \setminus {N} \rightarrow R^2$ que carrega um ponto $p = (x, y, z)$ da esfera $S^2$ menos o polo norte $N = (0, 0, 2)$ na intersecção com o plano $xy$ com a linha reta que conecta $N$ a $p$. Seja $(u, v) = \pi(x, y, z)$, onde $(x, y, z) \in S^2 \setminus {N}$ e $(u, v)$ pertence ao plano $xy$.</p>
-<p><strong>a)</strong> Mostre que $\pi^{-1}: R^2 \rightarrow S^2$ é dada por</p>
-<p>$$\begin{cases}
-x = \frac{4u}{u^2 + v^2 + 4} \\
-y = \frac{4v}{u^2 + v^2 + 4} \\
-z = \frac{2(u^2 + v^2)}{u^2 + v^2 + 4} \\
-\end{cases}$$</p>
-<h4 id="resolução-7">Resolução</h4>
-<p>Esta ilustração aqui ficou bonitinha, mas não vamos precisar dela</p>
-
-
-
-<iframe src="https://www.geogebra.org/calculator/au8rdxte?embed" width="544" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
-
-
-
-<p>Para verificar se o ponto está ou não na esfera, vamos calcular</p>
-<p>$$x^2 + y^2 + (z - 1)^2$$</p>
-<p>e verificar se isso dá $1$</p>
-<p>$$\left(\frac{4u}{u^2 + v^2 + 4}\right)^2 + \left(\frac{4v}{u^2 + v^2 + 4}\right)^2 + \left(\frac{2(u^2 + v^2)}{u^2 + v^2 + 4} - 1\right)^2$$</p>
-<p>$$\frac{16u^2 + 16v^2 + (u^2 + v^2 - 4)^2}{(u^2 + v^2 + 4)^2}$$</p>
-<p>$$\frac{16u^2 + 16v^2 + (u^2 + v^2 - 4)^2}{(u^2 + v^2 + 4)^2}$$</p>
-<p>$$\frac{16u^2 + 16v^2 + u^4 + v^4 + 2u^2v^2 - 8u^2 - 8v^2 + 16}{(u^2 + v^2 + 4)^2}$$</p>
-<p>$$\frac{8u^2 + 8v^2 + u^4 + v^4 + 2u^2v^2 + 16}{(u^2 + v^2 + 4)^2}$$</p>
-<p>$$1$$</p>
-<p>Bacana, então o ponto está na esfera. Agora resta verificar se $D = (0, 0, 4)$, $E = (x, y, z)$ e $C = (u, v, 0)$ são colineares. Se forem não resta dúvida que essa é a expressão correta para $\pi^{-1}$. De fato</p>
-<p>$$C - D = (u, v, -4)$$</p>
-<p>e</p>
-<p>$$E - D = \left(\frac{4}{u^2 + v^2 + 4}u, \frac{4}{u^2 + v^2 + 4}v, \frac{4}{u^2 + v^2 + 4}\cdot (-4)\right)$$</p>
-<p><strong>b)</strong> Mostre que é possível, usando projeção estereográfica, cobrir a esfera com duas vizinhanças coordenadas.</p>
-<h4 id="resolução-8">Resolução</h4>
-<p>Se você definir a transformação afim $\varphi(x, y, z) = (x, y, 2 - z)$, a composição $\varphi \circ \pi^{-1}$ também parametriza outra vizinhança da esfera. Em particular $\varphi \circ \pi^{-1} (0, 0) = (0, 0, 4)$, que era o único ponto que tinha ficado faltando na parametrização anterior.</p>
-<h3 id="questão-17-">Questão 17 🖋️<a class="anchor" href="#questão-17-">#</a></h3>
-<p>Defina uma curva regular analogamente a uma superfície regular. Prove que</p>
-<h4 id="resolução-9">Resolução</h4>
-<p>Um subconjunto $C \subset R^3$ é uma <em>curva regular</em> se, para todo $p \in C$, existir uma vizinhança $V$ em $R^3$ e uma aplicação $\mathbf{x}: I \rightarrow V \cap C$ de um <em>intervalo aberto</em> $I \subset R$ em $V \cap C \subset R^3$ tal que</p>
-<ol>
-<li>$\mathbf{x}$ é diferenciável</li>
-<li>$\mathbf{x}$ é homeomorfismo</li>
-<li>para todo $t \in I$ temos $\mathbf{x}' \neq 0$</li>
-</ol>
-<p><strong>a)</strong> A imagem inversa de um valor regular de uma função diferenciável</p>
-<p>$$f: U \subset R^2 \rightarrow R$$</p>
-<p>é uma curva plana regular. Dê um exemplo de tal curva que não é conexa.</p>
-<h4 id="resolução-10">Resolução</h4>
-<p>Suponha que $u \in R$ é um valor regular de $f$ e seja $p = (x_0, y_0)$ um ponto de $f^{-1}(p)$. Sabemos que $f'(u) \neq 0$, então alguma das coordenadas dessa derivada seria diferente de $0$. Sem perda de generalizada podemos assumir que é o $y$. Vamos definir uma $F : R^2 \rightarrow R^2$ tal que $F(x, y) = (x, f(x, y))$. A derivada de $F$ é dada por
-$$\mathrm{d}F_p =
-\begin{pmatrix}
-1 &amp; 0 \\
-f_x &amp; f_y \\
-\end{pmatrix}$$</p>
-<p>Como $f_y \neq 0$ por hipótese, esse determinante é diferente de $0$. Assim podemos aplicar o teorema da função inversa para obter uma $F^{-1}$ numa vizinhança de $p$. Em particular, em $f^{-1}(u)$ podemos definir a função $\varphi: x \mapsto F^{-1}(x, u)$ que vai parametrizar os pontos da vizinhança em função do $x$.</p>
-<p>Um exemplo de curva regular que não é conexa é $y^2 - x^2 = -1$, dá uma hipérbole. Ela possui os pontos $(1, 0)$ e $(-1, 0)$, mas não possui nenhum ponto com $x \in (-1, 1)$</p>
-<p><strong>b)</strong> A imagem inversa de um valor regular de uma aplicação diferenciável</p>
-<p>$$F: U \subset R^3 \rightarrow R^2$$</p>
-<p>é uma curva regular em R^3. Mostre a relação entre esta proposição e a maneira clássica de definir a curva em $R^3$ como uma intersecção de duas superfícies.</p>
-<h4 id="resolução-11">Resolução</h4>
-<p>A ideia é bem parecida com a da questão anterior, mas dessa vez vamos definir a função $G(x, y, z) = (x, F_1(x, y, z), F_2(x, y, z))$ para aplicarmos o teorema da função inversa. Feito isso a função $\varphi(x) = G^{-1}(x, p_1, p_2)$ irá parametrizar os pontos da curva.</p>
-<p>A analogia vem do fato de que, se temos $p = (p_1, p_2)$ um valor regular de $F$, definirmos $F_1 = \pi_1 \circ F$ e $F_2 = \pi_2 \circ F$, então $p_1$ é um valor regular de $F_1$ e $p_2$ é um valor regular de $F_2$. Logo $F_1^{-1}(p_1)$ e $F_2^{-1}(p_2)$ são superfícies regulares, e a intersecção delas é a curva regular $F^{-1}(p)$.</p>
-<p><strong>c)</strong> O conjunto $C = {(x, y) \in R^2;\ x^2 = y^3}$ não é uma curva regular.</p>
-<h4 id="resolução-12">Resolução</h4>
-<p>Suponha que tivéssemos uma $\varphi: (-\varepsilon, \varepsilon) \rightarrow R^2$ que parametrizasse uma vizinhança do $0$ de forma que $\varphi(0) = (0, 0)$ e</p>
-<p>$$t^2 = \varphi(t)^3$$</p>
-<p>derivando ambos os lados duas vezes</p>
-<p>$$2 \cdot t = 3 \cdot \varphi(t)^2 \varphi'(t)$$</p>
-<p>$$2 = 3 \cdot (2\varphi(t) \varphi'(t)^2 + \varphi(t)^2 \varphi''(t))$$
-$$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
-<p>mas $\varphi(0) = 0$, absurdo. Daí que a curva não pode ser regular.</p>
-<h2 id="capítulo-2---seção-3">Capítulo 2 - Seção 3<a class="anchor" href="#capítulo-2---seção-3">#</a></h2>
-<h3 id="questão-6">Questão 6<a class="anchor" href="#questão-6">#</a></h3>
-<p>Prove que a definição de aplicação diferenciável entre superfícies não depende das parametrizações escolhidas.</p>
+<h2 id="séries-de-fourier-">Séries de fourier 🖋️<a class="anchor" href="#séries-de-fourier-">#</a></h2>
+<h3 id="2---a">2 - a<a class="anchor" href="#2---a">#</a></h3>
+<p>$$a_0 = \frac{1}{L}\int^{L}_{-L} f(x) \mathrm{d}x$$</p>
+<p>$$a_n = \frac{1}{L}\int^L_{-L} f(x)\cos\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$</p>
+<p>$$b_n = \frac{1}{L}\int^L_{-L} f(x)\sin\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$</p>
+<h3 id="2---b">2 - b<a class="anchor" href="#2---b">#</a></h3>
+<p>Como $f$ é uma função ímpar e $a_0$ e $a_n$ são integrais em intevalos simétricos, então são todos iguais a $0$. Já $b_n$</p>
+<p>$$b_n = \frac{1}{2\pi}\int^{2\pi}_{-2\pi} f(x)\sin\left(\frac{n \pi x}{2\pi}\right) \mathrm{d}x$$</p>
+<p>$$b_n = \frac{1}{2\pi}\left(\int^{-\pi}<em>{-2\pi} 0\ \mathrm{d}x + \\
+\int^{\pi}</em>{-\pi} -6x\sin\left(\frac{n \pi x}{2\pi} \right)
+$$</p>
+<p>$$b_n = \frac{1}{2\pi}\int^{\pi}_{-\pi} -6x\sin\left(\frac{n \pi x}{2\pi}\right) \mathrm{d}x$$</p>
+<p>(1/(2<em>pi))</em>(-6x<em>sin((n</em>pi<em>x)/(2</em>pi))</p>
 
 
               
@@ -362,7 +168,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
 
           <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -423,29 +229,10 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#capítulo-1--seção-3">Capítulo 1 — Seção 3</a>
+    <li><a href="#séries-de-fourier-">Séries de fourier 🖋️</a>
       <ul>
-        <li><a href="#questão-8-">Questão 8 🖋️</a></li>
-        <li><a href="#questão-9-">Questão 9 🖋️</a></li>
-        <li><a href="#questão-10-">Questão 10 🖋️</a></li>
-      </ul>
-    </li>
-    <li><a href="#capítulo-1--seção-5">Capítulo 1 — Seção 5</a>
-      <ul>
-        <li><a href="#questão-4-">Questão 4 🖋️</a></li>
-        <li><a href="#questão-6-">Questão 6 🖋️</a></li>
-        <li><a href="#questão-12">Questão 12</a></li>
-      </ul>
-    </li>
-    <li><a href="#capítulo-2--seção-2">Capítulo 2 — Seção 2</a>
-      <ul>
-        <li><a href="#questão-16-">Questão 16 🖋️</a></li>
-        <li><a href="#questão-17-">Questão 17 🖋️</a></li>
-      </ul>
-    </li>
-    <li><a href="#capítulo-2---seção-3">Capítulo 2 - Seção 3</a>
-      <ul>
-        <li><a href="#questão-6">Questão 6</a></li>
+        <li><a href="#2---a">2 - a</a></li>
+        <li><a href="#2---b">2 - b</a></li>
       </ul>
     </li>
   </ul>
@@ -460,7 +247,7 @@ $$2 = 3 \varphi(t) \cdot (2\varphi'(t)^2 + \varphi(t) \varphi''(t))$$</p>
    
 
   
-  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

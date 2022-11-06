@@ -6,15 +6,15 @@
     <description>Recent content on dessages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 13 May 2022 12:00:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Nov 2022 12:00:00 -0300</lastBuildDate><atom:link href="https://rigille.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Designing a Telegram Bot - Part 0</title>
-      <link>https://rigille.github.io/blog/designing_telegram_bot_0/</link>
-      <pubDate>Fri, 13 May 2022 12:00:00 -0300</pubDate>
+      <title>How to become a better programmer?</title>
+      <link>https://rigille.github.io/blog/how-to-be-a-better-programmer/</link>
+      <pubDate>Sun, 06 Nov 2022 12:00:00 -0300</pubDate>
       
-      <guid>https://rigille.github.io/blog/designing_telegram_bot_0/</guid>
-      <description>I was challenged by my girlfriend to practice or study something for 30 days and post it online. A great excuse to start a project, don&amp;rsquo;t you think? This time I want to work in a project that ends up being useful for ordinary people and actually has users. The last time this happened was when I plotted market data from a minecraft server.
-But I also want to focus on quality.</description>
+      <guid>https://rigille.github.io/blog/how-to-be-a-better-programmer/</guid>
+      <description>I would like to become a better programmer. By that I mean I would like to learn to write programs that solve more problems, give strong guarantees of correctness and are easier to understand. I know this is not what the market values the most and that&amp;rsquo;s ok. It&amp;rsquo;s more of a personal thing.
+Ok but solving more problems, giving strong guarantees of correctness and being easy to understand aren&amp;rsquo;t precise enough to be goals.</description>
     </item>
     
     <item>
@@ -24,15 +24,6 @@ But I also want to focus on quality.</description>
       
       <guid>https://rigille.github.io/blog/uma-estrategia-para-atacar-problemas-grandes/</guid>
       <description>Felizmente várias vezes é possível conseguir o que queremos com ações nossas, sem muitas outras pessoas envolvidas e sem muitas variáveis externas. Nesses casos é fácil determinar as causas e efeitos, e a nossa intuição funciona muito bem. Por outro lado pode ser que haja milhões, bilhões de pessoas envolvidas. Nesse caso a nossa intuição nos joga pro caminho errado, que além de não funcionar pode desperdiçar nosso tempo. Eu gostaria de explorar como isso acontece e propor uma estratégia que, apesar de não ser fácil, tem mais chance de funcionar nesses casos complicados.</description>
-    </item>
-    
-    <item>
-      <title>why i&#39;m interested in constructive mathematics</title>
-      <link>https://rigille.github.io/blog/why-constructive/</link>
-      <pubDate>Thu, 21 Oct 2021 10:00:00 -0300</pubDate>
-      
-      <guid>https://rigille.github.io/blog/why-constructive/</guid>
-      <description>i want to live in a future where if a mathematician proves that a certain subset of the plane is path-connected then a programmer could import the theorem and use it for the pathfinding of his game.</description>
     </item>
     
     <item>
@@ -117,9 +108,9 @@ Resolução Para resolver essa questão primeiro vamos considerar o cone gerado 
       
       <guid>https://rigille.github.io/exercicios/prova2_iedo/</guid>
       <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
-$$x&#39;&#39; = F(x)$$
+$$x&amp;rsquo;&amp;rsquo; = F(x)$$
 num intervalo da reta. Claramente ela é equivalente ao sistema
-$$ \begin{cases} x&#39; = v \\ v&#39; = F(x) \end{cases} \tag{1} $$
+$$ \begin{cases} x&amp;rsquo; = v \\ v&amp;rsquo; = F(x) \end{cases} \tag{1} $$
 a) Mostre que a energia total $E = T+U$ é uma integral primeira do sistema, onde $T(v) = \frac{v^2}{2}$ é a energia cinética e $U(x) = - \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$ é a energia potencial.
 b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</description>
     </item>
@@ -151,10 +142,12 @@ Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é 
       <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/exercicios/lista1-gd/</guid>
-      <description>Capítulo 1 — Seção 3 Questão 8 🖋️ Seja $\alpha : I \rightarrow R^3$ uma curva diferenciável e seja $[a, b] \subset I$ ser um intervalo fechado. Pra cada partição
-$$a = t_0 &amp;lt; t_1 &amp;lt; &amp;hellip; &amp;lt; t_n = b$$
-de $[a, b]$, considere a soma $\sum_{i=1}^n |\alpha(t_i) - \alpha(t_{i-1})| = I(\alpha, P)$ onde $P$ representa a partição. A norma $|P|$ de uma partição $|P|$ é definida como
-$$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</description>
+      <description>Séries de fourier 🖋️ 2 - a $$a_0 = \frac{1}{L}\int^{L}_{-L} f(x) \mathrm{d}x$$
+$$a_n = \frac{1}{L}\int^L_{-L} f(x)\cos\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$
+$$b_n = \frac{1}{L}\int^L_{-L} f(x)\sin\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$
+2 - b Como $f$ é uma função ímpar e $a_0$ e $a_n$ são integrais em intevalos simétricos, então são todos iguais a $0$. Já $b_n$
+$$b_n = \frac{1}{2\pi}\int^{2\pi}_{-2\pi} f(x)\sin\left(\frac{n \pi x}{2\pi}\right) \mathrm{d}x$$
+$$b_n = \frac{1}{2\pi}\left(\int^{-\pi}{-2\pi} 0\ \mathrm{d}x + \\ \int^{\pi}{-\pi} -6x\sin\left(\frac{n \pi x}{2\pi} \right) $$</description>
     </item>
     
     <item>
@@ -178,7 +171,7 @@ Provarei a versão mais forte</description>
       <description>Enunciado E. 4. b) Seja
 $$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -3 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 &amp;amp; 0 \\ \end{bmatrix} $$
 Encontre a solução $\varphi$ para o PVI
-$$ \begin{cases} x&#39; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
+$$ \begin{cases} x&amp;rsquo; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
     </item>
     
     <item>
@@ -222,7 +215,7 @@ a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\right
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/blog/as-curvas-e-as-quinas/</guid>
-      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
+      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&amp;rsquo;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
     

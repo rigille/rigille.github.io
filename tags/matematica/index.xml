@@ -49,9 +49,9 @@ Resolução Para resolver essa questão primeiro vamos considerar o cone gerado 
       
       <guid>https://rigille.github.io/exercicios/prova2_iedo/</guid>
       <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
-$$x&#39;&#39; = F(x)$$
+$$x&amp;rsquo;&amp;rsquo; = F(x)$$
 num intervalo da reta. Claramente ela é equivalente ao sistema
-$$ \begin{cases} x&#39; = v \\ v&#39; = F(x) \end{cases} \tag{1} $$
+$$ \begin{cases} x&amp;rsquo; = v \\ v&amp;rsquo; = F(x) \end{cases} \tag{1} $$
 a) Mostre que a energia total $E = T+U$ é uma integral primeira do sistema, onde $T(v) = \frac{v^2}{2}$ é a energia cinética e $U(x) = - \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$ é a energia potencial.
 b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</description>
     </item>
@@ -72,10 +72,12 @@ Resolução Antes de mais nada precisamos estabelecer que $\mathrm{conv}(X)$ é 
       <pubDate>Sat, 10 Apr 2021 17:14:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/exercicios/lista1-gd/</guid>
-      <description>Capítulo 1 — Seção 3 Questão 8 🖋️ Seja $\alpha : I \rightarrow R^3$ uma curva diferenciável e seja $[a, b] \subset I$ ser um intervalo fechado. Pra cada partição
-$$a = t_0 &amp;lt; t_1 &amp;lt; &amp;hellip; &amp;lt; t_n = b$$
-de $[a, b]$, considere a soma $\sum_{i=1}^n |\alpha(t_i) - \alpha(t_{i-1})| = I(\alpha, P)$ onde $P$ representa a partição. A norma $|P|$ de uma partição $|P|$ é definida como
-$$|P| = \mathrm{max}(t_i - t_{i-1}),\ i = 1, …, n$$</description>
+      <description>Séries de fourier 🖋️ 2 - a $$a_0 = \frac{1}{L}\int^{L}_{-L} f(x) \mathrm{d}x$$
+$$a_n = \frac{1}{L}\int^L_{-L} f(x)\cos\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$
+$$b_n = \frac{1}{L}\int^L_{-L} f(x)\sin\left(\frac{n \pi x}{L}\right) \mathrm{d}x$$
+2 - b Como $f$ é uma função ímpar e $a_0$ e $a_n$ são integrais em intevalos simétricos, então são todos iguais a $0$. Já $b_n$
+$$b_n = \frac{1}{2\pi}\int^{2\pi}_{-2\pi} f(x)\sin\left(\frac{n \pi x}{2\pi}\right) \mathrm{d}x$$
+$$b_n = \frac{1}{2\pi}\left(\int^{-\pi}{-2\pi} 0\ \mathrm{d}x + \\ \int^{\pi}{-\pi} -6x\sin\left(\frac{n \pi x}{2\pi} \right) $$</description>
     </item>
     
     <item>
@@ -99,7 +101,7 @@ Provarei a versão mais forte</description>
       <description>Enunciado E. 4. b) Seja
 $$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -3 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 &amp;amp; 0 \\ \end{bmatrix} $$
 Encontre a solução $\varphi$ para o PVI
-$$ \begin{cases} x&#39; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
+$$ \begin{cases} x&amp;rsquo; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
     </item>
     
     <item>
@@ -143,7 +145,7 @@ a) seja $x \in \mathbb{R}^n \setminus \{ 0 \}$. prove que se $L := \lim_{n\right
       <pubDate>Sun, 07 Feb 2021 17:43:00 -0300</pubDate>
       
       <guid>https://rigille.github.io/blog/as-curvas-e-as-quinas/</guid>
-      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&#39;(p) \neq 0$ para todo $p \in I$.
+      <description>o curso de geometria diferencial abre com a definição de uma curva diferencial parametrizada, que é um função $f : I \rightarrow \mathbb{R}^n$ onde $I$ é um intervalo aberto, $f$ tem derivadas de todas as ordens e $f&amp;rsquo;(p) \neq 0$ para todo $p \in I$.
 essa definição foi pensada visando excluir as curvas que têm quinas e outras bestas mais temíveis, deixando apenas as curvas sensuais1 que saem serpenteando suavemente pelo espaço.</description>
     </item>
     

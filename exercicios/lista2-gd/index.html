@@ -172,19 +172,19 @@ $$F_{vv} = -6u$$</p>
 </ol>
 <h3 id="resolução-2">Resolução<a class="anchor" href="#resolução-2">#</a></h3>
 <p><strong>1.</strong> Para calcular os coeficientes da primeira forma fundamental. Primeiro vamos calcular o campo coordenado</p>
-<p>$$X_u(u, v) = (f'(u)\cos v, f'(u)\sin v, g'(u))$$</p>
+<p>$$X_u(u, v) = (f&rsquo;(u)\cos v, f&rsquo;(u)\sin v, g&rsquo;(u))$$</p>
 <p>$$X_v(u, v) = (-f(u)\sin v, f(u)\cos v, 0)$$</p>
 <p>Daí</p>
-<p>$$E(u, v) = \langle X_u, X_u \rangle = f'(u)^2 + g'(u)^2$$</p>
+<p>$$E(u, v) = \langle X_u, X_u \rangle = f&rsquo;(u)^2 + g&rsquo;(u)^2$$</p>
 <p>$$F(u, v) = \langle X_u, X_v \rangle = 0$$</p>
 <p>$$G(u, v) = \langle X_v, X_v \rangle = f(u)^2$$</p>
 <p>E a área da região $R$ é</p>
 <p>$$\int \int_R |X_u \wedge X_v| \mathrm{d}u\mathrm{d}v$$</p>
 <p>$$\int \int_R \sqrt{EG - F^2} \mathrm{d}u\mathrm{d}v$$</p>
-<p>$$\int \int_R \sqrt{(f'(u)^2 + g'(u)^2)f(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
-<p>$$\int \int_R |f(u)|\sqrt{f'(u)^2 + g'(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
+<p>$$\int \int_R \sqrt{(f&rsquo;(u)^2 + g&rsquo;(u)^2)f(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
+<p>$$\int \int_R |f(u)|\sqrt{f&rsquo;(u)^2 + g&rsquo;(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
 <p>que acho que está numa forma legal para calcular. No caso da esfera especificamente podemos fazer $g(u) = \sin u$ e $f(u) = \cos u$ e $R = [-\pi/2, \pi/2]\times[0, 2\pi]$.</p>
-<p>$$\int_0^{2\pi} \int_{-\pi/2}^{\pi/2} |f(u)|\sqrt{f'(u)^2 + g'(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
+<p>$$\int_0^{2\pi} \int_{-\pi/2}^{\pi/2} |f(u)|\sqrt{f&rsquo;(u)^2 + g&rsquo;(u)^2} \mathrm{d}u\mathrm{d}v$$</p>
 <p>$$\int_0^{2\pi} \int_{-\pi/2}^{\pi/2} \cos u \mathrm{d}u\mathrm{d}v$$</p>
 <p>$$2\pi \int_{-\pi/2}^{\pi/2} \cos u \mathrm{d}u$$</p>
 <p>$$2\pi (\sin(\pi/2) - \sin(\pi/2))$$</p>
@@ -257,7 +257,7 @@ g(p, u) \mapsto f(p)$$</p>
 
           <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -366,7 +366,7 @@ g(p, u) \mapsto f(p)$$</p>
    
 
   
-  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

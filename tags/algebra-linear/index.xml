@@ -36,9 +36,9 @@ Resolução Para resolver essa questão primeiro vamos considerar o cone gerado 
       
       <guid>https://rigille.github.io/exercicios/prova2_iedo/</guid>
       <description>Questão 1 Enunciado Sistemas conservativos unidimensionais: Considere a equação
-$$x&#39;&#39; = F(x)$$
+$$x&amp;rsquo;&amp;rsquo; = F(x)$$
 num intervalo da reta. Claramente ela é equivalente ao sistema
-$$ \begin{cases} x&#39; = v \\ v&#39; = F(x) \end{cases} \tag{1} $$
+$$ \begin{cases} x&amp;rsquo; = v \\ v&amp;rsquo; = F(x) \end{cases} \tag{1} $$
 a) Mostre que a energia total $E = T+U$ é uma integral primeira do sistema, onde $T(v) = \frac{v^2}{2}$ é a energia cinética e $U(x) = - \int_{x_0}^{x} F(\tau)\mathrm{d}\tau$ é a energia potencial.
 b) Mostre que todos os pontos de equilíbrio do sistema estão no eixo dos $x.</description>
     </item>
@@ -74,7 +74,7 @@ Provarei a versão mais forte</description>
       <description>Enunciado E. 4. b) Seja
 $$B = \begin{bmatrix} -1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -3 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 3 &amp;amp; 0 \\ \end{bmatrix} $$
 Encontre a solução $\varphi$ para o PVI
-$$ \begin{cases} x&#39; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
+$$ \begin{cases} x&amp;rsquo; = Bx \\ x(0) = (a_1, a_2, a_3, a_4, a_5) \in \mathbb{R}^5 \end{cases} $$</description>
     </item>
     
     <item>
